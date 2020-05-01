@@ -1,13 +1,10 @@
 .contacts {
 	font-size: 15px;
-}
 
-.contacts__text {
-	@include reset();
-	margin-bottom: 15px;
-
-	&:last-of-type {
-		margin-bottom: 0;
+	@media (min-width: $desktop-width) {
+		display: flex;
+		justify-content: space-between;
+		order: 2;
 	}
 }
 
@@ -15,6 +12,7 @@
 	@include reset-list();
 	font-size: 18px;
 	font-weight: 600;
+	margin-bottom: 25px;
 }
 
 .contacts__item {
@@ -23,13 +21,20 @@
 
 .contacts__time-work {
 	display: block;
-	margin-top: 5px;
 	font-size: 18px;
 	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 .contacts__email {
 	color: #222222;
 	text-decoration: none;
 	font-weight: 600;
+
+}
+
+.contacts__wrapper {
+	@media (min-width: $desktop-width) {
+		margin-right: 147px;
+	}
 }

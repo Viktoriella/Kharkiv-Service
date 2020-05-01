@@ -1,9 +1,20 @@
+.breadcrumps {
+	@media (min-width: $desktop-width) {
+		order: 1;
+	}
+}
+
 .breadcrumps__list {
 	@include reset-list();
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	height: 120px;
+
+	@media (min-width: $desktop-width) {
+		height: auto;
+		flex-wrap: nowrap;
+	}
 }
 
 .breadcrumps__link {

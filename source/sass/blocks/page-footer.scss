@@ -4,13 +4,38 @@
 	padding-top: 20px;
 	padding-bottom: 15px;
 	background-color: #CCEDFF;
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 178px;
+		padding-right: 275px;
+		padding-top: 40px;
+		padding-bottom: 32px;
+	}
 }
 
 .page-footer__logo {
 	display: block;
 	margin-bottom: 30px;
+	order: 0;
 }
 
 .page-footer__socials {
 	font-size: 15px;
+
+	@media (min-width: $desktop-width) {
+		order: 3;
+	}
+}
+
+.page-footer__title {
+	@include reset();
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 5px;
+
+	@media (min-width: $desktop-width) {
+		font-size: 18px;
+	}
 }

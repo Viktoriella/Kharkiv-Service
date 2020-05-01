@@ -373,6 +373,12 @@ body {
 .page-main {
   padding-bottom: 40px; }
 
+@media (min-width: 1920px) {
+  .page-main__wrapper {
+    background-image: url("../img/bg-5-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom 200px; } }
+
 .main-nav__show-menu {
   width: 30px;
   height: 30px;
@@ -505,6 +511,10 @@ body {
   margin-right: 0;
   margin-top: 5px;
   margin-bottom: 20px; }
+  @media (min-width: 1920px) {
+    .socials-footer {
+      padding-top: 0;
+      margin-top: 10px; } }
 
 .intro {
   background-image: url("../img/bg-mobile.jpg");
@@ -1618,13 +1628,39 @@ body {
   padding-top: 20px;
   padding-bottom: 15px;
   background-color: #CCEDFF; }
+  @media (min-width: 1920px) {
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 178px;
+      padding-right: 275px;
+      padding-top: 40px;
+      padding-bottom: 32px; } }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  order: 0; }
 
 .page-footer__socials {
   font-size: 15px; }
+  @media (min-width: 1920px) {
+    .page-footer__socials {
+      order: 3; } }
+
+.page-footer__title {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 5px; }
+  @media (min-width: 1920px) {
+    .page-footer__title {
+      font-size: 18px; } }
+
+@media (min-width: 1920px) {
+  .breadcrumps {
+    order: 1; } }
 
 .breadcrumps__list {
   margin: 0;
@@ -1634,6 +1670,10 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   height: 120px; }
+  @media (min-width: 1920px) {
+    .breadcrumps__list {
+      height: auto;
+      flex-wrap: nowrap; } }
 
 .breadcrumps__link {
   display: block;
@@ -1651,31 +1691,34 @@ body {
 
 .contacts {
   font-size: 15px; }
-
-.contacts__text {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 15px; }
-  .contacts__text:last-of-type {
-    margin-bottom: 0; }
+  @media (min-width: 1920px) {
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+      order: 2; } }
 
 .contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 18px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 25px; }
 
 .contacts__item {
   margin-bottom: 5px; }
 
 .contacts__time-work {
   display: block;
-  margin-top: 5px;
   font-size: 18px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 15px; }
 
 .contacts__email {
   color: #222222;
   text-decoration: none;
   font-weight: 600; }
+
+@media (min-width: 1920px) {
+  .contacts__wrapper {
+    margin-right: 147px; } }
