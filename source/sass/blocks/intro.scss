@@ -53,6 +53,17 @@
 	text-decoration: none;
 }
 
+.intro__tel--viber {
+	position: relative;
+
+	&::before {
+		@include pseudo();
+		@include sprite(-20px, -1221px, 27px, 13px);
+		top: 4px;
+		left: -18px;
+	}
+}
+
 .intro__title {
 	@include reset();
 	width: 227px;

@@ -15,6 +15,32 @@
 
 .socials__link {
 	font-size: 0;
+	width: 30px;
+	height: 30px;
+}
+
+.socials__link--google {
+	@include sprite(-20px, -152px, 30px, 30px);
+}
+
+.socials__link--instagram {
+	@include sprite(-20px, -362px, 30px, 30px);
+}
+
+.socials__link--youtube {
+	@include sprite(-20px, -2018px, 30px, 30px);
+}
+
+.socials__link--google-footer {
+	@include sprite(-20px, -222px, 30px, 30px);
+}
+
+.socials__link--instagram-footer {
+	@include sprite(-20px, -432px, 30px, 30px);
+}
+
+.socials__link--youtube-footer {
+	@include sprite(-20px, -2158px, 30px, 30px);
 }
 
 .socials-footer {

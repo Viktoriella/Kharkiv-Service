@@ -9,7 +9,16 @@
 }
 
 .review__slide {
+	position: relative;
 	padding-top: 148px;
+
+	&::after {
+		@include pseudo();
+		@include sprite(-20px, -902px, 85px, 68px);
+		top: 45px;
+		left: 50%;
+		transform: translateX(-50%);
+	}	
 	
 	@media (min-width: $desktop-width) {
 		padding-top: 148px;

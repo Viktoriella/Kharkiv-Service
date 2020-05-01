@@ -73,8 +73,29 @@
 	margin-bottom: 30px;
 }
 
+.video__slide {
+	position: relative;
+}
+
 .video__videofile {
 	width: 100%;
   	height: auto;
   	max-height: 100%;
+}
+
+.video__play-button {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 75px;
+	height: 55px;
+	font-size: 0;
+	border: 0;
+	background-color: transparent;
+	@include sprite(-20px, -806px, 77px, 56px);
+
+	@media (min-width: $desktop-width) {
+		top: 120px;
+	}
 }

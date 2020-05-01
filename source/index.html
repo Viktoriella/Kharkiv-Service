@@ -43,25 +43,18 @@
 			</nav>
 			<ul class="socials">
 				<li class="socials__item">
-					<a class="socials__link" href="#">
+					<a class="socials__link socials__link--google" href="#">
 						Google +
-						<svg width="30" height="30">
-							<use xlink:href="#ico-google"></use>
-						</svg>
 					</a>
 				</li>
 				<li class="socials__item">
-					<a class="socials__link" href="#">
+					<a class="socials__link socials__link--instagram" href="#">
 						Instagram
-						<svg width="30" height="30">
-							<use xlink:href="#ico-instagram"></use>
-						</svg>
 					</a>
 				</li>
 				<li class="socials__item">
-					<a class="socials__link" href="#">
+					<a class="socials__link socials__link--youtube" href="#">
 						Youtube
-						<img src="img/icon-youtube.png">
 					</a>
 				</li>
 			</ul>
@@ -77,7 +70,7 @@
 						<a class="intro__tel" href="tel:0687777777">068-777-77-77</a>
 					</li>
 					<li class="intro__item main-nav__tel--desktop">
-						<a class="intro__tel" href="tel:0637777777">063-777-77-77</a>
+						<a class="intro__tel intro__tel--viber" href="tel:0637777777">063-777-77-77</a>
 					</li>
 				</ul>
 			</div>
@@ -98,7 +91,7 @@
 						<a class="intro__tel" href="tel:0687777777">068-777-77-77</a>
 					</li>
 					<li class="intro__item">
-						<a class="intro__tel" href="tel:0637777777">063-777-77-77</a>
+						<a class="intro__tel intro__tel--viber" href="tel:0637777777">063-777-77-77</a>
 					</li>
 				</ul>
 			</div>
@@ -127,7 +120,7 @@
 			<div class="work__container">
 				<h2 class="work__title">Как мы работаем</h2>
 				<ul class="work__list">
-					<li class="work__item">
+					<li class="work__item work__item--1">
 						<h3 class="work__subtitle">
 							Вы звоните или оставляете заявку
 						</h3>
@@ -135,7 +128,7 @@
 							Опытный мастер связывается с Вами и отвечает на все вопросы - это бесплатно
 						</p>
 					</li>
-					<li class="work__item">
+					<li class="work__item work__item--2">
 						<h3 class="work__subtitle">
 							Определяемся с возможной поломкой
 						</h3>
@@ -143,7 +136,7 @@
 							Выслушав Вас, мастер определяет вероятную поломку, озвучивает стоимость работы
 						</p>	
 					</li>
-					<li class="work__item">
+					<li class="work__item work__item--3">
 						<h3 class="work__subtitle">
 							Мы выезжаем по Вашему адресу
 						</h3>
@@ -151,7 +144,7 @@
 							Вы договариваетесь про удобное время, когда мастер может к Вам приехать и заняться ремонтом Вашем стиральной машины
 						</p>
 					</li>
-					<li class="work__item">
+					<li class="work__item work__item--4">
 						<h3 class="work__subtitle">
 							Работающая стиральная машинка
 						</h3>
@@ -227,7 +220,12 @@
 					</tr>
 				</div>
 			</table>
-			<button class="price__button--less" type="button">Свернуть</button>
+			<button class="price__button--less" type="button">
+				Свернуть
+				<svg class="price__button--less-image">
+					<use xlink:href="#ico-arrow" width="10" height="10"></use>
+				</svg>
+			</button>
 			<button class="button price__button--more" type="button">Подробнее</button>
 		</section>
 		
@@ -244,7 +242,11 @@
 					Срок зависит от вида и особенностей детали, использованной во время починки машинки, а также типа и сложности поломки. По окончании работы мастер выдаст вам гарантийный талон.
 				</p>
 			</div>
-			<button class="button--read-less" type="button">Читать меньше</button>
+			<button class="button--read-less" type="button">Читать меньше
+				<svg class="button--read-less-image">
+					<use xlink:href="#ico-arrow" width="10" height="10"></use>
+				</svg>
+			</button>
 		</section>
 
 		<section class="brands">
@@ -359,7 +361,11 @@
 			<p class="brands__text brands__text--mobile">
 				Если вы не нашли марку своей машинки в списке, позвоните нам и уточните возможность ремонта вашей помощницы.
 			</p>
-			<button class="button--read-less" type="button">Читать меньше</button>
+			<button class="button--read-less" type="button">Читать меньше
+				<svg class="button--read-less-image">
+					<use xlink:href="#ico-arrow" width="10" height="10"></use>
+				</svg>
+			</button>
 			<h2 class="reviews__title">
 				Отзывы наших клиентов
 			</h2>
@@ -493,11 +499,12 @@
 								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
 							</div>
 						</li>
-						<li class="slider__slide slider__slide--center">
+						<li class="slider__slide slider__slide--center video__slide">
 							<video class="video__videofile" poster="img/video-desktop.jpg">
 								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
 							</video>
+							<button class="video__play-button" type="button">Играть видео</button>
 							<h3 class="video__subtitle--mobile">Как сохранить нагревательную спираль</h3>
 							<h3 class="video__subtitle--desktop">Как сохранить нагревательную спираль
 							Как сохранить нагревательную спираль Как сохранить нагревательную спираль</h3>
@@ -621,25 +628,18 @@
 			<h3 class="page-footer__title">Мы в соцсетях</h3>
 			<ul class="socials socials-footer">
 				<li class="socials__item">
-					<a class="socials__link" href="#">
+					<a class="socials__link socials__link--google-footer" href="#">
 						Google +
-						<svg width="30" height="30">
-							<use xlink:href="#ico-google-footer"></use>
-						</svg>
 					</a>
 				</li>
 				<li class="socials__item">
-					<a class="socials__link" href="#">
+					<a class="socials__link socials__link--instagram-footer" href="#">
 						Instagram
-						<svg width="30" height="30">
-							<use xlink:href="#ico-instagram-footer"></use>
-						</svg>
 					</a>
 				</li>
 				<li class="socials__item">
-					<a class="socials__link" href="#">
+					<a class="socials__link socials__link--youtube-footer" href="#">
 						Youtube
-						<img src="img/icon-youtube-footer.png">
 					</a>
 				</li>
 			</ul>
