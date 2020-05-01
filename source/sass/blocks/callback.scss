@@ -3,6 +3,15 @@
 	padding-right: 20px;
 }
 
+.callback__title {
+	@include reset();
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	width: 210px;
+}
+
 .callback__input {
 	margin-bottom: 10px;
 	box-sizing: border-box;

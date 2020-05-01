@@ -350,6 +350,9 @@ body {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px; }
 
+.page-main {
+  padding-bottom: 40px; }
+
 .main-nav__show-menu {
   width: 30px;
   height: 30px;
@@ -368,8 +371,7 @@ body {
 .main-nav__container {
   text-align: center;
   padding-top: 24px;
-  padding-bottom: 49px;
-  display: none; }
+  padding-bottom: 49px; }
 
 .main-nav {
   margin-bottom: 80px; }
@@ -424,6 +426,12 @@ body {
 
 .socials__link {
   font-size: 0; }
+
+.socials-footer {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: 20px; }
 
 .intro {
   background-image: url("../img/bg-mobile.jpg");
@@ -516,6 +524,15 @@ body {
 .callback {
   padding-left: 20px;
   padding-right: 20px; }
+
+.callback__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  width: 210px; }
 
 .callback__input {
   margin-bottom: 10px;
@@ -961,3 +978,173 @@ body {
 
 .about-us__text:last-of-type {
   margin-bottom: 40px; }
+
+.video {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.video__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 22px; }
+
+.video__button {
+  width: auto;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00bffe;
+  font-weight: 600;
+  background-color: #ffffff; }
+
+.video__item {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  box-shadow: 0px 10px 35px rgba(32, 73, 86, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.17);
+  border-radius: 8px; }
+
+.video__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 27px; }
+
+.video__wrapper {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #979797; }
+
+.video__slider {
+  margin-bottom: 30px; }
+
+.articles {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px; }
+
+.articles__slider {
+  margin-bottom: 30px; }
+
+.articles__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 22px; }
+
+.articles__item {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  box-shadow: 0px 10px 35px rgba(32, 73, 86, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.17);
+  border-radius: 8px; }
+
+.articles__button {
+  width: auto;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00bffe;
+  font-weight: 600;
+  background-color: #ffffff; }
+
+.article__figure {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px; }
+
+.article__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 27px; }
+
+.article__text {
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
+.page-footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background-color: #CCEDFF; }
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 30px; }
+
+.page-footer__socials {
+  font-size: 15px; }
+
+.breadcrumps__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px; }
+
+.breadcrumps__link {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-right: 57px;
+  font-weight: 600; }
+
+.breadcrumps__link--active {
+  color: #00bffe; }
+
+.contacts {
+  font-size: 15px; }
+
+.contacts__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px; }
+  .contacts__text:last-of-type {
+    margin-bottom: 0; }
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600; }
+
+.contacts__item {
+  margin-bottom: 5px; }
+
+.contacts__time-work {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.contacts__email {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 600; }

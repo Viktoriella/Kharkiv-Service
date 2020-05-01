@@ -1,0 +1,17 @@
+.article__figure {
+	@include reset();
+	margin-bottom: 10px;
+}
+
+.article__title {
+	@include reset();
+	margin-bottom: 5px;
+	text-align: left;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.article__text {
+	@include reset();
+	text-align: left;
+}

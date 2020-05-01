@@ -349,13 +349,28 @@
 		<section class="video">
 			<h2 class="video__title">Видео</h2>
 			<div class="slider video__slider">
-				<video poster="img/video-mobile.jpg" width="250" height="156">
-					<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-				  				<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-				</video>
-				<h3>Как сохранить нагревательную спираль</h3>
-				<time>20:15</time>
-				<time datetime="2020-04-08">08.04.2020</time>
+				<div class="video__item">
+					<video poster="img/video-mobile.jpg" width="250" height="156">
+						<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+					</video>
+					<h3 class="video__subtitle">Как сохранить нагревательную спираль</h3>
+					<div class="video__wrapper">
+						<time class="video__time">20:15</time>
+						<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+					</div>
+				</div>
+				<div class="slider__pagination">
+					<span class="slider__pagination-item slider__pagination-item--active"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+				</div>
+				<div class="slider__arrows">
+					<button class="slider__arrow slider__arrow--left">Предыдущий</button>
+					<button class="slider__arrow slider__arrow--right">Следующий</button>
+				</div>
 			</div>
 			<a class="button video__button" href="#">Все видео</a>
 		</section>
@@ -363,11 +378,24 @@
 		<section class="articles">
 			<h2 class="articles__title">Полезные статьи</h2>
 			<div class="slider articles__slider">
-				<figure>
-					<img src="img/article-1-mobile.jpg" alt="Как сохранить нагревательную спираль">
-				</figure>
-				<h3 class="article__title">Статья 1. Как сохранить нагревательную спираль</h3>
-				<p class="article__text">В воскресенье после обеда поломалась моя...</p>
+				<div class="articles__item">
+					<figure class="article__figure">
+						<img src="img/article-1-mobile.jpg" alt="Как сохранить нагревательную спираль">
+					</figure>
+					<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+					<p class="article__text">В воскресенье после обеда поломалась моя...</p>
+				</div>
+				<div class="slider__pagination">
+					<span class="slider__pagination-item slider__pagination-item--active"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+				</div>
+				<div class="slider__arrows">
+					<button class="slider__arrow slider__arrow--left">Предыдущий</button>
+					<button class="slider__arrow slider__arrow--right">Следующий</button>
+				</div>
 			</div>
 			<a class="button articles__button" href="#">Все статьи</a>
 		</section>
@@ -383,7 +411,7 @@
 	</main>
 
 	<footer class="page-footer">
-		<a class="logo">
+		<a class="logo page-footer__logo" href="index.html">
 			<svg width="220" height="58">
 				<use xlink:href="#ico-logo-footer"></use>
 			</svg>
@@ -407,9 +435,9 @@
 				</li>
 			</ul>
 		</section>
-		<section class="sotials-footer">
+		<section class="page-footer__socials">
 			Мы в соцсетях
-			<ul class="socials">
+			<ul class="socials socials-footer">
 				<li class="socials__item">
 					<a class="socials__link" href="#">
 						Google +
@@ -437,19 +465,19 @@
 
 		<section class="contacts">
 			<p class="contacts__text">Наши номера телефонов
-				<ul>
-					<li>095-777-77-77</li>
-					<li>068-777-77-77</li>
-					<li>063-777-77-77</li>
+				<ul class="contacts__list">
+					<li class="contacts__item">095-777-77-77</li>
+					<li class="contacts__item">068-777-77-77</li>
+					<li class="contacts__item">063-777-77-77</li>
 				</ul>
 			</p>
 			<p class="contacts__text">
 				Время работы
-				с 8:00 до 21:00
+				<span class="contacts__time-work">с 8:00 до 21:00</span>
 			</p>
 			<p class="contacts__text">
 				Наша почта
-				<a href="mailto:kharkivservice2015@gmail.com">kharkivservice2015@gmail.com</a>
+				<a class="contacts__email" href="mailto:kharkivservice2015@gmail.com">kharkivservice2015@gmail.com</a>
 			</p>
 		</section>
 	</footer>
