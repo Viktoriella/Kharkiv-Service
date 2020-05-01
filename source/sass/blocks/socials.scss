@@ -6,6 +6,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 97px;
+
+	@media (min-width: $desktop-width) {
+		padding-top: 27px;
+		margin-bottom: 0;
+	}
 }
 
 .socials__link {

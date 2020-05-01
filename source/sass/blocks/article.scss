@@ -15,3 +15,17 @@
 	@include reset();
 	text-align: left;
 }
+
+.article__text--mobile {
+	@media (min-width: $desktop-width) {
+		display: none;
+	}
+}
+
+.article__text--desktop {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		display: block;
+	}
+}

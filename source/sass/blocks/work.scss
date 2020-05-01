@@ -11,6 +11,15 @@
 	border-radius: 8px;
 	background-color: #ffffff;
 	z-index: 1;
+
+	@media (min-width: $desktop-width) {
+		margin-left: 178px;
+		margin-right: 178px;
+		margin-top: -113px;
+		padding-top: 40px;
+		padding-left: 147px;
+		padding-right: 77px;
+	}
 }
 
 .work__title {
@@ -21,39 +30,53 @@
 	font-size: 22px;
 	line-height: 27px;
 	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		font-weight: 300;
+		font-size: 60px;
+		margin-bottom: 60px;
+		margin-top: 40px;
+	}
 }
 
 .work__list {
 	@include reset-list();
 	padding-left: 31px;
 	padding-right: 32px;
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .work__item {
 	padding-top: 58px;
 	padding-bottom: 50px;
 	margin-bottom: 30px;
+
+	@media (min-width: $desktop-width) {
+		width: 265px;
+		padding-top: 147px;
+	}
+}
+
+.work__subtitle {
+	@include reset();
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 27px;
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 15px;
+	}
 }
 
-.work__about {
-	@include reset();
-	margin-top: -10px;
-	margin-bottom: 61px;
-	padding-top: 171px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-image: url("../img/bg-2-mobile.jpg");
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;
-	line-height: 25px;
-	z-index: 0;
-}
-
-.work__about--accent {
-	font-weight: bold;
-	color: $blue;
+.work__text {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		display: block;
+		@include reset();
+	}
 }

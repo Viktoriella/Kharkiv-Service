@@ -5,6 +5,13 @@
 	padding-bottom: 40px;
 	padding-top: 40px;
 	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		padding-left: 406px;
+		padding-right: 368px;
+		padding-top: 60px;
+		padding-bottom: 55px;
+	}
 }
 
 .about-us__button {
@@ -27,12 +34,71 @@
 	line-height: 27px;
 }
 
+.about-us__title--desktop {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		display: block;
+		@include reset();
+		margin-bottom: 20px;
+		text-align: left;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 27px;
+	}
+}
+
 .about-us__text {
 	@include reset();
 	margin-bottom: 20px;
 	text-align: left;
+
+	@media (min-width: $desktop-width) {
+		display: none;
+	}
 }
 
 .about-us__text:last-of-type {
 	margin-bottom: 40px;
+}
+
+.about-us__list {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		display: block;
+		@include reset-list();
+		text-align: left;
+	}
+}
+
+.about-us__item {
+	@media (min-width: $desktop-width) {
+		position: relative;
+		padding-left: 20px;
+
+		&::before {
+			@include pseudo();
+			width: 10px;
+			height: 10px;
+			background-color: $blue;
+			border-radius: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}	
+}
+
+.about-us__wrapper {
+	@media (min-width: $desktop-width) {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+}
+
+.about-us__container {
+	@media (min-width: $desktop-width) {
+		width: 507px;
+	}
 }

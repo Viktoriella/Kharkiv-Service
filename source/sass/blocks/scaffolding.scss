@@ -29,6 +29,14 @@ body {
 	}
 }
 
+.main-page-body {
+	@media (min-width: $desktop-width) {
+		background-image: url("../img/bg-desktop.jpg");
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+}
+
 .visually-hidden {
 	width: 1px;
 	height: 1px;
