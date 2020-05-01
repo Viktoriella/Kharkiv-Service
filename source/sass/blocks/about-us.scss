@@ -1,0 +1,38 @@
+.about-us {
+	background-color: #F2F9FC;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.about-us__button {
+	width: auto;
+	padding-left: 31px;
+	padding-right: 31px;
+	margin-left: auto;
+	margin-right: auto;
+	color: $blue;
+	font-weight: 600;
+	background-color: #ffffff;
+}
+
+.about-us__title {
+	@include reset();
+	margin-bottom: 20px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.about-us__text {
+	@include reset();
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.about-us__text:last-of-type {
+	margin-bottom: 40px;
+}

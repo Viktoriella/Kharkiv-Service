@@ -1,0 +1,13 @@
+.socials {
+	@include reset-list();
+	display: flex;
+	justify-content: space-between;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 97px;
+}
+
+.socials__link {
+	font-size: 0;
+}

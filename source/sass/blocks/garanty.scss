@@ -1,0 +1,32 @@
+.garanty {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+}
+
+.garanty__icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 17px;
+}
+
+.garanty__title {
+	@include reset();
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.garanty__text {
+	@include reset();
+	margin-bottom: 30px;
+}
+
+.garanty__text:last-of-type {
+	margin-bottom: 10px;
+}
+
+.garanty__text--accent {
+	color: $blue;
+	font-weight: bold;
+}

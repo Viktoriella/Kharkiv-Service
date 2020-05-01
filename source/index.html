@@ -12,64 +12,71 @@
 	<div style="display: none">
 		<include src="build/img/sprite.svg"></include>
 	</div>
-	<header>
-		<a class="logo">
-			<svg width="95" height="25">
-				<use xlink:href="#ico-logo"></use>
-			</svg>
-		</a>
-		<nav class="main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__item">
-					<a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+	<header class="page-header">
+		<div class="page-header__container">
+			<a class="logo">Kharkiv Service
+				<svg width="95" height="25">
+					<use xlink:href="#ico-logo"></use>
+				</svg>
+			</a>
+			<button class="main-nav__show-menu main-nav__show-menu--closed" type="button">Открыть меню</button>
+		</div>
+		<div class="main-nav__container">
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link main-nav__link--active">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Статьи</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Отзывы</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Видео</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="socials">
+				<li class="socials__item">
+					<a class="socials__link" href="#">
+						Google +
+						<svg width="30" height="30">
+							<use xlink:href="#ico-google"></use>
+						</svg>
+					</a>
 				</li>
-				<li class="main-nav__item">
-					<a class="main-nav__link" href="#">Статьи</a>
+				<li class="socials__item">
+					<a class="socials__link" href="#">
+						Instagram
+						<svg width="30" height="30">
+							<use xlink:href="#ico-instagram"></use>
+						</svg>
+					</a>
 				</li>
-				<li class="main-nav__item">
-					<a class="main-nav__link" href="#">Отзывы</a>
-				</li>
-				<li class="main-nav__item">
-					<a class="main-nav__link" href="#">Видео</a>
-				</li>
-				<li class="main-nav__item">
-					<a class="main-nav__link" href="#">Контакты</a>
+				<li class="socials__item">
+					<a class="socials__link" href="#">
+						Youtube
+						<img src="img/ico-youtube.png">
+					</a>
 				</li>
 			</ul>
-		</nav>
-		<ul class="socials">
-			<li class="socials__item">
-				<a class="socials__link" href="#">
-					Google +
-					<svg width="30" height="30">
-						<use xlink:href="#ico-google"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="socials__item">
-				<a class="socials__link" href="#">
-					Instagram
-					<svg width="30" height="30">
-						<use xlink:href="#ico-instagram"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="socials__item">
-				<a class="socials__link" href="#">
-					Youtube
-					<img src="img/ico-youtube.png">
-				</a>
-			</li>
-		</ul>
-		<p class="work-time">
-			Время работы <b class="work-time--bold ">с 8:00 до 21:00</b>
-		</p>
+			<p class="main-nav__work-time">
+				Время работы <b class="main-nav__work-time--bold ">с 8:00 до 21:00</b>
+			</p>
+		</div>
 	</header>
 
-	<main>
+	<main class="page-main">
 		<section class="intro">
-			<p class="intro__call">
-				Нажмите на номер для быстрого звонка
+			<div class="intro__container">
+				<p class="intro__call">
+					Нажмите на номер для быстрого звонка
+				</p>
 				<ul class="intro__list">
 					<li class="intro__item">
 						<a class="intro__tel" href="tel:0957777777">095-777-77-77</a>
@@ -81,8 +88,14 @@
 						<a class="intro__tel" href="tel:0637777777">063-777-77-77</a>
 					</li>
 				</ul>
-			</p>
-			<h1 class="intro__title">Ремонт стиральных машин в Харькове</h1>
+			</div>
+			
+			<h1 class="intro__title">
+				<span class="intro__title--1">Ремонт </span>
+				<span class="intro__title--2">стиральных </span>
+				<span class="intro__title--3">машин </span>
+				<span class="intro__title--4">в Харькове</span>
+			</h1>
 			<section class="callback">
 				<form class="callback__form" action="#" method="post">
 					<input class="callback__input" name="username" type="text" placeholder="Ваше имя">
@@ -93,29 +106,23 @@
 		</section>
 
 		<section class="work">
-			<h2 class="work__title">Как мы работаем</h2>
-			<ul class="work__list">
-				<li class="work__item">
-					<img src="img/icon-about-1.png" width="163" height="145">
-					Вы звоните или оставляете заявку
-				</li>
-				<li class="work__item">
-					<svg width="163" height="145">
-						<use xlink:href="#ico-about-2"></use>
-					</svg>
-					Определяемся с возможной поломкой
-				</li>
-				<li class="work__item">
-					<svg width="163" height="145">
-						<use xlink:href="#ico-about-3"></use>
-					</svg>
-					Мы выезжаем по Вашему адресу
-				</li>
-				<li class="work__item">
-					<img src="img/icon-about-4.png" width="163" height="145">
-					Работающая стиральная машинка
-				</li>
-			</ul>
+			<div class="work__container">
+				<h2 class="work__title">Как мы работаем</h2>
+				<ul class="work__list">
+					<li class="work__item">
+						Вы звоните или оставляете заявку
+					</li>
+					<li class="work__item">
+						Определяемся с возможной поломкой
+					</li>
+					<li class="work__item">
+						Мы выезжаем по Вашему адресу
+					</li>
+					<li class="work__item">
+						Работающая стиральная машинка
+					</li>
+				</ul>
+			</div>
 			<p class="work__about">
 				<span class="work__about--accent">KharkivService</span> – сервис по ремонту стиральных машин в Харькове.
 			</p>
@@ -126,59 +133,64 @@
 
 			<table class="price__table">
 				<caption class="price__subtitle">Перечень услуг и цен, грн</caption>
-				<tr class="price__row">
-					<td class="price__text">Изъятие утерянных предметов из машинки, устранение течи</td>
-					<td class="price__price">300-400</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена клапанов, приводных ремней, петель, стекол и ручек дверей, пресостатов, сетевых фильтров</td>
-					<td class="price__price">400-700</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена сливного насоса, он же помпа</td>
-					<td class="price__price">550-750</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена подшипников разборного бака</td>
-					<td class="price__price">от 1200</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена подшипников в неразборном баке</td>
-					<td class="price__price">от 1500</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена нагревательного элемента, тена</td>
-					<td class="price__price">550-750</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена флянцев барабана</td>
-					<td class="price__price">от 1400</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена крестовин барабана</td>
-					<td class="price__price">от 1000</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена уплотнительных манжет люка</td>
-					<td class="price__price">от 600</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Ремонт плат управления, модулей</td>
-					<td class="price__price">от 800</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">Замена амортизаторов</td>
-					<td class="price__price">500-800</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__text">В случае отказа от ремонта, стоимость вызова специалиста и диагностики составляет</td>
-					<td class="price__price">100</td>
-				</tr>
+				<div class="price__container">
+					<tr class="price__row">
+						<td class="price__text">Изъятие утерянных предметов из машинки, устранение течи</td>
+						<td class="price__price">300-400</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена клапанов, приводных ремней, петель, стекол и ручек дверей, пресостатов, сетевых фильтров</td>
+						<td class="price__price">400-700</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена сливного насоса, он же помпа</td>
+						<td class="price__price">550-750</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена подшипников разборного бака</td>
+						<td class="price__price">от 1200</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена подшипников в неразборном баке</td>
+						<td class="price__price">от 1500</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена нагревательного элемента, тена</td>
+						<td class="price__price">550-750</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена флянцев барабана</td>
+						<td class="price__price">от 1400</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена крестовин барабана</td>
+						<td class="price__price">от 1000</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена уплотнительных манжет люка</td>
+						<td class="price__price">от 600</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Ремонт плат управления, модулей</td>
+						<td class="price__price">от 800</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">Замена амортизаторов</td>
+						<td class="price__price">500-800</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__text">В случае отказа от ремонта, стоимость вызова специалиста и диагностики составляет</td>
+						<td class="price__price">100</td>
+					</tr>
+				</div>
 			</table>
-			<button type="button">Свернуть</button>
+			<button class="price__button" type="button">Свернуть</button>
 		</section>
 		
 		<section class="garanty">
+			<svg class="garanty__icon" width="92" height="88">
+				<use xlink:href="#ico-garant"></use>
+			</svg>
 			<h2 class="garanty__title">Гарантия на ремонт</h2>
 			<p class="garanty__text">
 				Специалисты нашего сервиса делают ремонт стиральных машин в Харькове на дому и дают гарантию на выполненную работу. Срок гарантии на ремонт от <span class="garanty__text--accent">KharkivService</span> – от 3 месяцев до 1 года.
@@ -190,95 +202,97 @@
 		</section>
 
 		<section class="brands">
-			<h2 class="brands__title">Мы ремонтируем все</h2>
-			<ul class="brands__list">
-				<li class="brands__item">
-					<svg width="57" height="17">
-						<use xlink:href="#ico-brand-1"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="10">
-						<use xlink:href="#ico-brand-2"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="14">
-						<use xlink:href="#ico-brand-3"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="15">
-						<use xlink:href="#ico-brand-4"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="22">
-						<use xlink:href="#ico-brand-5"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="54" height="24">
-						<use xlink:href="#ico-brand-6"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="17">
-						<use xlink:href="#ico-brand-7"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="12">
-						<use xlink:href="#ico-brand-8"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="54" height="24">
-						<use xlink:href="#ico-brand-9"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="15">
-						<use xlink:href="#ico-brand-10"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="12">
-						<use xlink:href="#ico-brand-11"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="10">
-						<use xlink:href="#ico-brand-12"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="18">
-						<use xlink:href="#ico-brand-13"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="11">
-						<use xlink:href="#ico-brand-14"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="13">
-						<use xlink:href="#ico-brand-15"></use>
-					</svg>
-				</li>
-				<li class="brands__item">
-					<svg width="55" height="9">
-						<use xlink:href="#ico-brand-16"></use>
-					</svg>
-				</li>
-			</ul>
-			<button class="button brands__button" type="button">Заказать звонок</button>
+			<div class="brands__container">
+				<h2 class="brands__title">Мы ремонтируем все</h2>
+				<ul class="brands__list">
+					<li class="brands__item">
+						<svg class="brands__icon" width="57" height="17">
+							<use xlink:href="#ico-brand-1"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="10">
+							<use xlink:href="#ico-brand-2"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="14">
+							<use xlink:href="#ico-brand-3"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="15">
+							<use xlink:href="#ico-brand-4"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="22">
+							<use xlink:href="#ico-brand-5"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="54" height="24">
+							<use xlink:href="#ico-brand-6"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="17">
+							<use xlink:href="#ico-brand-7"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="12">
+							<use xlink:href="#ico-brand-8"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="54" height="24">
+							<use xlink:href="#ico-brand-9"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="15">
+							<use xlink:href="#ico-brand-10"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="12">
+							<use xlink:href="#ico-brand-11"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="10">
+							<use xlink:href="#ico-brand-12"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="18">
+							<use xlink:href="#ico-brand-13"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="11">
+							<use xlink:href="#ico-brand-14"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="13">
+							<use xlink:href="#ico-brand-15"></use>
+						</svg>
+					</li>
+					<li class="brands__item">
+						<svg class="brands__icon" width="55" height="9">
+							<use xlink:href="#ico-brand-16"></use>
+						</svg>
+					</li>
+				</ul>
+				<button class="button brands__button" type="button">Заказать звонок</button>
+			</div>
 			<p class="brands__text--bold">
 				Мы ремонтируем все марки стиральных машин
 			</p>
 			<p class="brands__text">
-				В KharkivService вы можете заказать ремонт стиральных машин в Харькове таких марок: Miele, Bosch, Indesit, Samsung, Ardo, AEG, Siemens, Ariston, Daewoo, Electrolux, Whirlpool, Zanussi, LG, Hotpoint Ariston, Gorenje, Hansa, Beko, Kaiser, Candy, Atlant и других.
+				В <span class="brands__accent">KharkivService</span> вы можете заказать ремонт стиральных машин в Харькове таких марок: Miele, Bosch, Indesit, Samsung, Ardo, AEG, Siemens, Ariston, Daewoo, Electrolux, Whirlpool, Zanussi, LG, Hotpoint Ariston, Gorenje, Hansa, Beko, Kaiser, Candy, Atlant и других.
 			</p>
 			<p class="brands__text">
 				Вы называете марку машинки и ее модель во время звонка мастеру, мы подбираем подходящие запчасти от производителя для ее ремонта.
@@ -297,15 +311,28 @@
 			<div class="slider reviews__slider">
 				<ul class="reviews__list">
 					<li class="review">
-						<cite class="review__author">Мария</cite>
-						<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+						<div class="review__container">
+							<cite class="review__author">Мария</cite>
+							<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+						</div>
 						<blockquote class="review__text">
 							В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
 						</blockquote>
 					</li>
 				</ul>
-				<a class="button reviews__button" href="#">Все отзывы</a>
+				<div class="slider__pagination">
+					<span class="slider__pagination-item slider__pagination-item--active"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+					<span class="slider__pagination-item"></span>
+				</div>
+				<div class="slider__arrows">
+					<button class="slider__arrow slider__arrow--left">Предыдущий</button>
+					<button class="slider__arrow slider__arrow--right">Следующий</button>
+				</div>
 			</div>
+			<a class="button reviews__button" href="#">Все отзывы</a>
 		</section>
 
 		<section class="about-us">

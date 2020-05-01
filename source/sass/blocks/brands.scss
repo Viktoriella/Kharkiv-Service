@@ -1,0 +1,74 @@
+.brands__container {
+	background-color: #F2F9FC;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 33px;
+	padding-bottom: 30px;
+}
+
+.brands__title {
+	@include reset();
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	color: #000000;
+	text-align: center;
+}
+
+.brands__list {
+	@include reset-list();
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.brands__item {
+	position: relative;
+	width: 130px;
+	height: 60px;
+	background-color: #ffffff;
+	border-radius: 50px;
+	margin-bottom: 15px;
+}
+
+.brands__icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.brands__button {
+	background-color: #ffffff;
+	color: $blue;
+	font-weight: 600;
+}
+
+.brands__text--bold {
+	@include reset();
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.brands__text {
+	@include reset();
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+.brands__text:last-of-type {
+	margin-bottom: 10px;
+}
+
+.brands__accent {
+	color: $blue;
+	font-weight: bold;
+}
