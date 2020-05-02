@@ -1,7 +1,7 @@
 $('.slider').slick({
   centerMode: false,
   dots: true,
-  infinite: false,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   mobileFirst: true,
@@ -12,8 +12,7 @@ $('.slider').slick({
       breakpoint: 1920,
       settings: {
       	centerMode: true,
-        infinite: false,
-        centerPadding: '0',
+        infinite: true,
         centerPadding: '0',
         slidesToShow: 3,
         variableWidth: true,

@@ -67,16 +67,15 @@
 
 .price__table {
 	display: block;
-	border-radius: 8px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 	box-shadow: 0px 10px 35px rgba(32, 73, 86, 0.1), 
 	0px 10px 10px rgba(0, 0, 0, 0.17);
-	margin-bottom: 25px;
 	border-collapse: collapse;
 
 	@media (min-width: $desktop-width) {
 		margin-left: 406px;
 		margin-right: 406px;
-		margin-bottom: 40px;
 	}
 }
 
@@ -107,6 +106,27 @@
 .price__container {
 	display: flex;
 	flex-direction: column;
+}
+
+.price__tablet-show {
+	display: none;
+
+	@media (min-width: $tablet-width) {
+		display: block;
+		border-radius: 8px;
+	}
+}
+
+.price__tablet-show--closed {
+	display: none;
+
+	@media (min-width: $tablet-width) {
+		display: block;
+	}
+}
+
+.price__tablet-show--opened {
+	display: block;
 }
 
 .price__row {
@@ -153,12 +173,13 @@
 	}
 }
 
-.price__button--less {
+.price__button--mobile {
 	display: block;
 	position: relative;
 	padding-right: 20px;
 	border: none;
 	color: #00BFFE;
+	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
 	cursor: pointer;
@@ -167,15 +188,87 @@
 	font-size: 16px;
 	line-height: 23px;
 
-	@media (min-width: $desktop-width) {
+	&::after {
+		@include pseudo();
+		width: 7px;
+		height: 7px;
+		border-left: 1.5px solid $blue;
+		border-bottom: 1.5px solid $blue;
+		transform: rotate(-45deg);
+		left: auto;
+		right: 4px;
+		top: 8px;
+	}
+
+	&::before {
+		@include pseudo();
+		width: 1.5px;
+		height: 10px;
+		background-color: $blue;
+		left: auto;
+		right: 7.5px;
+		top: 7px;
+	}
+
+	@media (min-width: $tablet-width) {
 		display: none;
 	}
 }
 
-.price__button--less-image {
-	position: absolute;
-	left: 95px;
-	top: 8px;
+.price__button--mobile-arrow-down {
+	&::after {
+		@include pseudo();
+		width: 7px;
+		height: 7px;
+		border-left: 1.5px solid $blue;
+		border-bottom: 1.5px solid $blue;
+		transform: rotate(-45deg);
+		left: auto;
+		right: 4px;
+		top: 8px;
+	}
+
+	&::before {
+		@include pseudo();
+		width: 1.5px;
+		height: 10px;
+		background-color: $blue;
+		left: auto;
+		right: 7.5px;
+		top: 7px;
+	}
+
+	@media (min-width: $tablet-width) {
+		display: none;
+	}	
+}
+
+.price__button--mobile-arrow-up {
+	&::after {
+		@include pseudo();
+		width: 7px;
+		height: 7px;
+		border-left: 1.5px solid $blue;
+		border-bottom: 1.5px solid $blue;
+		transform: rotate(135deg);
+		left: auto;
+		right: 4px;
+		top: 9px;
+	}
+
+	&::before {
+		@include pseudo();
+		width: 1.5px;
+		height: 10px;
+		background-color: $blue;
+		left: auto;
+		right: 7.5px;
+		top: 8px;
+	}
+
+	@media (min-width: $tablet-width) {
+		display: none;
+	}
 }
 
 .price__button--more {
@@ -192,18 +285,11 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 40px;
 		padding-left: 30px;
 		padding-right: 30px;
 		background-color: #FFFFFF;
 		color: $blue;
-	}
-
-	.price__button--more--closed span {
-		content: 'Подробнее';
-	}
-
-	.price__button--more--opened {
-		content: 'Свернуть';
 	}
 
 	.price-information {

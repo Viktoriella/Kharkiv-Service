@@ -32,6 +32,7 @@
 		burgerHandler();
 	});
 
+// Ниже код развернуть текст
 	var priceMoreBtn = document.querySelector(".price__button--more");
 	var priceInfo = document.querySelector(".price-information");
 
@@ -53,6 +54,34 @@
 		priceHandler();
 	});
 
+// Ниже код развернуть текст
+
+	var priceMobileBtn = document.querySelector(".price__button--mobile");
+	var priceMobile = document.querySelector(".price__tablet-show");
+
+	var priceTableHandler = function() {
+		if (priceMobile.classList.contains('price__tablet-show--closed')) {
+			priceMobileBtn.textContent = "Свернуть";
+			priceMobileBtn.classList.add('price__button--mobile-arrow-up');
+			priceMobileBtn.classList.remove('price__button--mobile-arrow-down');
+			priceMobile.classList.add('price__tablet-show--opened');
+			priceMobile.classList.remove('price__tablet-show--closed');
+
+		} else if (priceMobile.classList.contains('price__tablet-show--opened')) {
+			priceMobileBtn.textContent = "Развернуть";
+			priceMobileBtn.classList.add('price__button--mobile-arrow-down');
+			priceMobileBtn.classList.remove('price__button--mobile-arrow-up');
+			priceMobile.classList.add('price__tablet-show--closed');
+			priceMobile.classList.remove('price__tablet-show--opened');
+		};
+	};
+
+	priceMobileBtn.addEventListener('click', function(evt) {
+		evt.preventDefault();
+		priceTableHandler();
+	});
+
+// Ниже код кнопка вверх
 var goTopBtn = document.querySelector('.back_to_top');
 	window.addEventListener('scroll', trackScroll);
 	goTopBtn.addEventListener('click', backToTop);

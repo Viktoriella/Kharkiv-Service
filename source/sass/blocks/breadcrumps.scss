@@ -29,6 +29,11 @@
 	font-weight: 600;
 }
 
+.breadcrumps__link[href]:hover,
+.breadcrumps__link[href]:active {
+	color: rgba(34, 34, 34, 0.5);
+}
+
 .breadcrumps__link--active {
 	color: $blue;
 }
