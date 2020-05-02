@@ -1,7 +1,10 @@
 @import "normalize";
 @import "mixin";
 @import "variables";
+@import "slick";
+// @import "slick-theme";
 @import "blocks/scaffolding";
+@import "blocks/back-to-top";
 @import "blocks/page-header";
 @import "blocks/page-main";
 @import "blocks/main-nav";

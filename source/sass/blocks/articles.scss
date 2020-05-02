@@ -1,7 +1,5 @@
 .articles {
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
 	margin-bottom: 40px;
 
 	@media (min-width: $desktop-width) {
@@ -25,6 +23,8 @@
 	margin-bottom: 30px;
 	font-weight: 300;
 	font-size: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	@media (min-width: $desktop-width) {
 		margin-bottom: 60px;
@@ -54,4 +54,14 @@
 	color: $blue;
 	font-weight: 600;
 	background-color: #ffffff;
+
+	&:hover,
+	&:active {
+		background-color: $light-grey;
+	}
+
+	&:disabled {
+		background-color: #ffffff;
+		color: $disabled-bg;
+	}
 }

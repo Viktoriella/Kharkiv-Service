@@ -76,6 +76,15 @@
 	color: #ffffff;
 	width: 100%;
 
+	&:hover,
+	&:active {
+		background-color: $blue-hover;
+	}
+
+	&:disabled {
+		background-color: $disabled-bg;
+	}
+
 	@media (min-width: $desktop-width) {
 		width: auto;
 		padding-left: 20px;

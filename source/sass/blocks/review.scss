@@ -18,19 +18,26 @@
 		top: 45px;
 		left: 50%;
 		transform: translateX(-50%);
-	}	
+	}
 	
 	@media (min-width: $desktop-width) {
 		padding-top: 148px;
 	}
 }
 
-.review__slide--center {
-
+.slick-center .review__slide {
 	@media (min-width: $desktop-width) {
 		padding-top: 224px;
 		padding-left: 35px;
 		padding-right: 35px;
+
+		&::after {
+			@include pseudo();
+			@include sprite(-20px, -1010px, 150px, 120px);
+			top: 45px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 
@@ -56,20 +63,7 @@
 	color: #979797;
 }
 
-.review__text {
-	@include reset();
-	text-align: left;
-}
-
-.review__text--mobile {
-	@media (min-width: $desktop-width) {
-		display: none;
-	}
-}
-
-.review__text--desktop {
-	display: none;
-	
+.slick-center .review__text--desktop {
 	@media (min-width: $desktop-width) {
 		display: block;
 	}

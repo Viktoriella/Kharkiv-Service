@@ -77,6 +77,16 @@
 	margin-right: auto;
 	padding-left: 30px;
 	padding-right: 30px;
+
+	&:hover,
+	&:active {
+		background-color: $light-grey;
+	}
+
+	&:disabled {
+		background-color: #ffffff;
+		color: $disabled-bg;
+	}
 }
 
 .brands__text--bold {
@@ -87,6 +97,8 @@
 	font-size: 20px;
 	line-height: 27px;
 	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	@media (min-width: $desktop-width) {
 		padding-left: 228px;
@@ -98,6 +110,8 @@
 	@include reset();
 	margin-bottom: 20px;
 	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	@media (min-width: $desktop-width) {
 		padding-left: 228px;

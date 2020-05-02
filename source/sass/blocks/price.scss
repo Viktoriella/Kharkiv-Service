@@ -180,8 +180,15 @@
 
 .price__button--more {
 	display: none;
+}
+
+.price-information {
+	display: none;
+}
+
+@media (min-width: $desktop-width) {
 	
-	@media (min-width: $desktop-width) {
+	.price__button--more {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -190,4 +197,51 @@
 		background-color: #FFFFFF;
 		color: $blue;
 	}
+
+	.price__button--more--closed span {
+		content: 'Подробнее';
+	}
+
+	.price__button--more--opened {
+		content: 'Свернуть';
+	}
+
+	.price-information {
+		padding-left: 386px;
+		padding-right: 408px;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+
+	.price-information--closed {
+		display: none;
+	}
+
+	.price-information--opened {
+		display: block;
+	}
+
+	.price-information__container {
+		@media (min-width: $desktop-width) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	.price-information__text {
+		@media (min-width: $desktop-width) {
+			@include reset();
+			width: 500px;
+			margin-bottom: 66px;
+		}
+	}
+
+	.price-information__title {
+		@include reset();
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
 }
+	

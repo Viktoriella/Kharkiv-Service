@@ -23,6 +23,16 @@
 	color: $blue;
 	font-weight: 600;
 	background-color: #ffffff;
+
+	&:hover,
+	&:active {
+		background-color: $light-grey;
+	}
+
+	&:disabled {
+		background-color: #ffffff;
+		color: $disabled-bg;
+	}
 }
 
 .about-us__title {

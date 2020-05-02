@@ -13,7 +13,7 @@
 		<include src="build/img/sprite.svg"></include>
 	</div>
 	<header class="page-header">
-		<div class="page-header__container">
+		<div class="page-header__container page-header__container--closed">
 			<a class="logo">Kharkiv Service
 				<svg class="logo__image">
 					<use xlink:href="#ico-logo"></use>
@@ -21,7 +21,7 @@
 			</a>
 			<button class="main-nav__show-menu main-nav__show-menu--closed" type="button">Открыть меню</button>
 		</div>
-		<div class="main-nav__container">
+		<div class="main-nav__container main-nav--closed main-nav--nojs">
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li class="main-nav__item">
@@ -109,7 +109,7 @@
 				<form class="callback__form" action="#" method="post">
 					<div class="callback__wrapper">
 						<input class="callback__input" name="username" type="text" placeholder="Ваше имя">
-						<input class="callback__input" name="phone" type="tel" placeholder="Номер телефона">
+						<input class="callback__input callback__input--phone" name="phone" type="tel" placeholder="Номер телефона">
 					</div>
 					<button class="button callback__button"  type="submit">Заказать звонок</button>
 				</form>
@@ -149,7 +149,7 @@
 							Работающая стиральная машинка
 						</h3>
 						<p class="work__text">
-							Вместе с матером проверяете работу стиральной машины, если Вас все устраивает - оплачиваете работу мастеру
+							Вместе с мастером проверяете работу стиральной машины, если Вас все устраивает - оплачиваете работу мастеру
 						</p>
 					</li>
 				</ul>
@@ -222,11 +222,23 @@
 			</table>
 			<button class="price__button--less" type="button">
 				Свернуть
-				<svg class="price__button--less-image">
-					<use xlink:href="#ico-arrow" width="10" height="10"></use>
-				</svg>
 			</button>
-			<button class="button price__button--more" type="button">Подробнее</button>
+			<button class="button price__button--more price__button--more--closed" type="button">Подробнее</button>
+
+			<section class="price-information price-information--closed">
+				<h3 class="price-information__title">Стоимость и сроки ремонта машинки</h3>
+				<div class="price-information__container">
+					<p class="price-information__text">
+						Цена и сроки ремонта стиральных машин определяются после вашего описания проблемы и проведения диагностики мастером. Приблизительную цену ремонта и его продолжительность специалист назовет уже по телефону.
+					</p>
+					<p class="price-information__text">
+						Вызов мастера по ремонту стиральных машин в Харькове вы можете сделать по телефонам, указанным вверху страницы, или оставив заявку онлайн в форме ниже. Мы ответим на ваши вопросы и устраним любые проблемы в работе стиральной машины быстро и по доступной цене.
+					</p>
+					<p class="price-information__text">
+						Стоимость и сроки зависят от вида поломки и ее сложности, стоимости необходимых деталей, срочности работы, марки и модели машинки. Они определяются индивидуально для каждого случая. Получить больше информации об оплате вы можете на странице «Услуги и цены».
+					</p>
+				</div>
+			</section>
 		</section>
 		
 		<section class="garanty">
@@ -243,9 +255,6 @@
 				</p>
 			</div>
 			<button class="button--read-less" type="button">Читать меньше
-				<svg class="button--read-less-image">
-					<use xlink:href="#ico-arrow" width="10" height="10"></use>
-				</svg>
 			</button>
 		</section>
 
@@ -362,55 +371,83 @@
 				Если вы не нашли марку своей машинки в списке, позвоните нам и уточните возможность ремонта вашей помощницы.
 			</p>
 			<button class="button--read-less" type="button">Читать меньше
-				<svg class="button--read-less-image">
-					<use xlink:href="#ico-arrow" width="10" height="10"></use>
-				</svg>
 			</button>
 			<h2 class="reviews__title">
 				Отзывы наших клиентов
 			</h2>
 
-			<div class="slider reviews__slider">
-				<ul class="slider__list">
-					<li class="slider__slide slider__slide--desktop review__slide">
-						<div class="review__container">
-							<cite class="review__author">Мария</cite>
-							<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+			<div class="slider__wrapper">
+				<div class="slider reviews__slider">
+						<div>
+							<!-- slider__slide--desktop review__slide  убрала классы-->
+							<div class="slider__slide review__slide">
+								<div class="review__container">
+									<cite class="review__author">Мария</cite>
+									<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+								</div>
+								<blockquote class="slider__text">
+									В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
+									<span class="slider__text--desktop">починили. Спасибо, что работаете в удобное для нас время В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время</span>
+									</span>
+								</blockquote>
+							</div>
 						</div>
-						<blockquote class="review__text">
-							В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
-						</blockquote>
-					</li>
-					<li class="slider__slide slider__slide--center review__slide review__slide--center">
-						<div class="review__container">
-							<cite class="review__author review__author--center">Мария</cite>
-							<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+						<div>
+							<!-- slider__slide--desktop review__slide  убрала классы-->
+							<div class="slider__slide review__slide">
+								<div class="review__container">
+									<cite class="review__author">Мария</cite>
+									<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+								</div>
+								<blockquote class="slider__text">
+									В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
+									<span class="slider__text--desktop">починили. Спасибо, что работаете в удобное для нас время В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время</span>
+									</span>
+								</blockquote>
+							</div>
 						</div>
-						<blockquote class="review__text">
-							<span class="review__text--mobile">В воскресенье после обеда поломалась моя стиралочка и уже вечером её...</span>
-							<span class="review__text--desktop">В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время</span>
-						</blockquote>
-					</li>
-					<li class="slider__slide slider__slide--desktop review__slide">
-						<div class="slider__container">
-							<cite class="review__author">Константин Василье...</cite>
-							<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+						<div>
+							<!-- slider__slide--desktop review__slide  убрала классы-->
+							<div class="slider__slide review__slide">
+								<div class="review__container">
+									<cite class="review__author">Мария</cite>
+									<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+								</div>
+								<blockquote class="slider__text">
+									В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
+									<span class="slider__text--desktop">починили. Спасибо, что работаете в удобное для нас время В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время</span>
+									</span>
+								</blockquote>
+							</div>
 						</div>
-						<blockquote class="review__text">
-							В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
-						</blockquote>
-					</li>
-				</ul>
-				<div class="slider__pagination">
-					<span class="slider__pagination-item slider__pagination-item--active"></span>
-					<span class="slider__pagination-item"></span>
-					<span class="slider__pagination-item"></span>
-					<span class="slider__pagination-item"></span>
-					<span class="slider__pagination-item"></span>
-				</div>
-				<div class="slider__arrows">
-					<button class="slider__arrow slider__arrow--left">Предыдущий</button>
-					<button class="slider__arrow slider__arrow--right">Следующий</button>
+						<div>
+							<!-- review__slide review__slide--center -->
+							<div class="slider__slide review__slide">
+								<div class="review__container">
+									<cite class="review__author">Мария</cite>
+									<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+								</div>
+								<blockquote class="slider__text">
+									В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
+									<span class="slider__text--desktop">починили. Спасибо, что работаете в удобное для нас время В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время</span>
+									</span>
+								</blockquote>
+							</div>
+						</div>
+						<div>
+							<!-- slider__slide--desktop -->
+							<div class="slider__slide review__slide">
+								<div class="review__container">
+									<cite class="review__author">Мария</cite>
+									<time class="review__date" datetime="2020-04-08">08.04.2020</time>
+								</div>
+								<blockquote class="slider__text">
+									В воскресенье после обеда поломалась моя стиралочка и уже вечером её...
+									<span class="slider__text--desktop">починили. Спасибо, что работаете в удобное для нас время В воскресенье после обеда поломалась моя стиралочка и уже вечером её починили. Спасибо, что работаете в удобное для нас время</span>
+									</span>
+								</blockquote>
+							</div>
+						</div>
 				</div>
 			</div>
 			<a class="button reviews__button" href="#">Все отзывы</a>
@@ -487,53 +524,80 @@
 			<section class="video">
 				<h2 class="video__title">Видео</h2>
 				<div class="slider video__slider">
-					<ul class="slider__list">
-						<li class="slider__slide slider__slide--desktop">
-							<video poster="img/video-mobile.jpg" width="250" height="156">
-								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-							</video>
-							<h3 class="video__subtitle">Как сохранить нагревательную спираль</h3>
-							<div class="video__wrapper">
-								<time class="video__time">20:15</time>
-								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
-							</div>
-						</li>
-						<li class="slider__slide slider__slide--center video__slide">
-							<video class="video__videofile" poster="img/video-desktop.jpg">
+					<div>
+						<div class="slider__slide video__slide">
+							<video class="video__videofile" poster="img/video-mobile.jpg">
 								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
 							</video>
 							<button class="video__play-button" type="button">Играть видео</button>
-							<h3 class="video__subtitle--mobile">Как сохранить нагревательную спираль</h3>
-							<h3 class="video__subtitle--desktop">Как сохранить нагревательную спираль
-							Как сохранить нагревательную спираль Как сохранить нагревательную спираль</h3>
+							<h3 class="slider__text">Как сохранить нагревательную спираль 
+							<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
 							<div class="video__wrapper">
 								<time class="video__time">20:15</time>
 								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
 							</div>
-						</li>
-						<li class="slider__slide slider__slide--desktop">
-							<video poster="img/video-mobile.jpg" width="250" height="156">
+						</div>
+					</div>
+					<div>
+						<div class="slider__slide video__slide">
+							<video class="video__videofile" poster="img/video-mobile.jpg">
+								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
 							</video>
-							<h3 class="video__subtitle">Как сохранить нагревательную спираль</h3>
+							<button class="video__play-button" type="button">Играть видео</button>
+							<h3 class="slider__text">Как сохранить нагревательную спираль 
+							<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
 							<div class="video__wrapper">
 								<time class="video__time">20:15</time>
 								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
 							</div>
-						</li>
-					</ul>
-					<div class="slider__pagination">
-						<span class="slider__pagination-item slider__pagination-item--active"></span>
-						<span class="slider__pagination-item"></span>
-						<span class="slider__pagination-item"></span>
-						<span class="slider__pagination-item"></span>
-						<span class="slider__pagination-item"></span>
+						</div>
 					</div>
-					<div class="slider__arrows">
-						<button class="slider__arrow slider__arrow--left">Предыдущий</button>
-						<button class="slider__arrow slider__arrow--right">Следующий</button>
+					<div>
+						<div class="slider__slide video__slide">
+							<video class="video__videofile" poster="img/video-mobile.jpg">
+								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+							</video>
+							<button class="video__play-button" type="button">Играть видео</button>
+							<h3 class="slider__text">Как сохранить нагревательную спираль 
+							<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+							<div class="video__wrapper">
+								<time class="video__time">20:15</time>
+								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider__slide video__slide">
+							<video class="video__videofile" poster="img/video-mobile.jpg">
+								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+							</video>
+							<button class="video__play-button" type="button">Играть видео</button>
+							<h3 class="slider__text">Как сохранить нагревательную спираль 
+							<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+							<div class="video__wrapper">
+								<time class="video__time">20:15</time>
+								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider__slide video__slide">
+							<video class="video__videofile" poster="img/video-mobile.jpg">
+								<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+							</video>
+							<button class="video__play-button" type="button">Играть видео</button>
+							<h3 class="slider__text">Как сохранить нагревательную спираль 
+							<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+							<div class="video__wrapper">
+								<time class="video__time">20:15</time>
+								<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+							</div>
+						</div>
 					</div>
 				</div>
 				<a class="button video__button" href="#">Все видео</a>
@@ -542,45 +606,45 @@
 			<section class="articles">
 				<h2 class="articles__title">Полезные статьи</h2>
 				<div class="slider articles__slider">
-					<ul class="slider__list">
-						<li class="slider__slide slider__slide--desktop">
-							<figure class="article__figure">
-								<img src="img/article-1-mobile.jpg" alt="Как сохранить нагревательную спираль">
-							</figure>
+					<div>
+						<div class="slider__slide article__slide">
+							<div class="article__image"></div>
 							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-							<p class="article__text">В воскресенье после обеда поломалась моя...</p>
-						</li>
-						<li class="slider__slide slider__slide--center article__slide--center">
-							<figure class="article__figure">
-								<picture>
-									<source media="(min-width: 1920px)" srcset="img/article-1-desktop.jpg">
-									<img src="img/article-1-mobile.jpg" alt="Как сохранить нагревательную спираль">
-								</picture>
-							</figure>
-							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-							<p class="article__text">
-								<span class="article__text--mobile">В воскресенье после обеда поломалась моя...</span>
-								<span class="article__text--desktop">Если вы заметили сбой в работе машинки – попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+							<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
 							</p>
-						</li>
-						<li class="slider__slide slider__slide--desktop">
-							<figure class="article__figure">
-								<img src="img/article-1-mobile.jpg" alt="Как сохранить нагревательную спираль">
-							</figure>
-							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-							<p class="article__text">В воскресенье после обеда поломалась моя...</p>
-						</li>
-					</ul>
-					<div class="slider__pagination">
-						<span class="slider__pagination-item slider__pagination-item--active"></span>
-						<span class="slider__pagination-item"></span>
-						<span class="slider__pagination-item"></span>
-						<span class="slider__pagination-item"></span>
-						<span class="slider__pagination-item"></span>
+						</div>
 					</div>
-					<div class="slider__arrows">
-						<button class="slider__arrow slider__arrow--left">Предыдущий</button>
-						<button class="slider__arrow slider__arrow--right">Следующий</button>
+					<div>
+						<div class="slider__slide article__slide">
+							<div class="article__image"></div>
+							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+							<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__slide article__slide">
+							<div class="article__image"></div>
+							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+							<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__slide article__slide">
+							<div class="article__image"></div>
+							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+							<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__slide article__slide">
+							<div class="article__image"></div>
+							<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+							<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+							</p>
+						</div>
 					</div>
 				</div>
 				<a class="button articles__button" href="#">Все статьи</a>
@@ -591,7 +655,7 @@
 				<form class="callback__form" action="#" method="post">
 					<div class="callback__wrapper">
 						<input class="callback__input" name="username" type="text" placeholder="Ваше имя">
-						<input class="callback__input" name="phone" type="tel" placeholder="Номер телефона">
+						<input class="callback__input callback__input--phone" name="phone" type="tel" placeholder="Номер телефона">
 					</div>
 					<button class="button callback__button"  type="submit">Заказать звонок</button>
 				</form>
@@ -661,6 +725,13 @@
 				<a class="contacts__email" href="mailto:kharkivservice2015@gmail.com">kharkivservice2015@gmail.com</a>
 			</div>
 		</section>
+		<a class="back_to_top" title="Наверх">Наверх</a>
 	</footer>
+	<script type="text/javascript" src="js/open-menu.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/slider.min.js"></script>
+	<script type="text/javascript" src="js/maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/phone-mask.min.js"></script>
 </body>
 </html>

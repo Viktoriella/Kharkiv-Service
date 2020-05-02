@@ -21,14 +21,29 @@
 
 .socials__link--google {
 	@include sprite(-20px, -152px, 30px, 30px);
+
+	&:hover,
+	&:active {
+		@include sprite(-20px, -292px, 30px, 30px);
+	}
 }
 
 .socials__link--instagram {
 	@include sprite(-20px, -362px, 30px, 30px);
+
+	&:hover,
+	&:active {
+		@include sprite(-20px, -502px, 30px, 30px);
+	}
 }
 
 .socials__link--youtube {
 	@include sprite(-20px, -2018px, 30px, 30px);
+
+	&:hover,
+	&:active {
+		@include sprite(-20px, -2228px, 30px, 30px);
+	}
 }
 
 .socials__link--google-footer {

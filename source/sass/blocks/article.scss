@@ -16,16 +16,37 @@
 	text-align: left;
 }
 
-.article__text--mobile {
+.article__image {
+	width: 250px;
+	height: 156px;
+	background-image: url("../img/article-1-mobile.jpg");
+	background-size: cover;
+}
+
+.slick-center .article__slide {
 	@media (min-width: $desktop-width) {
-		display: none;
+		width: 450px;
 	}
 }
 
-.article__text--desktop {
-	display: none;
-	
+.slick-center .article__image {
 	@media (min-width: $desktop-width) {
-		display: block;
+		width: 450px;
+		height: 286px;
+		background-image: url("../img/article-1-mobile.jpg");
+		background-size: cover;
+		margin-bottom: 25px;
+	}
+}
+
+.articles__slider .slider__arrow--right {
+	@media (min-width: $desktop-width) {
+		right: 400px;
+	}
+}
+
+.articles__slider .slider__arrow--left {
+	@media (min-width: $desktop-width) {
+		left: 400px;
 	}
 }

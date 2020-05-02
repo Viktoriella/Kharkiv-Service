@@ -1,7 +1,5 @@
 .video {
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 
@@ -18,6 +16,8 @@
 	margin-bottom: 30px;
 	font-weight: 300;
 	font-size: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	@media (min-width: $desktop-width) {
 		margin-bottom: 60px;
@@ -37,6 +37,16 @@
 	color: $blue;
 	font-weight: 600;
 	background-color: #ffffff;
+
+	&:hover,
+	&:active {
+		background-color: $light-grey;
+	}
+
+	&:disabled {
+		background-color: #ffffff;
+		color: $disabled-bg;
+	}
 }
 
 .video__subtitle {
@@ -45,20 +55,6 @@
 	text-align: left;
 	font-size: 20px;
 	line-height: 27px;
-}
-
-.video__subtitle--mobile {
-	@media (min-width: $desktop-width) {
-		display: none;
-	}
-}
-
-.video__subtitle--desktop {
-	display: none;
-	
-	@media (min-width: $desktop-width) {
-		display: block;
-	}
 }
 
 .video__wrapper {
@@ -85,7 +81,7 @@
 
 .video__play-button {
 	position: absolute;
-	top: 50px;
+	top: 70px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 75px;
@@ -96,6 +92,12 @@
 	@include sprite(-20px, -806px, 77px, 56px);
 
 	@media (min-width: $desktop-width) {
-		top: 120px;
+		top: 65px;
 	}
+}
+
+.slick-center .video__play-button {
+	@media (min-width: $desktop-width) {
+		top: 165px;
+	}	
 }
