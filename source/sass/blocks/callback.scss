@@ -38,7 +38,37 @@
 		font-weight: bold;
 		font-size: 30px;
 		line-height: 37px;
-		width: 365px;
+		letter-spacing: 0.02em;
+		width: 380px;
+	}
+}
+
+.callback__title--desktop--footer {
+	@media (min-width: $desktop-width) {
+		display: block;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: 0.02em;
+		width: 380px;
+	}
+}
+
+.callback__label {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		letter-spacing: 0.02em;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+.callback__container {
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -66,7 +96,12 @@
 		padding-right: 30px;
 		padding-top: 22px;
 		padding-bottom: 21px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+	}
+
+	&:hover,
+	&:focus {
+		border: 1px solid #222222;
 	}
 }
 

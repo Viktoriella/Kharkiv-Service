@@ -25,6 +25,7 @@
 	z-index: 0;
 
 	@media (min-width: $desktop-width) {
+		padding-top: 156px;
 		margin-top: 0;
 		margin-bottom: 90px;
 		background: none;
@@ -79,7 +80,7 @@
 	}
 }
 
-.price__subtitle {
+.price__table .price__subtitle {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 15px;
@@ -147,7 +148,11 @@
 	}
 }
 
-.price__row--desktop {
+.price__row:nth-child(2n-1) {
+	background-color:  #F2F9FC;
+}
+
+.price__row.price__row--desktop {
 	display: none;
 	
 	@media (min-width: $desktop-width) {
@@ -155,10 +160,6 @@
 		background-color: #CCEDFF;
 		min-height: 85px;
 	}
-}
-
-.price__row:nth-child(2n-1) {
-	background-color:  #F2F9FC;
 }
 
 .price__price {
@@ -287,9 +288,44 @@
 		margin-right: auto;
 		margin-top: 40px;
 		padding-left: 30px;
-		padding-right: 30px;
+		padding-right: 53px;
 		background-color: #FFFFFF;
 		color: $blue;
+		position: relative;
+		
+		&::before {
+			@include pseudo();
+			width: 8px;
+			height: 8px;
+			border-right: 2px solid $blue;
+			border-top: 2px solid $blue;
+			left: auto;
+			right: 28px;
+		}
+
+		&:hover,
+		&:active {
+			background-color: $light-grey;
+		}
+
+		&:disabled {
+			color: $disabled-bg;
+		}
+	}
+
+	.price__button--more--closed {
+		
+		&::before {
+			transform: rotate(135deg);
+			top: 20px;
+		  }
+	}
+
+	.price__button--more--opened {
+		&::before {
+			transform: rotate(-45deg);
+			top: 25px;
+		}
 	}
 
 	.price-information {

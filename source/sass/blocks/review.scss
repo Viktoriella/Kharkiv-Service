@@ -22,6 +22,7 @@
 	
 	@media (min-width: $desktop-width) {
 		padding-top: 148px;
+		width: 250px;
 	}
 }
 
@@ -30,6 +31,8 @@
 		padding-top: 224px;
 		padding-left: 35px;
 		padding-right: 35px;
+		width: 542px;
+		transform: translateX(-20px);
 
 		&::after {
 			@include pseudo();
@@ -52,7 +55,7 @@
 	}
 }
 
-.review__author--center {
+.slick-center .review__author {
 	@media (min-width: $desktop-width) {
 		font-size: 20px;
 	}

@@ -29,11 +29,103 @@
 
 .garanty__text {
 	@include reset();
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 
 	@media (min-width: $desktop-width) {
 		width: 544px;
 		margin-bottom: 0;
+	}
+}
+
+.garanty__text--more {
+	display: none;
+	margin-top: 20px;
+	
+	@media (min-width: $desktop-width) {
+		display: block;
+	}
+}
+
+.garanty__text--more--closed {
+	display: none;
+}
+
+.garanty__text--more--opened {
+	display: block;
+}
+
+.garanty__button {
+	display: block;
+	position: relative;
+	padding-right: 20px;
+	border: none;
+	color: #00BFFE;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	background: none;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 23px;
+
+	@media (min-width: $desktop-width) {
+		display: none;
+	}
+}
+
+.garanty__arrow-down {
+	&::after {
+		@include pseudo();
+		width: 7px;
+		height: 7px;
+		border-left: 1.5px solid $blue;
+		border-bottom: 1.5px solid $blue;
+		transform: rotate(-45deg);
+		left: auto;
+		right: 4px;
+		top: 8px;
+	}
+
+	&::before {
+		@include pseudo();
+		width: 1.5px;
+		height: 10px;
+		background-color: $blue;
+		left: auto;
+		right: 7.5px;
+		top: 7px;
+	}
+
+	@media (min-width: $desktop-width) {
+		display: none;
+	}	
+}
+
+.garanty__arrow-up {
+	&::after {
+		@include pseudo();
+		width: 7px;
+		height: 7px;
+		border-left: 1.5px solid $blue;
+		border-bottom: 1.5px solid $blue;
+		transform: rotate(135deg);
+		left: auto;
+		right: 4px;
+		top: 9px;
+	}
+
+	&::before {
+		@include pseudo();
+		width: 1.5px;
+		height: 10px;
+		background-color: $blue;
+		left: auto;
+		right: 7.5px;
+		top: 8px;
+	}
+
+	@media (min-width: $desktop-width) {
+		display: none;
 	}
 }
 

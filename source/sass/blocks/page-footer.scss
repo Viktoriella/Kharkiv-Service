@@ -1,7 +1,7 @@
 .page-footer {
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 20px;
+	padding-top: 25px;
 	padding-bottom: 15px;
 	background-color: #CCEDFF;
 
@@ -21,6 +21,16 @@
 	order: 0;
 }
 
+.page-footer__logo-image {
+	width: 220px;
+	height: 58px;
+
+	@media (min-width: $desktop-width) {
+		width: 223px;
+		height: 59px;
+	}
+}
+
 .page-footer__socials {
 	font-size: 15px;
 
@@ -37,5 +47,6 @@
 
 	@media (min-width: $desktop-width) {
 		font-size: 18px;
+		margin-bottom: 10px;
 	}
 }

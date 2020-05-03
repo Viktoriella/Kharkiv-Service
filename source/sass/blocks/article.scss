@@ -23,9 +23,20 @@
 	background-size: cover;
 }
 
+.article__slide {
+	@media (min-width: $desktop-width) {
+		padding-top: 20px;
+		width: 250px;
+	}
+}
+
 .slick-center .article__slide {
 	@media (min-width: $desktop-width) {
 		width: 450px;
+		transform: translateX(30px);
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
 	}
 }
 
@@ -41,12 +52,12 @@
 
 .articles__slider .slider__arrow--right {
 	@media (min-width: $desktop-width) {
-		right: 400px;
+		right: 530px;
 	}
 }
 
 .articles__slider .slider__arrow--left {
 	@media (min-width: $desktop-width) {
-		left: 400px;
+		left: 560px;
 	}
 }

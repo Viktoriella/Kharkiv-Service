@@ -5,26 +5,26 @@
 
 	@media (min-width: $desktop-width) {
 		padding-top: 70px;
-		padding-left: 178px;
-		padding-right: 178px;
 		padding-bottom: 70px;
 	}
 }
 
 .video__title {
 	@include reset();
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	font-weight: 300;
 	font-size: 22px;
 	padding-left: 20px;
 	padding-right: 20px;
 
 	@media (min-width: $desktop-width) {
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 		font-weight: 300;
 		font-size: 60px;
 		line-height: 73px;
 		letter-spacing: 0.02em;
+		padding-left: 178px;
+		padding-right: 178px;
 	}
 }
 
@@ -63,41 +63,94 @@
 	justify-content: space-between;
 	font-size: 15px;
 	color: #979797;
+
+	@media (min-width: $desktop-width) {
+		margin-top: 15px;
+	} 
 }
 
 .video__slider {
 	margin-bottom: 30px;
 }
 
+.slick-center .video__slide {
+	@media (min-width: $desktop-width) {
+		width: 599px;
+		transform: translateX(-40px);
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
 .video__slide {
 	position: relative;
+
+	@media (min-width: $desktop-width) {
+		padding-top: 20px;
+		width: 250px;
+		// margin-right: 80px;
+		// margin-left: 80px;
+	}
+}
+
+.video__slider .slider__arrow--left {
+	@media (min-width: $desktop-width) {
+		left: 530px;
+	}
+}
+
+.video__slider .slider__arrow--right {
+	@media (min-width: $desktop-width) {
+		right: 500px;
+	}
+}
+
+.video__container {
+	position: relative;
+	width: 250px;
+	height: 156px;
+	overflow: hidden;
+}
+
+.slick-center .video__container {
+	@media (min-width: $desktop-width) {
+		width: 599px;
+		height: 286px;
+	}
 }
 
 .video__videofile {
-	width: 100%;
-  	height: auto;
-  	max-height: 100%;
+	display: block;
+	width: auto;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    object-fit: cover;
 }
 
 .video__play-button {
+	cursor: pointer;
 	position: absolute;
-	top: 70px;
+	top: 50%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	width: 75px;
 	height: 55px;
 	font-size: 0;
 	border: 0;
 	background-color: transparent;
 	@include sprite(-20px, -806px, 77px, 56px);
+}
 
+.slick-center .video__subtitle {
 	@media (min-width: $desktop-width) {
-		top: 65px;
+		margin-top: 25px;
 	}
 }
 
-.slick-center .video__play-button {
+.slick-center .video__wrapper {
 	@media (min-width: $desktop-width) {
-		top: 165px;
-	}	
+		display: none;
+	}
 }

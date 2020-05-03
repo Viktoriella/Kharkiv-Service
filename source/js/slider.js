@@ -11,12 +11,16 @@ $('.slider').slick({
     {
       breakpoint: 1920,
       settings: {
+        initialSlide: 1,
       	centerMode: true,
         infinite: true,
         centerPadding: '0',
         slidesToShow: 3,
         variableWidth: true,
-        dots: true
+        dots: true,
+        speed: 900,
+        accessibility: false,
+        draggable: false
       }
      }
     // You can unslick at a given breakpoint now by adding:

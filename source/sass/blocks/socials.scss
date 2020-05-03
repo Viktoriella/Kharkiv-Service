@@ -48,14 +48,29 @@
 
 .socials__link--google-footer {
 	@include sprite(-20px, -222px, 30px, 30px);
+
+	&:hover,
+	&:active {
+		@include sprite(-20px, -292px, 30px, 30px);
+	}	
 }
 
 .socials__link--instagram-footer {
 	@include sprite(-20px, -432px, 30px, 30px);
+
+	&:hover,
+	&:active {
+		@include sprite(-20px, -502px, 30px, 30px);
+	}
 }
 
 .socials__link--youtube-footer {
 	@include sprite(-20px, -2158px, 30px, 30px);
+	
+	&:hover,
+	&:active {
+		@include sprite(-20px, -2228px, 30px, 30px);
+	}
 }
 
 .socials-footer {

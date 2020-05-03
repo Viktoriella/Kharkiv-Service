@@ -1,14 +1,13 @@
 .reviews {
 	padding-top: 40px;
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 	text-align: center;
 
 	@media (min-width: $desktop-width) {
+		padding-bottom: 80px;
 		background-image: url("../img/bg-3-desktop.jpg"), url("../img/bg-4-desktop.jpg");
 		background-position: top 120px left, top right;
 		background-repeat: no-repeat, no-repeat;
-		padding-left: 178px;
-		padding-right: 178px;
 	}
 }
 
@@ -25,11 +24,13 @@
 
 	@media (min-width: $desktop-width) {
 		margin-top: 120px;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 		font-weight: 300;
 		font-size: 60px;
 		line-height: 73px;
 		letter-spacing: 0.02em;
+		padding-left: 178px;
+		padding-right: 178px;
 	}
 }
 
@@ -70,5 +71,20 @@
 		padding-bottom: 18px;
 		color: #ffffff;
 		box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
+
+		&:hover,
+		&:active {
+			background-color: $blue-hover;
+		}
+
+		&:disabled {
+			background-color: $disabled-bg;
+		}
+	}
+}
+
+.reviews__slider .slider__arrow--right {
+	@media (min-width: $desktop-width) {
+		right: 510px;
 	}
 }

@@ -60,8 +60,8 @@ gulp.task("style", function() {
   .pipe(postcss([
         autoprefixer()
     ]))
-  // .pipe(minify())
-  // .pipe(rename("style.min.css"))
+  .pipe(minify())
+  .pipe(rename("style.min.css"))
   .pipe(gulp.dest("build/css"))
   .pipe(server.stream());
 });
@@ -80,7 +80,7 @@ gulp.task("html", function() {
   .pipe(posthtml([
     include()
   ]))
-  // .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
