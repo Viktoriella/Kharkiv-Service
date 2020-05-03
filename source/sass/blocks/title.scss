@@ -1,0 +1,15 @@
+.title {
+	font-size: 22px;
+	line-height: 27px;
+	font-weight: 300;
+	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 60px;
+		line-height: 73px;
+		letter-spacing: 0.02em;
+		text-align: left;
+	}
+}

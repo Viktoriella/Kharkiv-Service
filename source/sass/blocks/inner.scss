@@ -1,0 +1,17 @@
+.inner {
+	@media (min-width: $desktop-width) {
+		background-image: url("../img/bg-4-desktop.jpg");
+		background-repeat: no-repeat;
+		background-position: top -80px center;
+	}
+}
+
+.inner__main {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		padding-bottom: 65px;
+	}
+}

@@ -9,15 +9,22 @@
 	}
 }
 
-.callback--footer {
+.callback--footer-inner {
 	@media (min-width: $desktop-width) {
-		margin-top: 143px;
-		padding-right: 532px;
-		padding-left: 965px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.callback--footer-main {
+	@media (min-width: $desktop-width) {
 		background-image: url("../img/bg-6-desktop.jpg");
 		background-repeat: no-repeat;
 		background-position: top 30px left 288px;
 		min-height: 390px;
+		margin-top: 143px;
+		padding-right: 532px;
+		padding-left: 965px;
 	}
 }
 
@@ -28,6 +35,7 @@
 	font-size: 18px;
 	line-height: 25px;
 	width: 210px;
+	text-align: left;
 }
 
 .callback__title--desktop {

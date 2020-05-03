@@ -1,0 +1,47 @@
+.advices {
+	margin-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media (min-width: $desktop-width) {
+		padding-left: 178px;
+		padding-right: 177px;
+	}
+}
+
+.advices__container {
+	@media (min-width: $desktop-width) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.advices__title {
+	margin-bottom: 40px;
+
+	@media (min-width: $desktop-width) {
+		padding-left: 178px;
+		margin-bottom: 70px;
+	}
+}
+
+.advices__article {
+	margin-bottom: 40px;
+	height: 342px;
+	overflow: hidden;
+
+	@media (min-width: $desktop-width) {
+		margin-right: 99px;
+		margin-bottom: 50px;
+
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+	}
+}
+
+.advices__pagination {
+	@media (min-width: $desktop-width) {
+		margin-left: auto;
+	}
+}

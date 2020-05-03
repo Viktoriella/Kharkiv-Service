@@ -37,3 +37,8 @@
 .breadcrumps__link--active {
 	color: $blue;
 }
+
+.breadcrumps__link--active[href]:hover,
+.breadcrumps__link--active[href]:active {
+	color: rgba(0, 191, 254, 0.5);
+}
