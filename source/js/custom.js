@@ -1,6 +1,6 @@
 'use strict';
 
-(function(){
+(function(){ 
 
 // Ниже код развернуть текст price
 	var priceMoreBtn = document.querySelector(".price__button--more");
@@ -57,12 +57,14 @@
 
 // Ниже код развернуть текст about-us
 
-	var aboutUsBtn = document.querySelector(".about-us__button--desktop");
+	var aboutUsBtn = document.querySelector(".about-us__button");
 	var aboutUsMore = document.querySelector(".about-us--more");
 
 	var aboutUsBtnHandler = function() {
 		if (aboutUsMore.classList.contains('about-us--more--closed')) {
 			aboutUsBtn.classList.add('about-us__button--opened');
+			aboutUsBtn.classList.remove('about-us__button--closed');
+			aboutUsBtn.textContent = "Свернуть";
 			aboutUsBtn.classList.remove('about-us__button--closed');
 			aboutUsMore.classList.add('about-us--more--opened');
 			aboutUsMore.classList.remove('about-us--more--closed');
@@ -70,8 +72,9 @@
 		} else if (aboutUsMore.classList.contains('about-us--more--opened')) {
 			aboutUsBtn.classList.add('about-us__button--closed');
 			aboutUsBtn.classList.remove('about-us__button--opened');
-			aboutUsMore.classList.add('about-us__button--closed');
-			aboutUsMore.classList.remove('about-us__button--opened');
+			aboutUsBtn.textContent = "Читать больше";
+			aboutUsMore.classList.add('about-us--more--closed');
+			aboutUsMore.classList.remove('about-us--more--opened');
 		};
 	};
 

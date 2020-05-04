@@ -3,7 +3,7 @@
 	padding-bottom: 40px;
 	text-align: center;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-bottom: 80px;
 		background-image: url("../img/bg-3-desktop.jpg"), url("../img/bg-4-desktop.jpg");
 		background-position: top 120px left, top right;
@@ -19,10 +19,10 @@
 	text-align: center;
 	margin-bottom: 30px;
 	margin-top: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 6.25%;
+	padding-right: 6.25%;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-top: 120px;
 		margin-bottom: 30px;
 		font-weight: 300;
@@ -61,7 +61,7 @@
 .reviews__button--desktop{
 	display: none;
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: inline-block;
 		margin-left: 20px;
 		background-color: $blue;
@@ -84,7 +84,7 @@
 }
 
 .reviews__slider .slider__arrow--right {
-	@media (min-width: $desktop-width) {
-		right: 510px;
+	@media (min-width: $tablet-more-width) {
+		// right: 510px;
 	}
 }

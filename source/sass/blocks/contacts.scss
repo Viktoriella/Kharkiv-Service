@@ -1,7 +1,12 @@
 .contacts {
 	font-size: 15px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-small-width) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (min-width: $tablet-more-width) {
 		display: flex;
 		justify-content: space-between;
 		order: 2;
@@ -26,7 +31,7 @@
 	font-weight: 600;
 	margin-bottom: 15px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-bottom: 30px;
 	}
 }
@@ -38,7 +43,7 @@
 }
 
 .contacts__wrapper {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-right: 147px;
 	}
 }

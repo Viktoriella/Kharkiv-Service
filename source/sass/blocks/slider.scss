@@ -3,17 +3,21 @@
 // }
 
 .slider__wrapper {
-	width: 100%;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 
-	@media (min-width: $desktop-width) {
-		// width: 1564px;
+	@media (min-width: $smaller-desktop-width) {
+		width: 100%;
 		text-align: center;
+		// временно
+		// display: none;
 	}
 }
 
 // .slider__slide-wrapper {
-// 	@media (min-width: $desktop-width) {
+// 	@media (min-width: $tablet-more-width) {
 // 		width: 580px;
 // 	}
 // }
@@ -26,7 +30,7 @@
 
 
 .slider__slide {
-	width: auto;
+	width: 280px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: left;
@@ -35,7 +39,7 @@
 	margin-right: 20px;
 	margin-top: 20px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $smaller-desktop-width) {
 		width: 250px;
 		position: relative;
 		// margin-right: 90px;
@@ -44,6 +48,8 @@
 		margin-top: 100px;
 		padding-left: 180px;
 		padding-right: 180px;
+		// padding-left: 9.36%;
+		// padding-left: 9.36%;
 	}
 }
 
@@ -73,7 +79,7 @@
 }
 
 .slick-center .slider__slide {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $smaller-desktop-width) {
 		width: 542px;
 		padding-top: 30px;
 		padding-left: 35px;
@@ -167,7 +173,7 @@
 		border-left: 2px solid #222222;
 	}
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		height: 164px;	
 	}
 }
@@ -176,7 +182,7 @@
 	bottom: -85px;
 	left: 92px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		left: 530px;
 		bottom: auto;
 		top: 180px;
@@ -187,7 +193,7 @@
 		left: 24px;
 		transform: rotate(-45deg);
 
-		@media (min-width: $desktop-width) {
+		@media (min-width: $tablet-more-width) {
 			top: 64px;
 		}
 	}
@@ -197,7 +203,7 @@
 	bottom: -85px;
 	right: 92px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		right: 530px;
 		bottom: auto;
 		top: 180px;
@@ -208,7 +214,7 @@
 		left: 12px;
 		transform: rotate(135deg);
 
-		@media (min-width: $desktop-width) {
+		@media (min-width: $tablet-more-width) {
 			top: 64px;
 		}
 	}
@@ -217,7 +223,7 @@
 .slider__list {
 	@include reset-list();
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $smaller-desktop-width) {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 40px;
@@ -236,7 +242,7 @@
 	margin-left: auto;
 	margin-bottom: 120px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $smaller-desktop-width) {
 		margin-top: 0;
 		margin-bottom: 40px;
 	}
@@ -267,7 +273,7 @@
 }
 
 .slick-center .slider__text--desktop {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $smaller-desktop-width) {
 		display: block;
 	}
 }

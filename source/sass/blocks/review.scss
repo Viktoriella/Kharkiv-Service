@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	margin-bottom: 5px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-bottom: 18px;
 	}
 }
@@ -20,14 +20,14 @@
 		transform: translateX(-50%);
 	}
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-top: 148px;
 		width: 250px;
 	}
 }
 
 .slick-center .review__slide {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-top: 224px;
 		padding-left: 35px;
 		padding-right: 35px;
@@ -50,13 +50,13 @@
 	font-size: 20px;
 	text-align: left;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		font-size: 14px;
 	}
 }
 
 .slick-center .review__author {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		font-size: 20px;
 	}
 }
@@ -67,7 +67,7 @@
 }
 
 .slick-center .review__text--desktop {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 	}
 }

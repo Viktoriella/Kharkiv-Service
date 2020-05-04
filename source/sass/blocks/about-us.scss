@@ -1,63 +1,73 @@
 .about-us {
 	background-color: #F2F9FC;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 6.25%;
+	padding-right: 6.25%;
 	padding-bottom: 40px;
 	padding-top: 40px;
 	text-align: center;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-top: 60px;
-		padding-bottom: 0;
+		padding-bottom: 40px;
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
+	
+.about-us__button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		padding-left: 30px;
+		padding-right: 53px;
+		background-color: #FFFFFF;
+		color: $blue;
+		position: relative;
+		
+		&::before {
+			@include pseudo();
+			width: 8px;
+			height: 8px;
+			border-right: 2px solid $blue;
+			border-top: 2px solid $blue;
+			left: auto;
+			right: 28px;
+		}
+
+		&:hover,
+		&:active {
+			background-color: $light-grey;
+		}
+
+		&:disabled {
+			color: $disabled-bg;
+		}
+	}
+
+	.about-us__button--closed {
+		
+		&::before {
+			transform: rotate(135deg);
+			top: 20px;
+		  }
+	}
+
+	.about-us__button--opened {
+		&::before {
+			transform: rotate(-45deg);
+			top: 25px;
+		}
+	}
+
 
 .about-us__wrapper {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 20px;
-		padding-left: 406px;
-		padding-right: 368px;
-	}
-}
-
-.about-us__button {
-	width: auto;
-	padding-left: 31px;
-	padding-right: 31px;
-	margin-left: auto;
-	margin-right: auto;
-	color: $blue;
-	font-weight: 600;
-	background-color: #ffffff;
-
-	&:hover,
-	&:active {
-		background-color: $light-grey;
-	}
-
-	&:disabled {
-		background-color: #ffffff;
-		color: $disabled-bg;
-	}
-
-	@media (min-width: $desktop-width) {
-		margin-bottom: 55px;
-	}
-}
-
-.about-us__button--closed {
-	@media (min-width: $desktop-width) {
-		display: inline-block;
-	}
-}
-
-.about-us__button--opened {
-	@media (min-width: $desktop-width) {
-		display: none;
+		padding-left: 21.11%;
+		padding-right: 19.13%;
 	}
 }
 
@@ -73,7 +83,7 @@
 .about-us__title--desktop {
 	display: none;
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 		@include reset();
 		margin-bottom: 20px;
@@ -84,15 +94,15 @@
 	}
 }
 
-.about-us__text {
-	@include reset();
-	margin-bottom: 20px;
-	text-align: left;
+// .about-us__text {
+// 	@include reset();
+// 	margin-bottom: 20px;
+// 	text-align: left;
 
-	@media (min-width: $desktop-width) {
-		display: none;
-	}
-}
+// 	@media (min-width: $tablet-more-width) {
+// 		display: none;
+// 	}
+// }
 
 .about-us__text:last-of-type {
 	margin-bottom: 40px;
@@ -101,26 +111,40 @@
 .about-us__list {
 	display: none;
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 		@include reset-list();
 		text-align: left;
 		margin-bottom: 30px;
+		width: 550px;
+		width: 90%;
 	}
 }
 
+.about-us__list--mobile {
+	display: block;
+		@include reset-list();
+		text-align: left;
+		margin-bottom: 30px;
+}
+
+.about-us__list--more {
+	width: 45%;
+}
+
 .about-us__description {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		@include reset();
 		font-size: 18px;
 		line-height: 26px;
 		text-align: left;
 		margin-bottom: 30px;
+		width: 544px;
+		width: 45%;
 	}
 }
 
 .about-us__item {
-	@media (min-width: $desktop-width) {
 		position: relative;
 		padding-left: 20px;
 
@@ -131,64 +155,64 @@
 			background-color: $blue;
 			border-radius: 50%;
 			top: 7px;
-		}
-	}	
+		}	
 }
 
 .about-us__container {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		width: 507px;
 	}
 }
 
 .about-us--more {
-	display: none;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 9.27%;
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
-		background-color: #ffffff;
-		padding-left: 404px;
-		padding-right: 332px;
-		padding-top: 90px;
+		padding-left: 21%;
+		padding-right: 17.26%;
+		padding-top: 50px;
 	}
 }
 
 .about-us--more--closed {
-	@media (min-width: $desktop-width) {
 		display: none;
-	}
 }
 
 .about-us--more--opened {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 	}
 }
 
 .about-us__wrap {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		height: 620px;
+		max-height: 150vh;
 		align-content: space-between;
 	}
+
+	@media (min-width: $smaller-desktop-width) {
+		max-height: 100vh;
+	}
+
+	@media (min-width: 1800px) {
+		height: 640px;
+	}
+
 }
 
 .about-us__contain {
-	width: 660px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-.about-us__list {
-	width: 550px;
-}
-
-.about-us__description {
-	@media (min-width: $desktop-width) {
-		width: 544px;
+	@media (min-width: $tablet-more-width) {
+		width: 660px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 }
+
 

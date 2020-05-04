@@ -1,5 +1,5 @@
 .inner {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		background-image: url("../img/bg-4-desktop.jpg");
 		background-repeat: no-repeat;
 		background-position: top -80px center;
@@ -11,7 +11,7 @@
 	padding-bottom: 40px;
 	text-align: center;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-bottom: 65px;
 	}
 }

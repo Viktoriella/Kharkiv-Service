@@ -3,7 +3,7 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
@@ -17,7 +17,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-bottom: 30px;
 		font-weight: 300;
 		font-size: 60px;
@@ -64,7 +64,7 @@
 	font-size: 15px;
 	color: #979797;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-top: 15px;
 	} 
 }
@@ -74,7 +74,7 @@
 }
 
 .slick-center .video__slide {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		width: 599px;
 		transform: translateX(-40px);
 		padding-top: 30px;
@@ -86,7 +86,7 @@
 .video__slide {
 	position: relative;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-top: 20px;
 		width: 250px;
 		// margin-right: 80px;
@@ -95,13 +95,13 @@
 }
 
 .video__slider .slider__arrow--left {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		left: 530px;
 	}
 }
 
 .video__slider .slider__arrow--right {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		right: 500px;
 	}
 }
@@ -114,7 +114,7 @@
 }
 
 .slick-center .video__container {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		width: 599px;
 		height: 286px;
 	}
@@ -144,13 +144,13 @@
 }
 
 .slick-center .video__subtitle {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-top: 25px;
 	}
 }
 
 .slick-center .video__wrapper {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: none;
 	}
 }

@@ -21,7 +21,7 @@
 	border: none;
 	cursor: pointer;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: none;
 	}
 }
@@ -31,8 +31,8 @@
 	padding-top: 24px;
 	padding-bottom: 49px;
 
-	@media (min-width: $desktop-width) {
-		width: 1100px;
+	@media (min-width: $tablet-more-width) {
+		width: 70.33%;
 		display: flex;
 		justify-content: space-between;
 		padding-top: 0;
@@ -72,17 +72,21 @@
 
 .main-nav {
 	margin-bottom: 80px;
-
-	@media (min-width: $desktop-width) {
-		width: 683px;
+	
+	@media (min-width: $tablet-more-width) {
 		margin-bottom: 0;
+		width: 100%;
+	}
+
+	@media (min-width: $small-desktop-width) {
+		width: 63%;
 	}
 }
 
 .main-nav__list {
 	@include reset-list();
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -100,7 +104,7 @@
 	line-height: 18px;
 	text-decoration: none;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-top: 30px;
 	}
 }
@@ -113,7 +117,7 @@
 .main-nav__link--active {
 	font-weight: bold;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		position: relative;
 		color: $blue;
 
@@ -133,7 +137,7 @@
 	font-size: 15px;
 	line-height: 20px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: none;
 	}
 }
@@ -148,15 +152,23 @@
 .main-nav__call--desktop {
 	display: none;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
+		position: absolute;
+		right: 10%;
+		top: 250px;
+	}
+
+	@media (min-width: $small-desktop-width) {
+		position: static;
 		padding-top: 27px;
 		text-align: right;
+		z-index: 10;
 	}
 }
 
 .main-nav__tel--desktop {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		width: auto;
 	}
 }

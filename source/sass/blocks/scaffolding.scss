@@ -38,27 +38,55 @@
 		"url(montserrat-black.woff)";
 }
 
+a:active, a:focus { 
+	outline: none; 
+}
+
+button {
+	outline: none; 
+}
+
+input {
+	outline:none;
+}
+input:active, textarea:active {
+	outline:none;
+}
+
+:focus {
+	outline:none;
+}
+
+html {
+	overflow-x: hidden;
+}
+
 body {
 	margin: 0 auto;
-	width: $mobile-width;
+	min-width: $mobile-width;
+	max-width: $tablet-width;
 	color: #222222;
 	background-color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 26px;
+	padding-left: 10px;
+	padding-right: 10px;
 
-	@media (min-width: $desktop-width) {
-		width: $desktop-width;
+	@media (min-width: $tablet-more-width) {
+		min-width: $tablet-more-width;
+		max-width: $desktop-width;
 		font-family: 'Montserrat', sans-serif;
 	}
 }
 
-.main-page-body {
-	@media (min-width: $desktop-width) {
+.main-page__container {
+	@media (min-width: $tablet-more-width) {
 		background-image: url("../img/bg-desktop.jpg");
 		background-repeat: no-repeat;
 		background-position: top center;
+		background-size: cover;
 	}
 }
 

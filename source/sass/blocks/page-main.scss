@@ -3,9 +3,12 @@
 }
 
 .page-main__wrapper {
-	@media (min-width: $desktop-width) {
+	padding-bottom: 30px;
+	
+	@media (min-width: $tablet-more-width) {
 		background-image: url("../img/bg-5-desktop.jpg");
 		background-repeat: no-repeat;
 		background-position: right bottom 200px;
+		background-size: cover;
 	}
 }

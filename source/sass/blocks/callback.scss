@@ -1,8 +1,9 @@
 .callback {
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		padding-left: 0;
 		padding-right: 0;
 		width: 614px;
@@ -10,21 +11,26 @@
 }
 
 .callback--footer-inner {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
 .callback--footer-main {
-	@media (min-width: $desktop-width) {
-		background-image: url("../img/bg-6-desktop.jpg");
-		background-repeat: no-repeat;
-		background-position: top 30px left 288px;
+	@media (min-width: $tablet-more-width) {
 		min-height: 390px;
 		margin-top: 143px;
-		padding-right: 532px;
-		padding-left: 965px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (min-width: $smaller-desktop-width) {
+		background-image: url("../img/bg-6-desktop.jpg");
+		background-repeat: no-repeat;
+		background-position: top 30px left 15%;
+		padding-right: 27.6%;
+		padding-left: 50.18%;
 	}
 }
 
@@ -41,7 +47,7 @@
 .callback__title--desktop {
 	display: none;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 		font-weight: bold;
 		font-size: 30px;
@@ -52,7 +58,7 @@
 }
 
 .callback__title--desktop--footer {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 		font-weight: bold;
 		font-size: 30px;
@@ -65,7 +71,7 @@
 .callback__label {
 	display: none;
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		letter-spacing: 0.02em;
 		display: block;
 		margin-bottom: 5px;
@@ -74,7 +80,7 @@
 
 .callback__container {
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: flex;
 		flex-direction: column;
 	}
@@ -98,7 +104,7 @@
 		color: #B9B9B9;
 	}
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		width: 290px;
 		padding-left: 30px;
 		padding-right: 30px;
@@ -128,7 +134,7 @@
 		background-color: $disabled-bg;
 	}
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		width: auto;
 		padding-left: 20px;
 		padding-right: 30px;
@@ -137,7 +143,7 @@
 }
 
 .callback__wrapper {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: flex;
 		justify-content: space-between;
 		text-align: left;
@@ -145,7 +151,7 @@
 }
 
 .callback__form {
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		text-align: right;
 	}	
 }

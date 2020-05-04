@@ -2,136 +2,138 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="preload" href="css/style.min.css" as="style">
+	<link rel="preload" href="css/style.css" as="style">
 	<link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
 	<meta name="description" content="Kharkiv Service - ремонт стиральных машин">
 	<meta name="keywords" content="Kharkiv Service, ремонт стиральных машин">
-	<link rel="stylesheet" href="css/style.min.css">	
+	<link rel="stylesheet" href="css/style.css">
 	<title>Kharkiv Service - ремонт стиральных машин</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body class="main-page-body">
+<body>
 	<div style="display: none">
 		<include src="build/img/sprite.svg"></include>
 	</div>
-	<header class="page-header">
-		<div class="page-header__container page-header__container--closed">
-			<a class="logo">Kharkiv Service
-				<img class="logo__image" src="img/logo-big-blue.svg" alt="Kharkiv Service - ремонт стиральных машин">
-			</a>
-			<button class="main-nav__show-menu main-nav__show-menu--closed" type="button">Открыть меню</button>
-		</div>
-		<div class="main-nav__container main-nav--closed main-nav--nojs">
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class="main-nav__item">
-						<a class="main-nav__link main-nav__link--active">Главная</a>
+	<div class="main-page__container">
+		<header class="page-header">
+			<div class="page-header__container page-header__container--closed">
+				<a class="logo" href="index.html">Kharkiv Service
+					<img class="logo__image" src="img/logo-big-blue.svg" alt="Kharkiv Service - ремонт стиральных машин">
+				</a>
+				<button class="main-nav__show-menu main-nav__show-menu--closed" type="button">Открыть меню</button>
+			</div>
+			<div class="main-nav__container main-nav--closed main-nav--nojs">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a class="main-nav__link main-nav__link--active">Главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="advices.html">Статьи</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Отзывы</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Видео</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="socials socials--header">
+					<li class="socials__item">
+						<a class="socials__link socials__link--google" href="#">
+							Google +
+						</a>
 					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="advices.html">Статьи</a>
+					<li class="socials__item">
+						<a class="socials__link socials__link--instagram" href="#">
+							Instagram
+						</a>
 					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Отзывы</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Видео</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="#">Контакты</a>
+					<li class="socials__item">
+						<a class="socials__link socials__link--youtube" href="#">
+							Youtube
+						</a>
 					</li>
 				</ul>
-			</nav>
-			<ul class="socials">
-				<li class="socials__item">
-					<a class="socials__link socials__link--google" href="#">
-						Google +
-					</a>
-				</li>
-				<li class="socials__item">
-					<a class="socials__link socials__link--instagram" href="#">
-						Instagram
-					</a>
-				</li>
-				<li class="socials__item">
-					<a class="socials__link socials__link--youtube" href="#">
-						Youtube
-					</a>
-				</li>
-			</ul>
-			<p class="main-nav__work-time">
-				Время работы <b class="main-nav__work-time--bold ">с 8:00 до 21:00</b>
-			</p>
-			<div class="main-nav__call--desktop">
-				<ul class="intro__list">
-					<li class="intro__item">
-						<a class="intro__tel main-nav__tel--desktop" href="tel:0957777777">095-777-77-77</a>
-					</li>
-					<li class="intro__item main-nav__tel--desktop">
-						<a class="intro__tel" href="tel:0687777777">068-777-77-77</a>
-					</li>
-					<li class="intro__item main-nav__tel--desktop">
-						<a class="intro__tel intro__tel--viber" href="tel:0637777777">063-777-77-77</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</header>
-
-	<main class="page-main">
-		<section class="intro">
-			<div class="intro__container">
-				<p class="intro__call">
-					Нажмите на номер для быстрого звонка
+				<p class="main-nav__work-time">
+					Время работы <b class="main-nav__work-time--bold ">с 8:00 до 21:00</b>
 				</p>
-				<ul class="intro__list">
-					<li class="intro__item">
-						<a class="intro__tel" href="tel:0957777777">095-777-77-77</a>
-					</li>
-					<li class="intro__item">
-						<a class="intro__tel" href="tel:0687777777">068-777-77-77</a>
-					</li>
-					<li class="intro__item">
-						<a class="intro__tel intro__tel--viber" href="tel:0637777777">063-777-77-77</a>
-					</li>
-				</ul>
+				<div class="main-nav__call--desktop">
+					<ul class="intro__list">
+						<li class="intro__item">
+							<a class="intro__tel main-nav__tel--desktop" href="tel:0957777777">095-777-77-77</a>
+						</li>
+						<li class="intro__item main-nav__tel--desktop">
+							<a class="intro__tel" href="tel:0687777777">068-777-77-77</a>
+						</li>
+						<li class="intro__item main-nav__tel--desktop">
+							<a class="intro__tel intro__tel--viber" href="tel:0637777777">063-777-77-77</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="intro__heading">
-				<p class="intro__heading-text">
-					Ремонт стиральных машин в Харькове
-				</p>
-				<p class="intro__heading-text">
-					Время работы с 08:00 до 21:00
-				</p>
-			</div>
-			<div class="intro__wrapper">
-				<h1 class="intro__title">
-					<span class="intro__title--1">Ремонт </span>
-					<span class="intro__title--2">стиральных </span>
-					<span class="intro__title--3">машин </span>
-					<span class="intro__title--4">в Харькове</span>
-				</h1>
-				<section class="callback">
-					<p class="callback__title--desktop">
-						Заполните форму<br> и мы Вам перезвоним
+		</header>
+		
+		<main class="page-main">
+			<section class="intro">
+				<div class="intro__container">
+					<p class="intro__call">
+						Нажмите на номер для быстрого звонка
 					</p>
-					<form class="callback__form" action="#" method="post">
-						<div class="callback__wrapper">
-							<div class="callback__container">
-								<label class="callback__label" for="username">Ваше имя</label>
-								<input class="callback__input" id="username" name="username" type="text" placeholder="Ваше имя">
+					<ul class="intro__list">
+						<li class="intro__item">
+							<a class="intro__tel" href="tel:0957777777">095-777-77-77</a>
+						</li>
+						<li class="intro__item">
+							<a class="intro__tel" href="tel:0687777777">068-777-77-77</a>
+						</li>
+						<li class="intro__item">
+							<a class="intro__tel intro__tel--viber" href="tel:0637777777">063-777-77-77</a>
+						</li>
+					</ul>
+				</div>
+				<div class="intro__heading">
+					<p class="intro__heading-text">
+						Ремонт стиральных машин в Харькове
+					</p>
+					<p class="intro__heading-text">
+						Время работы с 08:00 до 21:00
+					</p>
+				</div>
+				<div class="intro__wrapper">
+					<h1 class="intro__title">
+						<span class="intro__title--1">Ремонт </span>
+						<span class="intro__title--2">стиральных </span>
+						<span class="intro__title--3">машин </span>
+						<span class="intro__title--4">в Харькове</span>
+					</h1>
+					<section class="callback">
+						<p class="callback__title--desktop">
+							Заполните форму<br> и мы Вам перезвоним
+						</p>
+						<form class="callback__form" action="#" method="post">
+							<div class="callback__wrapper">
+								<div class="callback__container">
+									<label class="callback__label" for="username">Ваше имя</label>
+									<input class="callback__input" id="username" name="username" type="text" placeholder="Ваше имя">
+								</div>
+								
+								<div class="callback__container">
+									<label class="callback__label" for="phone">Номер телефона</label>
+									<input class="callback__input callback__input--phone" id="phone" name="phone" type="tel" placeholder="Номер телефона">
+								</div>
+								
 							</div>
-							
-							<div class="callback__container">
-								<label class="callback__label" for="phone">Номер телефона</label>
-								<input class="callback__input callback__input--phone" id="phone" name="phone" type="tel" placeholder="Номер телефона">
-							</div>
-							
-						</div>
-						<button class="button callback__button"  type="submit">Заказать звонок</button>
-					</form>
-				</section>
-			</div>
-		</section>
+							<button class="button callback__button"  type="submit">Заказать звонок</button>
+						</form>
+					</section>
+				</div>
+			</section>
+	</div>
 
 		<section class="work">
 			<div class="work__container">
@@ -174,12 +176,13 @@
 		</section>
 		
 		<section class="price">
-			<p class="price__about">
-				<span class="price__about--accent">KharkivService</span> – сервис по ремонту стиральных машин в Харькове. 
-				<span class="price__about--desktop">Наши мастера быстро определят поломку и устранят ее прямо у вас на дому, поэтому вам не придется везти вашу помощницу в сервисный центр через весь город.</span>
-			</p>
-			<h2 class="price__title">Наши возможности</h2>
-
+			<div class="price__wrapper">
+				<p class="price__about">
+					<span class="price__about--accent">KharkivService</span> – сервис по ремонту стиральных машин в Харькове. 
+					<span class="price__about--desktop">Наши мастера быстро определят поломку и устранят ее прямо у вас на дому, поэтому вам не придется везти вашу помощницу в сервисный центр через весь город.</span>
+				</p>
+				<h2 class="price__title">Наши возможности</h2>
+			</div>
 			<table class="price__table">
 				<caption class="price__subtitle">Перечень услуг и цен, грн</caption>
 				<div class="price__container">
@@ -241,7 +244,7 @@
 					</tr>
 				</div>
 			</table>			
-			<button class="price__button--mobile price__button--mobile-arrow-down" type="button">Развернуть</button>
+			<button class="button price__button--mobile price__button--mobile-arrow-down" type="button">Развернуть</button>
 			<button class="button price__button--more price__button--more--closed" type="button">Подробнее</button>
 
 			<section class="price-information price-information--closed">
@@ -282,54 +285,64 @@
 				<h2 class="brands__title">Мы ремонтируем все</h2>
 				<ul class="brands__list">
 					<li class="brands__item brands__item-1">
-						<svg class="brands__icon brands__icon-1">
-							<use xlink:href="#ico-brand-1"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-1">
+								<use xlink:href="#ico-brand-1"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-2">
-							<use xlink:href="#ico-brand-2"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-2">
+								<use xlink:href="#ico-brand-2"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-3">
-							<use xlink:href="#ico-brand-3"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-3">
+								<use xlink:href="#ico-brand-3"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-4">
-							<use xlink:href="#ico-brand-4"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-4">
+								<use xlink:href="#ico-brand-4"></use>
+							</svg></a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-5">
-							<use xlink:href="#ico-brand-5"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-5">
+								<use xlink:href="#ico-brand-5"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-6">
-							<use xlink:href="#ico-brand-6"></use>
-						</svg>
+						<a href="#" class="brands__link">
+							<svg class="brands__icon brands__icon-6">
+								<use xlink:href="#ico-brand-6"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-7">
-							<use xlink:href="#ico-brand-7"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-7">
+								<use xlink:href="#ico-brand-7"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-8">
-							<use xlink:href="#ico-brand-8"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-8">
+								<use xlink:href="#ico-brand-8"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-9">
-							<use xlink:href="#ico-brand-9"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-9">
+								<use xlink:href="#ico-brand-9"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
-						<svg class="brands__icon brands__icon-10">
-							<use xlink:href="#ico-brand-10"></use>
-						</svg>
+						<a href="#" class="brands__link"><svg class="brands__icon brands__icon-10">
+								<use xlink:href="#ico-brand-10"></use>
+							</svg>
+						</a>
 					</li>
 					<li class="brands__item">
 						<svg class="brands__icon brands__icon-11">
@@ -484,13 +497,13 @@
 			<div class="about-us__wrapper">
 				<div class="about-us__container">
 					<h2 class="about-us__title">Обращайтесь к нам с любыми поломками</h2>
-					<p class="about-us__text">
+					<!-- <p class="about-us__text">
 						Если сломалась стиральная машинка - обратитесь в наш сервис. Мы выполняем ремонт стиральных машин (Харьков) быстро и качественно.
 					</p>
 					<p class="about-us__text">
 						Услуги по ремонту стиральных машин Мы работаем с разными видами поломок в стиральных машинах.
-					</p>
-					<ul class="about-us__list">
+					</p> -->
+					<ul class="about-us__list about-us__list--mobile">
 						<li class="about-us__item">
 							Стиральная машинка перестала включаться
 						</li>
@@ -546,11 +559,10 @@
 					</ul>
 				</div>
 			</div>
-			<button class="button about-us__button about-us__button--desktop about-us__button--closed" type="button">Читать больше</button>
 			<section class="about-us--more about-us--more--closed">
 				<div class="about-us__wrap">
 					<h3 class="about-us__title">Машинка вышла из строя</h3>
-					<ul class="about-us__list">
+					<ul class="about-us__list about-us__list--more">
 						<li class="about-us__item">Стиральная машинка перестала включаться</li>
 						<li class="about-us__item">Барабан не вращается или шумит при отжиме</li>
 						<li class="about-us__item">Не нагревается вода во время стирки</li>
@@ -577,7 +589,7 @@
 				</div>
 				<div class="about-us__contain">
 					<h3 class="about-us__title">Вот некоторые виды ремонта автоматических стиральных машин, которые мы выполняем:</h3>
-					<ul class="about-us__list">
+					<ul class="about-us__list about-us__list--mobile">
 							<li class="about-us__item">
 								Замена сливного насоса
 							</li>
@@ -608,103 +620,106 @@
 						</ul>
 				</div>
 			</section>
+			<button class="button about-us__button about-us__button--closed" type="button">Читать больше</button>
 		</section>
 
 		<div class="page-main__wrapper">
 			<section class="video">
 				<h2 class="video__title">Видео</h2>
-				<div class="slider video__slider">
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper video__slide">
-								<div class="video__container">
-									<video class="video__videofile" poster="img/video-desktop.jpg">
-										<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-									</video>
-									<button class="video__play-button" type="button">Играть видео</button>
-								</div>
-								<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
-								<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
-								<div class="video__wrapper">
-									<time class="video__time">20:15</time>
-									<time class="video__date" datetime="2020-04-08">08.04.2020</time>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper video__slide">
-								<div class="video__container">
-									<video class="video__videofile" poster="img/video-desktop.jpg">
-										<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-									</video>
-									<button class="video__play-button" type="button">Играть видео</button>
-								</div>
-								<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
-								<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
-								<div class="video__wrapper">
-									<time class="video__time">20:15</time>
-									<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+				<div class="slider__wrapper">
+					<div class="slider video__slider">
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper video__slide">
+									<div class="video__container">
+										<video class="video__videofile" poster="img/video-desktop.jpg">
+											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+										  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+										</video>
+										<button class="video__play-button" type="button">Играть видео</button>
+									</div>
+									<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
+									<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+									<div class="video__wrapper">
+										<time class="video__time">20:15</time>
+										<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper video__slide">
-								<div class="video__container">
-									<video class="video__videofile" poster="img/video-desktop.jpg">
-										<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-									</video>
-									<button class="video__play-button" type="button">Играть видео</button>
-								</div>
-								<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
-								<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
-								<div class="video__wrapper">
-									<time class="video__time">20:15</time>
-									<time class="video__date" datetime="2020-04-08">08.04.2020</time>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper video__slide">
-								<div class="video__container">
-									<video class="video__videofile" poster="img/video-desktop.jpg">
-										<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-									</video>
-									<button class="video__play-button" type="button">Играть видео</button>
-								</div>
-								<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
-								<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
-								<div class="video__wrapper">
-									<time class="video__time">20:15</time>
-									<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper video__slide">
+									<div class="video__container">
+										<video class="video__videofile" poster="img/video-desktop.jpg">
+											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+										  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+										</video>
+										<button class="video__play-button" type="button">Играть видео</button>
+									</div>
+									<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
+									<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+									<div class="video__wrapper">
+										<time class="video__time">20:15</time>
+										<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper video__slide">
-								<div class="video__container">
-									<video class="video__videofile" poster="img/video-desktop.jpg">
-										<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-									  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
-									</video>
-									<button class="video__play-button" type="button">Играть видео</button>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper video__slide">
+									<div class="video__container">
+										<video class="video__videofile" poster="img/video-desktop.jpg">
+											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+										  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+										</video>
+										<button class="video__play-button" type="button">Играть видео</button>
+									</div>
+									<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
+									<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+									<div class="video__wrapper">
+										<time class="video__time">20:15</time>
+										<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+									</div>
 								</div>
-								<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
-								<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
-								<div class="video__wrapper">
-									<time class="video__time">20:15</time>
-									<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+							</div>
+						</div>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper video__slide">
+									<div class="video__container">
+										<video class="video__videofile" poster="img/video-desktop.jpg">
+											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+										  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+										</video>
+										<button class="video__play-button" type="button">Играть видео</button>
+									</div>
+									<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
+									<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+									<div class="video__wrapper">
+										<time class="video__time">20:15</time>
+										<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper video__slide">
+									<div class="video__container">
+										<video class="video__videofile" poster="img/video-desktop.jpg">
+											<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+										  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+										</video>
+										<button class="video__play-button" type="button">Играть видео</button>
+									</div>
+									<h3 class="slider__text video__subtitle">Как сохранить нагревательную спираль 
+									<span class="slider__text--desktop">Как сохранить нагревательную спираль Как сохранить нагревательную спираль</span></h3>
+									<div class="video__wrapper">
+										<time class="video__time">20:15</time>
+										<time class="video__date" datetime="2020-04-08">08.04.2020</time>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -715,54 +730,56 @@
 			
 			<section class="articles">
 				<h2 class="articles__title">Полезные статьи</h2>
-				<div class="slider articles__slider">
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper articles__slide">
-								<div class="articles__image"></div>
-								<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-								<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
-								</p>
+				<div class="slider__wrapper">
+					<div class="slider articles__slider">
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper articles__slide">
+									<div class="articles__image"></div>
+									<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+									<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper articles__slide">
-								<div class="articles__image"></div>
-								<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-								<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
-								</p>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper articles__slide">
+									<div class="articles__image"></div>
+									<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+									<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper articles__slide">
-								<div class="articles__image"></div>
-								<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-								<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
-								</p>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper articles__slide">
+									<div class="articles__image"></div>
+									<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+									<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper articles__slide">
-								<div class="articles__image"></div>
-								<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-								<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
-								</p>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper articles__slide">
+									<div class="articles__image"></div>
+									<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+									<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div>
-						<div class="slider__slide">
-							<div class="slider__slide-wrapper articles__slide">
-								<div class="articles__image"></div>
-								<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
-								<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
-								</p>
+						<div>
+							<div class="slider__slide">
+								<div class="slider__slide-wrapper articles__slide">
+									<div class="articles__image"></div>
+									<h3 class="article__title">Статья 1.Как сохранить нагревательную спираль</h3>
+									<p class="slider__text">Если вы заметили сбой в работе машинки – <span class="slider__text--desktop">попробуйте решить проблему самостоятельно. Что делать, если ваша помощница не включается, не сливает воду, шумит во время...</span>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -792,7 +809,7 @@
 	<footer class="page-footer">
 		<a class="logo page-footer__logo" href="index.html">
 			<picture>
-				<source media="(min-width: 1920px)" srcset="img/logo-big-blue.svg">
+				<source media="(min-width: 770px)" srcset="img/logo-big-blue.svg">
 				<img class="page-footer__logo-image" src="img/logo-black.svg" alt="Kharkiv Service - ремонт стиральных машин">
 			</picture>
 		</a>
@@ -805,13 +822,13 @@
 					<a class="breadcrumps__link" href="advices.html">Статьи</a>
 				</li>
 				<li class="breadcrumps__item">
-					<a class="breadcrumps__link" href="#">Контакты</a>
-				</li>
-				<li class="breadcrumps__item">
 					<a class="breadcrumps__link" href="#">Отзывы</a>
 				</li>
 				<li class="breadcrumps__item">
 					<a class="breadcrumps__link" href="#">Видео</a>
+				</li>
+				<li class="breadcrumps__item">
+					<a class="breadcrumps__link" href="#">Контакты</a>
 				</li>
 			</ul>
 		</section>
@@ -854,12 +871,12 @@
 		</section>
 		<a class="back_to_top"></a>
 	</footer>
-	<script type="text/javascript" src="js/open-menu.min.js"></script>
-	<script type="text/javascript" src="js/custom.min.js"></script>
+	<script type="text/javascript" src="js/open-menu.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/slider.min.js"></script>
-	<script type="text/javascript" src="js/maskedinput.min.js"></script>
-	<script type="text/javascript" src="js/phone-mask.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/maskedinput.js"></script>
+	<script type="text/javascript" src="js/phone-mask.js"></script>
 </body>
 </html>

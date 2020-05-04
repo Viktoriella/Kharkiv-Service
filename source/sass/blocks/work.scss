@@ -1,20 +1,22 @@
 .work__container {
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 87.5%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: -56px;
+	margin-bottom: 20px;
 	padding-top: 12px;
 	box-shadow: 0px 10px 35px rgba(32, 73, 86, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.17);
 	border-radius: 8px;
 	background-color: #ffffff;
-	z-index: 1;
 
-	@media (min-width: $desktop-width) {
-		margin-left: 178px;
-		margin-right: 178px;
+	@media (min-width: $tablet-more-width) {
+		width: auto;
+		margin-left: 9.27%;
+		margin-right: 9.27%;
 		margin-top: -113px;
 		padding-top: 40px;
-		padding-left: 147px;
-		padding-right: 77px;
+		padding-left: 7.65%;
+		padding-right: 4.01%;
 	}
 }
 
@@ -27,7 +29,7 @@
 	line-height: 27px;
 	text-align: center;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		font-weight: 300;
 		font-size: 60px;
 		margin-bottom: 60px;
@@ -37,11 +39,16 @@
 
 .work__list {
 	@include reset-list();
-	padding-left: 31px;
-	padding-right: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 67.8%;
+	margin-left: auto;
+	margin-right: auto;
 
-	@media (min-width: $desktop-width) {
-		display: flex;
+	@media (min-width: $tablet-more-width) {
+		width: auto;
+		flex-direction: row;
 		justify-content: space-between;
 	}
 }
@@ -57,7 +64,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 
-		@media (min-width: $desktop-width) {
+		@media (min-width: $tablet-more-width) {
 			left: 15px;
 			transform: none;
 		}
@@ -71,7 +78,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 
-		@media (min-width: $desktop-width) {
+		@media (min-width: $tablet-more-width) {
 			@include sprite(-20px, -96px, 170px, 16px);
 			top: 60px;
 			bottom: auto;
@@ -80,8 +87,8 @@
 		}
 	}
 
-	@media (min-width: $desktop-width) {
-		width: 265px;
+	@media (min-width: $tablet-more-width) {
+		width: 20%;
 		padding-top: 167px;
 	}
 }
@@ -112,7 +119,7 @@
 	font-size: 20px;
 	line-height: 27px;
 
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		margin-bottom: 15px;
 	}
 }
@@ -120,7 +127,7 @@
 .work__text {
 	display: none;
 	
-	@media (min-width: $desktop-width) {
+	@media (min-width: $tablet-more-width) {
 		display: block;
 		@include reset();
 	}
