@@ -27,6 +27,12 @@
 	}
 }
 
+.socials--header--inner {
+	@media (min-width: $tablet-more-width) {
+		top: 100px;
+	}
+}
+
 .socials__link {
 	font-size: 0;
 	width: 30px;

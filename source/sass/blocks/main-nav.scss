@@ -167,6 +167,12 @@
 	}
 }
 
+.main-nav__call--desktop--inner {
+	@media (min-width: $tablet-more-width) {
+		top: 150px;
+	}
+}
+
 .main-nav__tel--desktop {
 	@media (min-width: $tablet-more-width) {
 		width: auto;
