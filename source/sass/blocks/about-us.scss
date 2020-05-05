@@ -75,9 +75,6 @@
 	@include reset();
 	margin-bottom: 20px;
 	text-align: left;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 27px;
 }
 
 .about-us__title--desktop {
@@ -89,8 +86,6 @@
 		margin-bottom: 20px;
 		text-align: left;
 		font-weight: bold;
-		font-size: 20px;
-		line-height: 27px;
 	}
 }
 
@@ -128,19 +123,12 @@
 		margin-bottom: 30px;
 }
 
-.about-us__list--more {
-	width: 45%;
-}
-
 .about-us__description {
 	@media (min-width: $tablet-more-width) {
 		@include reset();
-		font-size: 18px;
-		line-height: 26px;
 		text-align: left;
 		margin-bottom: 30px;
-		width: 544px;
-		width: 45%;
+		width: auto;
 	}
 }
 
@@ -156,12 +144,6 @@
 			border-radius: 50%;
 			top: 7px;
 		}	
-}
-
-.about-us__container {
-	@media (min-width: $tablet-more-width) {
-		width: 507px;
-	}
 }
 
 .about-us--more {
@@ -191,9 +173,10 @@
 	@media (min-width: $tablet-more-width) {
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-		max-height: 150vh;
-		align-content: space-between;
+	}
+
+	@media (min-width: $br-960) {
+		max-height: 110vh;
 	}
 
 	@media (min-width: $smaller-desktop-width) {
@@ -208,11 +191,8 @@
 
 .about-us__contain {
 	@media (min-width: $tablet-more-width) {
-		width: 660px;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
 	}
 }
-
 

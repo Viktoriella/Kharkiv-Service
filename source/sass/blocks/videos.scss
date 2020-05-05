@@ -12,8 +12,8 @@
 	padding-right: 6.25%;
 
 	@media (min-width: $tablet-more-width) {
-		padding-left: 5.42%;
-		padding-right: 5.42%;
+		padding-left: 9.25%;
+		padding-right: 9.25%;
 	}
 }
 
@@ -88,4 +88,13 @@
 .videos__pagination {
 	margin-left: auto;
 	margin-right: auto;
+
+	@media (min-width: $tablet-more-width) {
+		margin-left: auto;
+		margin-right: 0;
+	}
+}
+
+.videos__subtitle {
+	padding-top: 10px;
 }

@@ -13,9 +13,6 @@
 
 .reviews__title {
 	@include reset();
-	font-weight: 300;
-	font-size: 22px;
-	line-height: 27px;
 	text-align: center;
 	margin-bottom: 30px;
 	margin-top: 40px;
@@ -25,10 +22,6 @@
 	@media (min-width: $tablet-more-width) {
 		margin-top: 120px;
 		margin-bottom: 30px;
-		font-weight: 300;
-		font-size: 60px;
-		line-height: 73px;
-		letter-spacing: 0.02em;
 		padding-left: 178px;
 		padding-right: 178px;
 	}

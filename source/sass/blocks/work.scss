@@ -24,16 +24,10 @@
 	@include reset();
 	margin-bottom: 40px;
 	font-style: normal;
-	font-weight: 300;
-	font-size: 22px;
-	line-height: 27px;
 	text-align: center;
 
 	@media (min-width: $tablet-more-width) {
-		font-weight: 300;
-		font-size: 60px;
 		margin-bottom: 60px;
-		margin-top: 40px;
 	}
 }
 
@@ -65,8 +59,12 @@
 		transform: translateX(-50%);
 
 		@media (min-width: $tablet-more-width) {
-			left: 15px;
+			left: 0;
 			transform: none;
+		}
+
+		@media (min-width: $desktop-width) {
+			left: 15px;
 		}
 	}
 
@@ -78,7 +76,12 @@
 		left: 50%;
 		transform: translateX(-50%);
 
+
 		@media (min-width: $tablet-more-width) {
+			display: none;
+		}
+
+		@media (min-width: $desktop-width) {
 			@include sprite(-20px, -96px, 170px, 16px);
 			top: 60px;
 			bottom: auto;
@@ -117,10 +120,33 @@
 	@include reset();
 	font-weight: bold;
 	font-size: 20px;
-	line-height: 27px;
+	line-height: 136.4%;
+
+	@media (min-width: $tablet-small-width) {
+		font-size: 19px;
+	}
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 15px;
+		font-size: 25px;
+	}
 
 	@media (min-width: $tablet-more-width) {
-		margin-bottom: 15px;
+		font-size: 15px;
+	}
+
+	@media (min-width: $br-960) {
+		font-size: 16px;
+	}
+
+	@media (min-width: $small-desktop-width) {
+		font-size: 18px;
+	}
+
+	@media (min-width: $smaller-desktop-width) {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 27px;
 	}
 }
 
@@ -130,5 +156,24 @@
 	@media (min-width: $tablet-more-width) {
 		display: block;
 		@include reset();
+		font-size: 13px;
+		line-height: 18.7px;
+	}
+
+	@media (min-width: $br-960) {
+		display: block;
+		@include reset();
+		font-size: 14px;
+		line-height: 20.22px;
+	}
+
+	@media (min-width: $small-desktop-width) {
+		font-size: 15px;
+		line-height: 22px;
+	}
+	
+	@media (min-width: $smaller-desktop-width) {
+		font-size: 18px;
+		line-height: 26px;
 	}
 }

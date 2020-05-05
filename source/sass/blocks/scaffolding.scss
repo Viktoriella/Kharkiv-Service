@@ -1,4 +1,4 @@
-@font-face {
+@font-face { 
 	font-family: 'Montserrat';
 	font-weight: normal;
 	font-display: swap;
@@ -74,10 +74,32 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 
+	@media (min-width: $tablet-small-width) {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	@media (min-width: $tablet-width) {
+		font-size: 15px;
+		line-height: 21.5px;
+	}
+
 	@media (min-width: $tablet-more-width) {
+		font-size: 15px;
+		line-height: 21.5px;
 		min-width: $tablet-more-width;
 		max-width: $desktop-width;
 		font-family: 'Montserrat', sans-serif;
+	}
+
+	@media (min-width: $br-960) {
+		font-size: 15px;
+		line-height: 21.5px;
+	}
+
+	@media (min-width: $smaller-desktop-width) {
+		font-size: 18px;
+		line-height: 26px;
 	}
 }
 
@@ -98,3 +120,18 @@ body {
 	padding: 0;
 	position: absolute;
 }
+
+.container__line {
+	@media (min-width: $tablet-more-width) {
+		display: flex;
+		justify-content: space-between;	
+		margin-bottom: 40px;
+	}	
+}
+
+.container__block {
+	@media (min-width: $tablet-more-width) {
+		width: 48.5%;
+	}
+}
+

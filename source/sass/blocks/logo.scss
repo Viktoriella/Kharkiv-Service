@@ -15,4 +15,14 @@
 		width: 210px;
 		height: 55px;
 	}
+
+	@media (min-width: $br-960) {
+		width: 150px;
+		height: auto;
+	}
+
+	@media (min-width: 1400) {
+		width: 210px;
+		height: 55px;
+	}
 }

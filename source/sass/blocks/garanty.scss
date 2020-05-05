@@ -24,7 +24,6 @@
 .garanty__title {
 	@include reset();
 	margin-bottom: 20px;
-	font-size: 20px;
 }
 
 .garanty__text {
@@ -32,7 +31,7 @@
 	margin-bottom: 10px;
 
 	@media (min-width: $tablet-more-width) {
-		width: 544px;
+		width: auto;
 		margin-bottom: 0;
 	}
 }
@@ -42,12 +41,17 @@
 	margin-top: 20px;
 	
 	@media (min-width: $tablet-more-width) {
+		margin-top: 0;
 		display: block;
 	}
 }
 
 .garanty__text--more--closed {
 	display: none;
+
+	@media (min-width: $tablet-more-width) {
+		display: block;
+	}
 }
 
 .garanty__text--more--opened {
@@ -145,6 +149,6 @@
 .garanty__container {
 	@media (min-width: $tablet-more-width) {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 	}
 }

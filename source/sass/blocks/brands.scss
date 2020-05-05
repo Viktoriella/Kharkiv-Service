@@ -16,17 +16,11 @@
 .brands__title {
 	@include reset();
 	margin-bottom: 30px;
-	font-size: 22px;
-	font-weight: 300;
-	letter-spacing: 0.02em;
 	color: #000000;
 	text-align: center;
 
 	@media (min-width: $tablet-more-width) {
 		font-weight: 300;
-		font-size: 60px;
-		line-height: 73px;
-		letter-spacing: 0.02em;
 		margin-bottom: 60px;
 	}
 }
@@ -35,11 +29,12 @@
 	@include reset-list();
 	display: flex;
 	flex-direction: row;
-	// justify-content: space-between;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
 
 	@media (min-width: $tablet-more-width) {
+		justify-content: flex-start;
 		margin-bottom: 40px;
 	}
 }
@@ -51,8 +46,10 @@
 	background-color: #ffffff;
 	border-radius: 50px;
 	margin-bottom: 15px;
-	margin-right: 2.3%;
-	margin-left: 2.3%;
+
+
+	// margin-right: 2.3%;
+	// margin-left: 2.3%;
 
 	@media (min-width: $tablet-more-width) {
 		width: 150px;
@@ -288,9 +285,6 @@
 .brands__text--bold {
 	@include reset();
 	margin-bottom: 20px;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 27px;
 	text-align: left;
 	padding-left: 6.25%;
 	padding-right: 6.25%;

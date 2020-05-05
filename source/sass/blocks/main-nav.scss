@@ -106,6 +106,13 @@
 
 	@media (min-width: $tablet-more-width) {
 		padding-top: 30px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 15px;
+		line-height: 18px;
 	}
 }
 
@@ -128,6 +135,14 @@
 			top: auto;
 			bottom: -19px;
 			background-color: $blue;
+
+			@media (min-width: $br-960) {
+				bottom: -4px;
+			}
+
+			@media (min-width: $small-desktop-width) {
+				bottom: -19px;
+			}
 		}
 	}
 }
@@ -156,7 +171,7 @@
 		display: block;
 		position: absolute;
 		right: 10%;
-		top: 250px;
+		top: 200px;
 	}
 
 	@media (min-width: $small-desktop-width) {

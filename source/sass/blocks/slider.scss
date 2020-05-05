@@ -1,14 +1,14 @@
 // .slick-initialized.slick-slider .slick-slide {
 // 	width: 612px;
 // }
-
+ 
 .slider__wrapper {
 	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 
-	@media (min-width: $smaller-desktop-width) {
+	@media (min-width: $slider-bp) {
 		width: 100%;
 		text-align: center;
 		// временно
@@ -39,7 +39,7 @@
 	margin-right: 20px;
 	margin-top: 20px;
 
-	@media (min-width: $smaller-desktop-width) {
+	@media (min-width: $slider-bp) {
 		width: 250px;
 		position: relative;
 		// margin-right: 90px;
@@ -79,7 +79,7 @@
 }
 
 .slick-center .slider__slide {
-	@media (min-width: $smaller-desktop-width) {
+	@media (min-width: $slider-bp) {
 		width: 542px;
 		padding-top: 30px;
 		padding-left: 35px;
@@ -173,7 +173,7 @@
 		border-left: 2px solid #222222;
 	}
 
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $slider-bp) {
 		height: 164px;	
 	}
 }
@@ -182,7 +182,7 @@
 	bottom: -85px;
 	left: 92px;
 
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $slider-bp) {
 		left: 530px;
 		bottom: auto;
 		top: 180px;
@@ -193,7 +193,7 @@
 		left: 24px;
 		transform: rotate(-45deg);
 
-		@media (min-width: $tablet-more-width) {
+		@media (min-width: $slider-bp) {
 			top: 64px;
 		}
 	}
@@ -203,7 +203,7 @@
 	bottom: -85px;
 	right: 92px;
 
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $slider-bp) {
 		right: 530px;
 		bottom: auto;
 		top: 180px;
@@ -214,7 +214,7 @@
 		left: 12px;
 		transform: rotate(135deg);
 
-		@media (min-width: $tablet-more-width) {
+		@media (min-width: $slider-bp) {
 			top: 64px;
 		}
 	}
@@ -223,7 +223,7 @@
 .slider__list {
 	@include reset-list();
 
-	@media (min-width: $smaller-desktop-width) {
+	@media (min-width: $slider-bp) {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 40px;
@@ -242,7 +242,7 @@
 	margin-left: auto;
 	margin-bottom: 120px;
 
-	@media (min-width: $smaller-desktop-width) {
+	@media (min-width: $slider-bp) {
 		margin-top: 0;
 		margin-bottom: 40px;
 	}
@@ -273,7 +273,7 @@
 }
 
 .slick-center .slider__text--desktop {
-	@media (min-width: $smaller-desktop-width) {
+	@media (min-width: $slider-bp) {
 		display: block;
 	}
 }

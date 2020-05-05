@@ -10,17 +10,12 @@
 .articles__title {
 	@include reset();
 	margin-bottom: 10px;
-	font-weight: 300;
-	font-size: 22px;
 	padding-left: 20px;
 	padding-right: 20px;
+	text-align: center;
 
 	@media (min-width: $tablet-more-width) {
 		margin-bottom: 30px;
-		font-weight: 300;
-		font-size: 60px;
-		line-height: 73px;
-		letter-spacing: 0.02em;
 		padding-left: 179px;
 		padding-right: 179px;
 	}
