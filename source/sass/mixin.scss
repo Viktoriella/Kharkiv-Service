@@ -132,3 +132,18 @@
 // 		display: none;
 // 	}
 // }
+
+// Гриды
+
+// @supports (display: grid)  {
+//     max-width: none;
+// }
+
+// @supports (display: grid) {
+// 	display: grid;
+// 	grid-template-columns: repeat(auto-fill, minmax(317px, 317px));
+// 	justify-content: space-between;
+// 	grid-row-gap: 50px;
+// 		grid-column-gap: 5.15%;
+// 	margin: initial;
+// }

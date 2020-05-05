@@ -1,0 +1,189 @@
+.feedback {
+	margin-bottom: 40px;
+	padding-left: 6.25%;
+	padding-right: 6.25%;
+	text-align: left;
+	background-image: url("../img/quotes.png");
+	background-repeat: no-repeat;
+	background-position: top center;	
+
+	@media (min-width: $tablet-more-width) {
+		padding-left: 9.27%;
+		padding-right: 9.27%;
+		background-image: none;
+	}
+}
+
+.feedback__title {
+	margin-bottom: 20px;
+
+	@media (min-width: $tablet-more-width) {
+		margin-bottom: 7px;
+	}
+}
+
+.feedback__form {
+	margin-bottom: 30px;
+
+	@media (min-width: $tablet-more-width) {
+		width: 531px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("../img/quotes.png");
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+}
+
+.feedback__label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.feedback__input {
+	display: block;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 22px;
+	padding-bottom: 21px;
+	border: 1px solid #979797;
+
+	&::placeholder {
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		color: #B9B9B9;
+	}
+}
+
+.feedback__textarea {
+	display: block;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 22px;
+	padding-bottom: 21px;
+	border: 1px solid #979797;
+	max-width: 100%;
+
+		&::placeholder {
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		color: #B9B9B9;
+	}
+
+	@media (min-width: $tablet-more-width) {
+		margin-bottom: 30px;	
+	}
+}
+
+.feedback__button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: $blue;
+	color: #ffffff;
+
+	@media (min-width: $tablet-more-width) {
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	&:hover,
+	&:active {
+		background-color: $blue-hover;
+	}
+
+	&:disabled {
+		background-color: $disabled-bg;
+	}
+}
+
+.feedback__container {
+	margin-bottom: 30px;
+
+	@media (min-width: $tablet-more-width) {
+		padding-left: 11.25%;
+		padding-right: 11.25%;	
+		margin-bottom: 40px;
+	}
+}
+
+.feedback__article {
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 23px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	background-image: url("../img/small-quotes.png");
+	background-repeat: no-repeat;
+	background-position: top 20px center;
+	max-height: 500px;
+
+	@media (min-width: $tablet-more-width) {
+		margin-bottom: 30px;
+		width: 64.8%;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.feedback__article:nth-child(2n-1) {
+	@media (min-width: $tablet-more-width) {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+
+.feedback__article:nth-child(2n) {
+	@media (min-width: $tablet-more-width) {
+		margin-right: 0;
+		margin-left: auto;
+	}
+}
+
+.feedback__article--var {
+	@media (min-width: $tablet-more-width) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.feedback__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.feedback__author {
+	@include reset();
+	font-style: normal;
+}
+
+.feedback__time {
+	color: #979797;
+}
+
+.feedback-pagination {
+	margin-left: auto;
+	margin-right: 11.25%;
+}
+
+.feedback__subtitle {
+	@media (min-width: $tablet-more-width) {
+		padding-top: 23px;
+	}
+}

@@ -77,7 +77,7 @@
 }
 
 .reviews__slider .slider__arrow--right {
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $slider-bp) {
 		// right: 510px;
 	}
 }

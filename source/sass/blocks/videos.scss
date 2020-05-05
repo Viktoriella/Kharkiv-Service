@@ -33,11 +33,16 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-	}
 
-	// @media (min-width: 1360px) {
-	// 	justify-content: flex-start;
-	// }
+			@supports (display: grid) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(317px, 317px));
+			justify-content: space-between;
+			grid-row-gap: 50px;
+			grid-column-gap: 5.15%;
+			margin: initial;
+		}
+	}
 }
 
 .videos__wrapper {
@@ -77,11 +82,19 @@
 		margin-right: 3.85%;
 		margin-left: 3.85%;
 		width: 280px;
+
+		@supports (display: grid)  {
+		    max-width: none;
+		}
 	}
 
 	@media (min-width: 1300px) {
 		margin-right: 1%;
 		margin-left: 1%;
+
+		@supports (display: grid)  {
+		    max-width: none;
+		}
 	}
 }
 

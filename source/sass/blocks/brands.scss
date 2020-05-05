@@ -36,6 +36,15 @@
 	@media (min-width: $tablet-more-width) {
 		justify-content: flex-start;
 		margin-bottom: 40px;
+
+		@supports (display: grid) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+			justify-content: space-between;
+			grid-row-gap: 50px;
+			grid-column-gap: 2.34%;
+			margin: initial;
+		}
 	}
 }
 

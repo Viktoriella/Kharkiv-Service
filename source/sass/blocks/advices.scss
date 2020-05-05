@@ -14,10 +14,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+
+		@supports (display: grid) {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fill, minmax(317px, 317px));
+		    justify-content: space-between;
+		    grid-row-gap: 50px;
+  			grid-column-gap: 5.15%;
+		    margin: initial;
+		  }
 	}
 
 	@media (min-width: 1360px) {
 		justify-content: flex-start;
+
+		@supports (display: grid) {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fill, minmax(317px, 317px));
+		    justify-content: space-between;
+		    grid-row-gap: 50px;
+  			grid-column-gap: 3%;
+		    margin: initial;
+		  }
 	}
 }
 
@@ -39,10 +57,20 @@
 		margin-right: 2.2%;
 		margin-left: 2.2%;
 		margin-bottom: 50px;
+
+		@supports (display: grid)  {
+			margin-right: 0;
+			margin-left: 0;
+		    max-width: none;
+		  }
 	}
 
 	@media (min-width: 1360px) {
 		justify-content: flex-start;
+
+		@supports (display: grid)  {
+		    max-width: none;
+		}
 	}
 }
 
@@ -53,15 +81,5 @@
 	@media (min-width: $tablet-more-width) {
 		margin-left: auto;
 		margin-right: 0;
-	}
-
-	@media (min-width: 1360px) {
-		margin-left: 2%;
-		margin-right: auto;
-	}
-
-	@media (min-width: 1850px) {
-		margin-left: auto;
-		margin-right: 2.2%;
 	}
 }

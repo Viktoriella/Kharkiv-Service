@@ -53,13 +53,13 @@
 }
 
 .articles__slider .slider__arrow--right {
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $slider-bp) {
 		right: 530px;
 	}
 }
 
 .articles__slider .slider__arrow--left {
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $slider-bp) {
 		left: 560px;
 	}
 }
