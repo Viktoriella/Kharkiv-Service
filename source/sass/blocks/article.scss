@@ -13,7 +13,7 @@
 	@media (min-width: $tablet-more-width) {
 		width: 317px;
 	}
-}
+} 
 
 .article__link {
 	background: #FFFFFF;
@@ -50,7 +50,8 @@
 	min-width: 100%;
 	height: auto;
 	display: block;
-	object-fit: contain;
+	object-fit: cover;
+	object-position: 50% 50%;
 }
 
 .article__title {
@@ -68,4 +69,11 @@
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 25px;
+}
+
+.article__intro {	
+	@media (min-width: $tablet-more-width) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
