@@ -35,7 +35,7 @@
 							<a class="main-nav__link" href="#">Отзывы</a>
 						</li>
 						<li class="main-nav__item">
-							<a class="main-nav__link" href="#">Видео</a>
+							<a class="main-nav__link" href="video.html">Видео</a>
 						</li>
 						<li class="main-nav__item">
 							<a class="main-nav__link" href="#">Контакты</a>
@@ -825,7 +825,7 @@
 					<a class="breadcrumps__link" href="#">Отзывы</a>
 				</li>
 				<li class="breadcrumps__item">
-					<a class="breadcrumps__link" href="#">Видео</a>
+					<a class="breadcrumps__link" href="video.html">Видео</a>
 				</li>
 				<li class="breadcrumps__item">
 					<a class="breadcrumps__link" href="#">Контакты</a>
@@ -871,7 +871,19 @@
 		</section>
 		<a class="back_to_top"></a>
 	</footer>
+	<div class="popup">
+		<div class="popup__video-wrapper">
+			<video class="popup__videofile" poster="img/video-1-desktop.jpg" controls="true">
+				<source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			  	<source src="#" type='video/webm; codecs="vp8, vorbis"'>
+			</video>
+		</div>
+		<button class="popup__close" type="button">Закрыть</button>
+	</div>
+
+	<div class="popup__overlay"></div>
 	<script type="text/javascript" src="js/open-menu.js"></script>
+	<script type="text/javascript" src="js/show-popup.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>

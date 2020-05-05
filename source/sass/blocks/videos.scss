@@ -1,0 +1,91 @@
+// <a class="article__link" href="advice.html">
+// 	<figure class="article__image-container">
+// 		<img class="article__image" src="img/advice-1.jpg" alt="Картинка 1">
+// 	</figure>
+// 	<h2 class="article__title">Статья 1. Как сохранить нагревательную...</h2>
+// 	<p class="article__text">В воскресенье после обеда поломалась моя...</p>
+// </a>
+
+.videos {
+	margin-bottom: 40px;
+	padding-left: 6.25%;
+	padding-right: 6.25%;
+
+	@media (min-width: $tablet-more-width) {
+		padding-left: 5.42%;
+		padding-right: 5.42%;
+	}
+}
+
+.videos__title {
+	margin-bottom: 40px;
+
+	@media (min-width: $tablet-more-width)  {
+		text-align: left;
+		margin-left: 9.27%;
+		margin-right: 9.27%;
+	}
+}
+
+.videos__container {
+	
+	@media (min-width: $tablet-more-width) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	// @media (min-width: 1360px) {
+	// 	justify-content: flex-start;
+	// }
+}
+
+.videos__wrapper {
+	position: relative;
+	width: auto;
+	height: 156px;
+	overflow: hidden;
+}
+
+.videos__videofile {
+	display: block;
+	width: auto;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    object-fit: cover;
+}
+
+.videos__article {
+	background: #FFFFFF;
+	color: #222222;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	width: auto;
+
+	@media (min-width: 400px) {
+		width: 320px;
+		margin-bottom: 40px;
+	}	
+
+	@media (min-width: $tablet-more-width) {
+		padding-left: 17px;
+		padding-right: 17px;
+		margin-right: 3.85%;
+		margin-left: 3.85%;
+		width: 280px;
+	}
+
+	@media (min-width: 1300px) {
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+}
+
+.videos__pagination {
+	margin-left: auto;
+	margin-right: auto;
+}
