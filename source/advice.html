@@ -289,11 +289,16 @@
 						<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона">
 					</div>
 				</div>
-				<button class="button callback__button"  type="submit">Заказать звонок</button>
+				<button class="button callback__button" type="submit">Заказать звонок</button>
 			</form>
 		</section>
 	</main>
 
+	<div class="popup popup--callback">
+		<p class="popup--callback__text">Спасибо за заказ. Наш мастер свяжется с вами в течение 15 минут</p>
+		<button class="popup__close" type="button">Закрыть</button>
+	</div>
+	<div class="popup__overlay"></div>
 	<footer class="page-footer">
 		<a class="logo page-footer__logo" href="index.html">
 			<picture>
@@ -359,6 +364,7 @@
 		<a class="back_to_top"></a>
 	</footer>
 	<script type="text/javascript" src="js/open-menu.js"></script>
+	<script type="text/javascript" src="js/show-callback-popup.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/maskedinput.js"></script>
 	<script type="text/javascript" src="js/phone-mask.js"></script>
