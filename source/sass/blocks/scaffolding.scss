@@ -62,7 +62,7 @@ html {
 }
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	// max-width: $tablet-width;
 	color: #222222;
 	background-color: #ffffff;
@@ -70,8 +70,6 @@ body {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 26px;
-	padding-left: 10px;
-	padding-right: 10px;
 
 	@media (min-width: $tablet-small-width) {
 		font-size: 16px;

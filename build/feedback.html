@@ -285,11 +285,11 @@
 						<h2 class="title__subtitle feedback__subtitle">Заполните поля для публикации отзыва</h2>
 						<div class="feedback-form-container">
 							<label class="feedback__label" for="feedback-username">Ваше имя</label>
-							<input class="feedback__input" type="text" id="feedback-username" name="feedback-username" placeholder="Имя">
+							<input class="feedback__input" type="text" id="feedback-username" name="feedback-username" placeholder="Имя" required="">
 						</div>
 						<div class="feedback-form-container">
 							<label class="feedback__label" for="feedback-text">Ваше сообщение</label>
-							<textarea class="feedback__textarea" name="feedback-text" id="feedback-text" rows="3" placeholder="Текст"></textarea>
+							<textarea class="feedback__textarea" name="feedback-text" id="feedback-text" rows="3" placeholder="Текст" required=""></textarea>
 						</div>
 						<button class="button feedback__button" type="submit">Оставить отзыв</button>
 					</form>
@@ -385,7 +385,7 @@
 			</section>
 		
 			<section class="callback callback--footer-inner">
-				<h2 class="callback__title callback__title--desktop callback__title--desktop--footer">Заполните форму и мы Вам перезвоним</h2>
+				<h2 class="callback__title callback__title--desktop--footer">Заполните форму и мы Вам перезвоним</h2>
 				<form class="callback__form" action="#" method="post">
 					<div class="callback__wrapper">
 						<div class="callback__container">
@@ -394,7 +394,7 @@
 						</div>
 						<div class="callback__container">
 							<label class="callback__label" for="phone-footer">Номер телефона</label>
-							<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона">
+							<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона" required="">
 						</div>
 					</div>
 					<button class="button callback__button" type="submit">Заказать звонок</button>

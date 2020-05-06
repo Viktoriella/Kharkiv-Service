@@ -1,6 +1,10 @@
 .articles {
 	text-align: center;
 	margin-bottom: 40px;
+
+	@media (min-width: $tablet-more-width) {
+		margin-bottom: 143px;
+	}
 }
 
 .articles__slider {
@@ -52,17 +56,17 @@
 	}
 }
 
-.articles__slider .slider__arrow--right {
-	@media (min-width: $slider-bp) {
-		right: 530px;
-	}
-}
+// .articles__slider .slider__arrow--right {
+// 	@media (min-width: $slider-bp) {
+// 		right: 530px;
+// 	}
+// }
 
-.articles__slider .slider__arrow--left {
-	@media (min-width: $slider-bp) {
-		left: 560px;
-	}
-}
+// .articles__slider .slider__arrow--left {
+// 	@media (min-width: $slider-bp) {
+// 		left: 560px;
+// 	}
+// }
 
 .articles__image {
 	width: 250px;

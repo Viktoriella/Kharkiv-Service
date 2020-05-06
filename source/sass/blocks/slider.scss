@@ -7,10 +7,12 @@
 	margin-left: auto;
 	margin-right: auto; 
 	position: relative;
+	border: 1px solid blue;
 
 	@media (min-width: $slider-bp) {
 		width: 100%;
 		text-align: center;
+		margin: 0;
 		// временно
 		// display: none;
 	}
@@ -33,25 +35,58 @@
 	width: 280px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	text-align: left;
+	text-align: center;
 	margin-bottom: 25px;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
+	border: 1px solid green;
+	display: flex;
+	justify-content: center;
 
 	@media (min-width: $slider-bp) {
-		width: 250px;
 		position: relative;
+		box-sizing: border-box;
+		width: 280px;
 		// margin-right: 90px;
 		// margin-left: 90px;
 		margin-bottom: 40px;
 		margin-top: 100px;
-		padding-left: 180px;
-		padding-right: 180px;
+		padding-left: 22px;
+		padding-right: 22px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	@media (min-width: $br-1600) {
+		box-sizing: border-box;
+		width: 570px;
+		margin-left: 10px;
+		margin-right: 10px;
+		// margin-right: 90px;
+		// margin-left: 90px;
+		margin-bottom: 40px;
+		margin-top: 100px;
+		padding-left: 160px;
+		padding-right: 160px;
 		// padding-left: 9.36%;
-		// padding-left: 9.36%;
+		// padding-left: 9.36%;		
 	}
 }
+
+.slick-list {
+	@media (min-width: $slider-bp) {
+		margin-left: -40px;
+		margin-right: -40px;
+	}	
+
+	@media (min-width: $br-1600) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+
 
 .slider__slide-wrapper {
 	box-shadow: 0px 10px 35px rgba(32, 73, 86, 0.1), 
@@ -62,31 +97,43 @@
 	padding-right: 15px;
 	padding-bottom: 20px;
 	padding-top: 20px;
-}
+	border: 1px solid red;
 
-@keyframes bigger {
-	0% {
-		transform: scale(0.5);
+	@media (min-width: $slider-bp) {
+		width: 190px;
 	}
-
-	50% {     
-    	transform: scale(0.8);
-  	} 
-
-  	100% {
-  		transform: scale(1);
-  	}
 }
+
+// @keyframes bigger {
+// 	0% {
+// 		transform: scale(0.5);
+// 	}
+
+// 	50% {     
+//     	transform: scale(0.8);
+//   	} 
+
+//   	100% {
+//   		transform: scale(1);
+//   	}
+// }
 
 .slick-center .slider__slide {
 	@media (min-width: $slider-bp) {
-		width: 542px;
-		padding-top: 30px;
-		padding-left: 35px;
-		padding-right: 37px;
+		box-sizing: border-box;
+		width: 280px;
+		padding-left: 0;
+		padding-right: 0;
 		padding-bottom: 0;
 		margin-top: 20px;
 		// animation: bigger 2s ease;
+	}
+
+	@media (min-width: $br-1600) {
+		margin-top: 20px;
+		box-sizing: border-box;
+		width: 617px;
+		padding-top: 30px;
 	}
 }
 
@@ -129,6 +176,13 @@
 
 .slider__pagination-item--active {
 	background-color: $blue;
+}
+
+.slider {
+	@media (min-width: $br-1024) {
+		position: relative;
+		border: 1px solid blue;
+	}
 }
 
 .slider__arrows {
@@ -183,9 +237,14 @@
 	left: 92px;
 
 	@media (min-width: $slider-bp) {
-		left: 530px;
+		left: 29%;
+		right: auto;
 		bottom: auto;
 		top: 180px;
+	}
+
+	@media (min-width: $br-1600) {
+		left: 26%;
 	}
 
 	&::before {
@@ -204,9 +263,14 @@
 	right: 92px;
 
 	@media (min-width: $slider-bp) {
-		right: 530px;
+		right: 29%;
+		left: auto;
 		bottom: auto;
 		top: 180px;
+	}
+
+	@media (min-width: $br-1600) {
+		right: 26%;
 	}
 
 	&::before {

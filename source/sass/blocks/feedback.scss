@@ -32,6 +32,7 @@
 		background-image: url("../img/quotes.png");
 		background-repeat: no-repeat;
 		background-position: top center;
+		margin-bottom: 60px;
 	}
 }
 
@@ -58,6 +59,11 @@
 		letter-spacing: 0.02em;
 		color: #B9B9B9;
 	}
+
+	&:hover,
+	&:focus {
+		border: 1px solid #222222;
+	}
 }
 
 .feedback__textarea {
@@ -82,6 +88,11 @@
 
 	@media (min-width: $tablet-more-width) {
 		margin-bottom: 30px;	
+	}
+
+	&:hover,
+	&:focus {
+		border: 1px solid #222222;
 	}
 }
 
@@ -141,14 +152,14 @@
 	}
 }
 
-.feedback__article:nth-child(2n-1) {
+.feedback__article--var:nth-child(2n-1) {
 	@media (min-width: $tablet-more-width) {
 		margin-left: 0;
 		margin-right: auto;
 	}
 }
 
-.feedback__article:nth-child(2n) {
+.feedback__article--var:nth-child(2n) {
 	@media (min-width: $tablet-more-width) {
 		margin-right: 0;
 		margin-left: auto;
@@ -179,7 +190,10 @@
 
 .feedback-pagination {
 	margin-left: auto;
-	margin-right: 11.25%;
+	margin-right: auto;
+	@media (min-width: $tablet-more-width) {
+		margin-right: 11.25%;
+	}
 }
 
 .feedback__subtitle {

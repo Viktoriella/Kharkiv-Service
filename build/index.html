@@ -313,7 +313,7 @@
 						<span class="intro__title--4">в Харькове</span>
 					</h1>
 					<section class="callback">
-						<p class="callback__title--desktop">
+						<p class="callback__title callback__title--desktop">
 							Заполните форму<br> и мы Вам перезвоним
 						</p>
 						<form class="callback__form" action="#" method="post">
@@ -325,7 +325,7 @@
 								
 								<div class="callback__container">
 									<label class="callback__label" for="phone">Номер телефона</label>
-									<input class="callback__input callback__input--phone" id="phone" name="phone" type="tel" placeholder="Номер телефона">
+									<input class="callback__input callback__input--phone" id="phone" name="phone" type="tel" placeholder="Номер телефона" required="">
 								</div>
 								
 							</div>
@@ -670,7 +670,7 @@
 							<div class="slider__slide">
 								<div class="slider__slide-wrapper review__slide">
 									<div class="review__container">
-										<cite class="review__author">Константин</cite>
+										<cite class="review__author">Мария</cite>
 										<time class="review__date" datetime="2020-04-08">08.04.2020</time>
 									</div>
 									<blockquote class="slider__text">
@@ -1030,20 +1030,26 @@
 			</section>
 			
 			<section class="callback callback--footer-main">
-				<h2 class="callback__title callback__title--desktop callback__title--desktop--footer">Заполните форму и мы Вам перезвоним</h2>
-				<form class="callback__form" action="#" method="post">
-					<div class="callback__wrapper">
-						<div class="callback__container">
-							<label class="callback__label" for="username-footer">Ваше имя</label>
-							<input class="callback__input" id="username-footer" name="username" type="text" placeholder="Ваше имя">
-						</div>
-						<div class="callback__container">
-							<label class="callback__label" for="phone-footer">Номер телефона</label>
-							<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона">
-						</div>
+				<div class="callback__wrap">
+					<div class="callback__wrap-index callback__wrap-index--bg-image">
 					</div>
-					<button class="button callback__button" type="submit">Заказать звонок</button>
-				</form>
+					<div class="callback__wrap-index callback__wrap-index--form">
+						<h2 class="callback__title callback__title--desktop--footer">Заполните форму и мы Вам перезвоним</h2>
+						<form class="callback__form" action="#" method="post">
+							<div class="callback__wrapper">
+								<div class="callback__container">
+									<label class="callback__label" for="username-footer">Ваше имя</label>
+									<input class="callback__input" id="username-footer" name="username" type="text" placeholder="Ваше имя">
+								</div>
+								<div class="callback__container">
+									<label class="callback__label" for="phone-footer">Номер телефона</label>
+									<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона" required="">
+								</div>
+							</div>
+							<button class="button callback__button" type="submit">Заказать звонок</button>
+						</form>
+					</div>
+				</div>
 			</section>
 		</div>
 	

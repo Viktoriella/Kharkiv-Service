@@ -1,4 +1,5 @@
 $('.slider').slick({
+  draggable: true,
   centerMode: false,
   dots: true,
   infinite: true,
@@ -26,7 +27,7 @@ $('.slider').slick({
     //   }
     // },
     {
-      breakpoint: 1640,
+      breakpoint: 1021,
       settings: {
         initialSlide: 1,
         centerMode: true,
@@ -37,8 +38,8 @@ $('.slider').slick({
         dots: true,
         speed: 900,
         accessibility: false,
-        draggable: false
-      }
+        draggable: true
+        }
       }
      
     // You can unslick at a given breakpoint now by adding:

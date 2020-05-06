@@ -20,7 +20,7 @@
 		transform: translateX(-50%);
 	}
 	
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $br-1600) {
 		padding-top: 148px;
 		width: 250px;
 	}
@@ -28,18 +28,24 @@
 
 .slick-center .review__slide {
 	@media (min-width: $tablet-more-width) {
-		padding-top: 224px;
-		padding-left: 35px;
-		padding-right: 35px;
-		width: 542px;
-		transform: translateX(-20px);
+		
+		@media (min-width: $slider-bp) {
+			padding-top: 124px;
+		}
 
-		&::after {
-			@include pseudo();
-			@include sprite(-20px, -1010px, 150px, 120px);
-			top: 45px;
-			left: 50%;
-			transform: translateX(-50%);
+		@media (min-width: $br-1600) {
+			padding-top: 224px;
+			padding-left: 35px;
+			padding-right: 35px;
+			width: 542px;
+
+			&::after {
+				@include pseudo();
+				@include sprite(-20px, -1010px, 150px, 120px);
+				top: 45px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 	}
 }
