@@ -63,8 +63,7 @@ html {
 
 body {
 	margin: 0 auto;
-	min-width: $mobile-width;
-	max-width: $tablet-width;
+	// max-width: $tablet-width;
 	color: #222222;
 	background-color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
@@ -87,8 +86,8 @@ body {
 	@media (min-width: $tablet-more-width) {
 		font-size: 15px;
 		line-height: 21.5px;
-		min-width: $tablet-more-width;
-		max-width: $desktop-width;
+		// min-width: $tablet-more-width;
+		// max-width: $desktop-width;
 		font-family: 'Montserrat', sans-serif;
 	}
 

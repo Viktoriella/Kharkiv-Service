@@ -31,13 +31,13 @@
 							<a class="main-nav__link" href="advices.html">Статьи</a>
 						</li>
 						<li class="main-nav__item">
-							<a class="main-nav__link main-nav__link--active">Отзывы</a>
+							<a class="main-nav__link" href="advices.html">Отзывы</a>
 						</li>
 						<li class="main-nav__item">
 							<a class="main-nav__link" href="video.html">Видео</a>
 						</li>
 						<li class="main-nav__item">
-							<a class="main-nav__link" href="#">Контакты</a>
+							<a class="main-nav__link main-nav__link--active">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -77,129 +77,109 @@
 			</div>
 		</header>
 		<main class="inner__main">
-			<section class="feedback">
-			<h1 class="title feedback__title">Отзывы</h1>
-				<div class="feedback__form">
-					<form action="#" method="post" id="feedback-form">
-						<h2 class="title__subtitle feedback__subtitle">Заполните поля для публикации отзыва</h2>
-						<div class="feedback-form-container">
-							<label class="feedback__label" for="feedback-username">Ваше имя</label>
-							<input class="feedback__input" type="text" id="feedback-username" name="feedback-username" placeholder="Имя">
+			<section class="contact">
+				<h1 class="title contact__title">Контакты</h1>
+			
+				<div class="contact__phones contact__phones--mobile">
+					<h2 class="contact__subtitle">Наши номера телефонов</h2>
+					<ul class="contact__list">
+						<li class="contact__item">095-777-77-77</li>
+						<li class="contact__item">068-777-77-77</li>
+						<li class="contact__item">063-777-77-77</li>
+					</ul>
+				</div>
+			
+				<section class="callback contact__callback contact__callback--mobile">
+					<h2 class="callback__title">Заполните форму и мы Вам перезвоним</h2>
+					<form class="callback__form" action="#" method="post">
+						<div class="callback__wrapper">
+							<div class="callback__container">
+								<label class="callback__label" for="username-footer">Ваше имя</label>
+								<input class="callback__input" id="username-footer" name="username" type="text" placeholder="Ваше имя" required>
+							</div>
+							<div class="callback__container">
+								<label class="callback__label" for="phone-footer">Номер телефона</label>
+								<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона">
+							</div>
 						</div>
-						<div class="feedback-form-container">
-							<label class="feedback__label" for="feedback-text">Ваше сообщение</label>
-							<textarea class="feedback__textarea" name="feedback-text" id="feedback-text" rows="3" placeholder="Текст"></textarea>
-						</div>
-						<button class="button feedback__button" type="submit">Оставить отзыв</button>
+						<button class="button callback__button"  type="submit">Заказать звонок</button>
 					</form>
-				</div>
-
-				<div class="feedback__container" id="feedbacks">
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Сергей</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Спасибо, буду советовать своим друзьям.</p>
-					</article>
-					
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Алена</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Сломалась стиральная машина. На отжиме свистела как самолет на взлете. Приехал мастер Николай. Все сделал быстро, качественно и аккуратно. Огромное спасибо. Очень толковый мастер, хотя и молодой. Всем рекомендую.</p>
-					</article>
-					
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Сергей</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Приехал мастер, заменил тен, дал гарантию на 1 год, сделал полную профилактику машинки. Очень довольны сервисом.</p>
-					</article>
-					
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Кристина</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Машинка гремела, тарахтела, что аж на лестнице было слышно. Соседи уже начали жаловаться. Вызвала мастера из сервиса, после 3 часов работы машинка стала работать так тихо, что не слышло как крутится барабан. Спасибо огромное, теперь могу стирать и ночью.</p>
-					</article>
-
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Дмитрий Васильевич</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Выполнен ремонт механики (замена ТЭНа и электроники (ремонт платы управления) стиральной машины, после ремонта я протестировал машину, все программы работают нормально. Понравилось быстрые и уверенные действия мастера Николая. Видно что он грамотно подходит к выполнению своей работы. Все бы так выполняли свою работу.</p>
-					</article>
-					
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Сергей</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Приехал мастер, заменил тен, дал гарантию на 1 год, сделал полную профилактику машинки. Очень довольны сервисом.</p>
-					</article>
-					
-					<article class="article feedback__article feedback__article--var">
-						<div class="feedback__wrapper">
-							<cite class="article__title feedback__author">Галина</cite>
-							<time datetime="2020-04-08" class="feedback__time">08.04.2020</time>
-						</div>
-						<p class="article__text">Сделала вызов мастера, приехал Николай, это не просто мастер, это волшебник, машинка стала как новая, все поломки быстро устранил, всё объяснил,он настоящий ЧЕЛОВЕК и мастер своего дела. Спасибо ОГРОМНОЕ.</p>
-					</article>
-				</div>
-		
-				<ul class="pagination feedback-pagination">
-					<li class="pagination__item">
-						<a class="pagination__nav pagination__nav--left pagination__nav--disabled">Налево</a>
-					</li>
-					<div class="pagination__wrapper">
-						<li class="pagination__item">
-							<a class="pagination__link feedback-pagination-link pagination__link--active">1</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link feedback-pagination-link">2</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link feedback-pagination-link">3</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link feedback-pagination-link">4</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link feedback-pagination-link">...</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link feedback-pagination-link">120</a>
-						</li>
+				</section>
+			
+				<div class="contact__address">
+					<div class="contact__address-container">
+						<h2 class="title__subtitle contact__subtitle--accent">Сервис работает во всех районах Харькова и области</h2>
+						<p class="contact__text">Звоните нам по указанным номерам, чтобы заказать ремонт стиральных машин в Харькове.</p>
+						<p class="contact__text">Мы принимаем Ваши заявки без выходных <span class="contact__text--bold">с 8 до 21.</span></p>
 					</div>
-					<li class="pagination__item">
-						<a href="#" class="pagination__nav pagination__nav--right">направо</a>
-					</li>
-				</ul>
-				
-			</section>
-		
-			<section class="callback callback--footer-inner">
-				<h2 class="callback__title callback__title--desktop callback__title--desktop--footer">Заполните форму и мы Вам перезвоним</h2>
-				<form class="callback__form" action="#" method="post">
-					<div class="callback__wrapper">
-						<div class="callback__container">
-							<label class="callback__label" for="username-footer">Ваше имя</label>
-							<input class="callback__input" id="username-footer" name="username" type="text" placeholder="Ваше имя">
+
+					<div class="contact__container">
+						<div class="contact__line">
+							<div class="contact__block">
+								<h3 class="contact__subtitle contact__subtitle--map">Мы на карте</h3>
+								<div class="contact__map">
+									<img class="contact__image" src="img/map.jpg" alt="Харьков, проспект Юбилейный, 46/15">
+								</div>
+							</div>
+											
+							<div class="contact__block">
+								<div class="contact__phones contact__phones--desktop">
+									<h2 class="contact__subtitle">Наши номера телефонов</h2>
+									<ul class="contact__list">
+										<li class="contact__item">095-777-77-77</li>
+										<li class="contact__item">068-777-77-77</li>
+										<li class="contact__item">063-777-77-77</li>
+									</ul>
+								</div>
+												
+								<div class="contact__address-wrapper">
+									<h3 class="contact__subtitle">Наш адрес</h3>
+									<p class="contact__text">61000 Харьков, проспект Юбилейный, 46/15</p>
+								</div>
+												
+								<div class="contact__address-wrapper">
+									<h3 class="contact__subtitle">Наша почта</h3>
+									<p class="contact__text">kharkivservice2015@gmail.com</p>
+								</div>
+												
+								<h3 class="contact__subtitle">Наши соцсети</h3>
+								<ul class="socials contact__socials">
+									<li class="socials__item">
+										<a class="socials__link contact__link--google" href="#">
+											Google +
+										</a>
+									</li>
+									<li class="socials__item">
+										<a class="socials__link contact__link--instagram" href="#">
+											Instagram
+										</a>
+									</li>
+									<li class="socials__item">
+										<a class="socials__link contact__link--youtube" href="#">
+											Youtube
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="callback__container">
-							<label class="callback__label" for="phone-footer">Номер телефона</label>
-							<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона">
-						</div>
+						<section class="callback contact__callback">
+						<h2 class="callback__title contact__form-title">Заполните форму<br> и мы Вам перезвоним</h2>
+						<form class="callback__form contact__form" action="#" method="post">
+							<div class="callback__wrapper contact__form-wrapper">
+								<div class="callback__container">
+									<label class="callback__label" for="username-footer">Ваше имя</label>
+									<input class="callback__input" id="username-footer" name="username" type="text" placeholder="Ваше имя">
+								</div>
+								<div class="callback__container">
+									<label class="callback__label" for="phone-footer">Номер телефона</label>
+									<input class="callback__input callback__input--phone" id="phone-footer" name="phone" type="tel" placeholder="Номер телефона" required>
+								</div>
+							</div>
+							<button class="button callback__button contact__button"  type="submit">Заказать звонок</button>
+						</form>
+						</section>
 					</div>
-					<button class="button callback__button"  type="submit">Заказать звонок</button>
-				</form>
 			</section>
-		
 		</main>
 
 	<footer class="page-footer">
@@ -218,10 +198,10 @@
 					<a class="breadcrumps__link" href="advices.html">Статьи</a>
 				</li>
 				<li class="breadcrumps__item">
-					<a class="breadcrumps__link" href="#">Контакты</a>
+					<a class="breadcrumps__link breadcrumps__link--active">Контакты</a>
 				</li>
 				<li class="breadcrumps__item">
-					<a class="breadcrumps__link breadcrumps__link--active">Отзывы</a>
+					<a class="breadcrumps__link" href="advices.html">Отзывы</a>
 				</li>
 				<li class="breadcrumps__item">
 					<a class="breadcrumps__link" href="video.html">Видео</a>

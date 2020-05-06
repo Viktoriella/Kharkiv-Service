@@ -141,7 +141,7 @@
 			}
 
 			@media (min-width: $small-desktop-width) {
-				bottom: -19px;
+				bottom: -25px;
 			}
 		}
 	}
@@ -177,6 +177,7 @@
 	@media (min-width: $small-desktop-width) {
 		position: static;
 		padding-top: 27px;
+		padding-bottom: 7px;
 		text-align: right;
 		z-index: 10;
 	}
