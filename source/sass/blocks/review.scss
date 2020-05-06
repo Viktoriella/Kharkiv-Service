@@ -27,17 +27,23 @@
 }
 
 .slick-center .review__slide {
-	@media (min-width: $tablet-more-width) {
+		@media (min-width: $tablet-more-width) {
 		
+		}
+
 		@media (min-width: $slider-bp) {
 			padding-top: 124px;
 		}
 
-		@media (min-width: $br-1600) {
-			padding-top: 224px;
-			padding-left: 35px;
-			padding-right: 35px;
-			width: 542px;
+		@media (min-width: $slider-bp) {
+			width: 300px;
+
+
+		
+
+		@media (min-width: $slider-bp-2) {
+			width: 340px;
+			padding-top: 180px;
 
 			&::after {
 				@include pseudo();
@@ -46,6 +52,13 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
+		}
+
+		@media (min-width: $br-1600) {
+			padding-top: 224px;
+			padding-left: 35px;
+			padding-right: 35px;
+			width: 542px;
 		}
 	}
 }

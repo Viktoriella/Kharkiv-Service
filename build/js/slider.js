@@ -29,7 +29,7 @@ $('.slider').slick({
     {
       breakpoint: 1021,
       settings: {
-        initialSlide: 1,
+        initialSlide: 0,
         centerMode: true,
         infinite: true,
         centerPadding: '0',

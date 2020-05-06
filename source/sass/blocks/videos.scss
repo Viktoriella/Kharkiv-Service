@@ -48,17 +48,17 @@
 .videos__wrapper {
 	position: relative;
 	width: auto;
-	height: 156px;
+	display: flex;
+	height: auto;
 	overflow: hidden;
+	min-height: 156px;
 }
 
 .videos__videofile {
-	display: block;
-	width: auto;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
+	width: 100%;
     object-fit: cover;
+    object-position: center center;
+    -webkit-border-radius: 1px;
 }
 
 .videos__article {
@@ -72,7 +72,7 @@
 	width: auto;
 
 	@media (min-width: 400px) {
-		width: 320px;
+		// width: 320px;
 		margin-bottom: 40px;
 	}	
 

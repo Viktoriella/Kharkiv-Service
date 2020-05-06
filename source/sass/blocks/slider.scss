@@ -7,7 +7,6 @@
 	margin-left: auto;
 	margin-right: auto; 
 	position: relative;
-	border: 1px solid blue;
 
 	@media (min-width: $slider-bp) {
 		width: 100%;
@@ -40,7 +39,6 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
-	border: 1px solid green;
 	display: flex;
 	justify-content: center;
 
@@ -56,6 +54,16 @@
 		padding-right: 22px;
 		margin-left: 40px;
 		margin-right: 40px;
+	}
+
+	@media (min-width: $slider-bp-2) {
+		width: 340px;
+	}
+
+	@media (min-width: $slider-bp-3) {
+		width: 520px;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
 
 	@media (min-width: $br-1600) {
@@ -74,17 +82,17 @@
 	}
 }
 
-.slick-list {
-	@media (min-width: $slider-bp) {
-		margin-left: -40px;
-		margin-right: -40px;
-	}	
+// .slick-list {
+// 	@media (min-width: $slider-bp) {
+// 		margin-left: -40px;
+// 		margin-right: -40px;
+// 	}	
 
-	@media (min-width: $br-1600) {
-		margin-left: -10px;
-		margin-right: -10px;
-	}
-}
+// 	@media (min-width: $br-1600) {
+// 		margin-left: -10px;
+// 		margin-right: -10px;
+// 	}
+// }
 
 
 
@@ -96,8 +104,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 20px;
-	padding-top: 20px;
-	border: 1px solid red;
+	padding-top: 15px;
 
 	@media (min-width: $slider-bp) {
 		width: 190px;
@@ -127,6 +134,14 @@
 		padding-bottom: 0;
 		margin-top: 20px;
 		// animation: bigger 2s ease;
+	}
+
+	@media (min-width: $slider-bp-2) {
+		width: 340px;
+	}
+
+	@media (min-width: $slider-bp-3) {
+		width: 520px;
 	}
 
 	@media (min-width: $br-1600) {
@@ -181,7 +196,6 @@
 .slider {
 	@media (min-width: $br-1024) {
 		position: relative;
-		border: 1px solid blue;
 	}
 }
 
@@ -243,8 +257,24 @@
 		top: 180px;
 	}
 
+	@media (min-width: 1100px) {
+		left: 30%;
+	}
+
+	@media (min-width: 1400px) {
+		left: 25%;
+	}
+
 	@media (min-width: $br-1600) {
-		left: 26%;
+		left: 23%;
+	}
+
+	@media (min-width: 1700px) {
+		left: 25%;
+	}
+
+	@media (min-width: 1900px) {
+		left: 28%;
 	}
 
 	&::before {
@@ -269,8 +299,24 @@
 		top: 180px;
 	}
 
+	@media (min-width: 1100px) {
+		right: 30%;
+	}
+
+	@media (min-width: 1400px) {
+		right: 25%;
+	}
+
 	@media (min-width: $br-1600) {
-		right: 26%;
+		right: 23%;
+	}
+
+	@media (min-width: 1700px) {
+		right: 25%;
+	}
+
+	@media (min-width: 1900px) {
+		right: 28%;
 	}
 
 	&::before {

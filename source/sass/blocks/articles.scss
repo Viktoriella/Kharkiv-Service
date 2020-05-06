@@ -68,37 +68,91 @@
 // 	}
 // }
 
-.articles__image {
-	width: 250px;
-	height: 156px;
-	background-image: url("../img/article-1-mobile.jpg");
-	background-size: cover;
-}
+// .articles__image {
+// 	width: 250px;
+// 	height: 156px;
+// 	background-image: url("../img/article-1-mobile.jpg");
+// 	background-size: cover;
+
+// 	@media (min-width: $tablet-more-width) {
+		
+// 	}
+// }
 
 .articles__slide {
 	@media (min-width: $tablet-more-width) {
 		padding-top: 20px;
 		width: 250px;
+		overflow: hidden;
+	}
+
+	@media (min-width: $slider-bp) {
+		width: auto;
+		padding-bottom: 30px;
+	}
+
+	@media (min-width: 1250px) {
+		width: 200px;
+	}
+
+	@media (min-width: 1600px) {
+		width: auto;
 	}
 }
 
+
+// .slick-center .articles__slide {
+// 	@media (min-width: $tablet-more-width) {
+// 		width: 450px;
+// 		transform: translateX(30px);
+// 		padding-left: 30px;
+// 		padding-right: 30px;
+// 		padding-top: 30px;
+// 	}
+// }
 
 .slick-center .articles__slide {
-	@media (min-width: $tablet-more-width) {
-		width: 450px;
-		transform: translateX(30px);
-		padding-left: 30px;
-		padding-right: 30px;
-		padding-top: 30px;
-	}
+	// @media (min-width: $tablet-more-width) {
+	// 	padding-top: 30px;
+	// 	padding-left: 30px;
+	// 	padding-right: 30px;
+
+		@media (min-width: $slider-bp) {
+			width: 240px;
+			padding-top: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+			min-height: 450px;
+		}
+
+		@media (min-width: $slider-bp-2) {
+			width: 340px;
+		}
+
+		@media (min-width: 1350px) {
+		
+		}
+
+		@media (min-width: $br-1600) {
+			// min-height: 500px;
+			// padding-top: 224px;
+			// padding-left: 35px;
+			// padding-right: 35px;
+			// width: 542px;
+
+			width: 450px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 30px;
+		}
 }
 
-.slick-center .articles__image {
-	@media (min-width: $tablet-more-width) {
-		width: 450px;
-		height: 286px;
-		background-image: url("../img/article-1-mobile.jpg");
-		background-size: cover;
-		margin-bottom: 25px;
-	}
-}
+// .slick-center .articles__image {
+// 	@media (min-width: $tablet-more-width) {
+// 		width: 450px;
+// 		height: 286px;
+// 		background-image: url("../img/article-1-mobile.jpg");
+// 		background-size: cover;
+// 		margin-bottom: 25px;
+// 	}
+// }
