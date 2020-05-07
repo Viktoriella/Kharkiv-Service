@@ -64,7 +64,7 @@
 	}
 
 	@media (min-width: $slider-bp) {
-		width: auto;
+		width: 190px;
 		padding-bottom: 30px;
 	}
 
@@ -81,21 +81,20 @@
 
 		@media (min-width: $slider-bp) {
 			width: 240px;
-			padding-top: 15px;
+			padding-top: 20px;
 			padding-left: 15px;
 			padding-right: 15px;
-			min-height: 450px;
+			min-height: 420px;
 		}
 
 		@media (min-width: $slider-bp-2) {
-			padding-top: 30px;
-			padding-left: 30px;
-			padding-right: 30px;
 			width: 340px;
 		}
 
-		@media (min-width: 1350px) {
-		
+		@media (min-width: $slider-bp-3) {
+			padding-top: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
 		}
 
 		@media (min-width: $br-1600) {
@@ -104,7 +103,6 @@
 			// padding-left: 35px;
 			// padding-right: 35px;
 			// width: 542px;
-
 			width: 450px;
 			padding-left: 30px;
 			padding-right: 30px;

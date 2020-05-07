@@ -11,6 +11,23 @@
 	}
 }
 
+@media (min-width: 240px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.logo {
+		background-image: url("../img/sprite/icon-logo.png");
+		background-repeat: no-repeat;
+		width: 95px;
+		height: 25px;
+	}
+}
+
+@media (min-width: 1400px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.logo {
+		background-image: url("../img/sprite/icon-logo-desktop.png");
+		width: 210px;
+		height: 56px;
+	}
+}
+
 .logo__image {
 	display: block;
 	width: 95px;
@@ -30,4 +47,10 @@
 		width: 210px;
 		height: 55px;
 	}
+}
+
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .logo__image {
+       display: none;
+   }
 }

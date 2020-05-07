@@ -29,6 +29,12 @@
 	}
 }
 
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.breadcrumps__list {
+		flex-direction: row;
+   }
+}
+
 .breadcrumps__link {
 
 	display: block;

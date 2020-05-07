@@ -26,6 +26,13 @@
 	order: 0;
 }
 
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .page-footer__logo {
+        background-image: none;
+        
+   }
+}
+
 .page-footer__logo-image {
 	width: 220px;
 	height: 58px;
