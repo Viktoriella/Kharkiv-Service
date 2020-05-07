@@ -1,4 +1,12 @@
 .button {
+	font-size: 12px;
+	line-height: 17px;
+
+	@media (min-width: $mobile-width) {
+		font-size: inherit;
+		line-height: inherit;
+	}
+
 	display: inline-block;
 	box-sizing: border-box;
 	padding-top: 17px;

@@ -1,3 +1,7 @@
+.brands {
+	text-align: center;
+}
+
 .brands__container {
 	background-color: #F2F9FC;
 	padding-left: 6.25%;
@@ -33,15 +37,23 @@
 	flex-wrap: wrap;
 	margin-bottom: 30px;
 
-
 	@supports (display: grid) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+			justify-content: space-between;
+			grid-row-gap: 10px;
+			grid-column-gap: 3%;
+		}
+
+	@media (min-width: $mobile-width) {
+		@supports (display: grid) {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(115px, 115px));
 			justify-content: space-between;
 			grid-row-gap: 15px;
 			grid-column-gap: 3%;
-			margin: initial;
 		}
+	}
 
 	@media (min-width: $tablet-more-width) {
 		justify-content: flex-start;
@@ -53,22 +65,31 @@
 			justify-content: space-between;
 			grid-row-gap: 35px;
 			grid-column-gap: 2.34%;
-			margin: initial;
 		}
 	}
 }
 
 .brands__item {
-	position: relative;
-	width: 115px;
-	height: 50px;
 	background-color: #ffffff;
-	border-radius: 50px;
-	margin-bottom: 15px;
+	position: relative;
+	border-radius: 25px;
+	width: 100px;
+	height: 40px;
 
 	@supports (display: grid)  {
-	    max-width: 115px;
-	}
+	    	max-width: 100px;
+		}
+
+	@media (min-width: $mobile-width) {
+		width: 115px;
+		height: 50px;
+		border-radius: 50px;
+		margin-bottom: 15px;
+
+		@supports (display: grid)  {
+	    	max-width: 115px;
+		}
+	}	
 
 	@media (min-width: $tablet-more-width) {
 		width: 150px;
@@ -287,14 +308,15 @@
 }
 
 .brands__button {
+	display: inline-block;
 	background-color: #ffffff;
 	color: $blue;
 	font-weight: 600;
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 30px;
 	padding-right: 30px;
+	width: auto;
 
 	&:hover,
 	&:active {

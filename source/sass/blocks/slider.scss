@@ -1,13 +1,13 @@
-// .slick-initialized.slick-slider .slick-slide {
-// 	width: 612px;
-// }
- 
 .slider__wrapper {
-	width: 320px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto; 
 	position: relative;
 
+	@media (min-width: $mobile-width) {
+		width: 320px;
+	}
+	
 	@media (min-width: $slider-bp) {
 		width: 100%;
 		text-align: center;
@@ -15,32 +15,32 @@
 		// временно
 		// display: none;
 	}
+
+	@media (min-width: 2050px) {
+		max-width: 2050px;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-// .slider__slide-wrapper {
-// 	@media (min-width: $tablet-more-width) {
-// 		width: 580px;
-// 	}
-// }
-
-// .slick-center .slider__slide-wrapper {
-// 	padding-left: 0;
-// 	padding-right: 0;
-// }
-
-
-
 .slider__slide {
-	width: 280px;
+	width: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 	margin-bottom: 25px;
-	margin-left: 20px;
-	margin-right: 20px;
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
+	margin-left: 6.25%;
+	margin-right: 6.25%;
+
+	@media (min-width: $mobile-width) {
+		width: 280px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 
 	@media (min-width: $slider-bp) {
 		position: relative;
@@ -104,7 +104,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 20px;
-	padding-top: 15px;
+	padding-top: 20px;
 
 	@media (min-width: $slider-bp) {
 		width: 190px;
@@ -147,7 +147,7 @@
 	@media (min-width: $br-1600) {
 		margin-top: 20px;
 		box-sizing: border-box;
-		width: 617px;
+		width: 570px;
 		padding-top: 30px;
 	}
 }
@@ -248,7 +248,11 @@
 
 .slider__arrow--left {
 	bottom: -85px;
-	left: 92px;
+	left: 52px;
+
+	@media (min-width: $mobile-width) {
+		left: 92px;
+	}
 
 	@media (min-width: $slider-bp) {
 		left: 29%;
@@ -270,11 +274,15 @@
 	}
 
 	@media (min-width: 1700px) {
-		left: 25%;
+		left: 26%;
+	}
+
+	@media (min-width: 1800px) {
+		left: 28%;
 	}
 
 	@media (min-width: 1900px) {
-		left: 28%;
+		left: 29%;
 	}
 
 	&::before {
@@ -290,7 +298,11 @@
 
 .slider__arrow--right {
 	bottom: -85px;
-	right: 92px;
+	right: 52px;
+
+	@media (min-width: $mobile-width) {
+		right: 92px;
+	}
 
 	@media (min-width: $slider-bp) {
 		right: 29%;
@@ -312,11 +324,15 @@
 	}
 
 	@media (min-width: 1700px) {
-		right: 25%;
+		right: 26%;
+	}
+
+	@media (min-width: 1800px) {
+		right: 28%;
 	}
 
 	@media (min-width: 1900px) {
-		right: 28%;
+		right: 29%;
 	}
 
 	&::before {

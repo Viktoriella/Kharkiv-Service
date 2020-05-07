@@ -1,10 +1,12 @@
-$('.slider').slick({
+$(document).ready(function() {
+  $('.slider').slick({
   draggable: true,
   centerMode: false,
   dots: true,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  speed: 800,
   initialSlide: 0,
   mobileFirst: true,
   prevArrow: '<button class="slider__arrow slider__arrow--left"></button>',
@@ -36,8 +38,9 @@ $('.slider').slick({
         slidesToShow: 3,
         variableWidth: true,
         dots: true,
-        speed: 900,
+        speed: 1000,
         accessibility: false,
+        useTransform: true,
         draggable: true
         }
       }
@@ -51,3 +54,4 @@ $('.slider').slick({
     $(window).on('resize', function() {
         $('.carousel').slick('resize');
     });
+});

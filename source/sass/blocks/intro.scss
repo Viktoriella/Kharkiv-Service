@@ -42,20 +42,22 @@
 }
 
 .intro__call {
-	width: 170px;
+
 	@include reset();
-	font-size: 14px;
-	line-height: 18px;
 	letter-spacing: 0.02em;
+	font-size: 10px;
+	line-height: 14px;
+	width: 50%;
+
+	@media (min-width: $mobile-width) {
+		font-size: 14px;
+		line-height: 18px;
+		width: 170px;
+	}
 }
 
 .intro__list {
 	@include reset-list();
-
-	@media (min-width: $tablet-more-width) {
-		// display: none;
-		// временно 
-	}
 
 	@media (min-width: $small-desktop-width) {
 		display: block;
@@ -64,16 +66,21 @@
 }
 
 .intro__tel {
+	font-size: 10px;
+	line-height: 13px;
 	display: block;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 15px;
 	font-weight: 600;
-	font-size: 12px;
-	line-height: 15px;
 	letter-spacing: 0.02em;
 	color: #222222;
 	text-decoration: none;
+
+	@media (min-width: $mobile-width) {
+		font-size: 12px;
+		line-height: 15px;		
+	}
 }
 
 .intro__tel--viber {
@@ -88,10 +95,16 @@
 }
 
 .intro__title {
+	width: auto;
+	font-size: 35px;
+	font-weight: bold;
 	@include reset();
-	width: 230px;
 	margin-bottom: 35px;
 	text-align: right;
+
+	@media (min-width: 240px) {
+		width: 230px;
+	}
 
 	@media (min-width: $tablet-more-width) {
 		margin-top: 20px;

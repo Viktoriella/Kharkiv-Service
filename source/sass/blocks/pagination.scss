@@ -1,6 +1,6 @@
 .pagination {
 	@include reset-list();
-	width: 281px;
+	width: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -9,6 +9,10 @@
 	border-radius: 4px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+
+	@media (min-width: $mobile-width) {
+		width: 281px;
+	}
 }
 
 .pagination__nav {
@@ -16,8 +20,13 @@
 	display: block;
 	font-size: 0;
 	line-height: 0;
-	width: 25px;
-	height: 30px;
+	width: 20px;
+	height: 25px;
+
+	@media (min-width: $mobile-width) {
+		width: 25px;
+		height: 30px;
+	}
 
 	&::before {
 	  	@include pseudo();
@@ -37,30 +46,48 @@
 .pagination__nav--left {
 	&::before {
 		transform: rotate(-135deg);
-		top: 10px;
-	  	left: 11px;
+		top: 8px;
+	  	left: 7px;
+
+	  	@media (min-width: $mobile-width) {
+	  		top: 10px;
+	  		left: 11px;
+		}
 	}
 }
 
 .pagination__nav--right {
 	&::before {
 		transform: rotate(45deg);
-		top: 10px;
-	  	left: 4px;
+		top: 8px;
+	  	left: 2px;
+
+	  	@media (min-width: $mobile-width) {
+			top: 10px;
+	  		left: 4px;
+		}
 	}	
 }
 
 .pagination__link {
+
 	display: block;
-	width: 30px;
-	height: 30px;
 	text-decoration: none;
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: center;
 	color: #222222;
 	background-color: #FFFFFF;
 	border-radius: 4px;
+	width: 25px;
+	height: 25px;
+
+	@media (min-width: $mobile-width) {
+		width: 30px;
+		height: 30px;
+		font-size: 15px;
+		line-height: 30px;
+	}
 }
 
 .pagination__link[href] {

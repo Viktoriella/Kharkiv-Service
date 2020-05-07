@@ -30,6 +30,7 @@
 }
 
 .breadcrumps__link {
+
 	display: block;
 	font-size: 14px;
 	letter-spacing: 0.02em;
@@ -37,8 +38,13 @@
 	color: #222222;
 	text-decoration: none;
 	margin-bottom: 10px;
-	margin-right: 57px;
+	margin-right: 10px;
 	font-weight: 600;
+
+	@media (min-width: $mobile-width) {
+		margin-right: 57px;
+	}
+	
 
 	@media (min-width: $tablet-small-width) {
 		margin-right: 40px;

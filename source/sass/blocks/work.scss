@@ -119,28 +119,38 @@
 .work__subtitle {
 	@include reset();
 	font-weight: bold;
-	font-size: 20px;
-	line-height: 136.4%;
+	font-size: 16px;
+	line-height: 22px;
+
+	@media (min-width: $mobile-width) {
+		font-size: 20px;
+		line-height: 27px;
+	}
 
 	@media (min-width: $tablet-small-width) {
 		font-size: 19px;
+		line-height: 25px;
 	}
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 15px;
 		font-size: 25px;
+		line-height: 33px;
 	}
 
 	@media (min-width: $tablet-more-width) {
 		font-size: 15px;
+		line-height: 20px;
 	}
 
 	@media (min-width: $br-960) {
 		font-size: 16px;
+		line-height: 22px;
 	}
 
 	@media (min-width: $small-desktop-width) {
 		font-size: 18px;
+		line-height: 30px;
 	}
 
 	@media (min-width: $smaller-desktop-width) {

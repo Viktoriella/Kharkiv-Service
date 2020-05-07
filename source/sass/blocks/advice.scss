@@ -69,8 +69,16 @@
 }
 
 .advice__title {
-	font-size: 20px;
-	line-height: 136.4%;
+	@include reset();
+	margin-bottom: 5px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 21px;
+
+	@media (min-width: $mobile-width) {
+		font-size: 20px;
+		line-height: 27px;
+	}
 }
 
 .advice__link {
@@ -111,22 +119,12 @@
 }
 
 .advice__text {
-	font-size: 18px;
 	margin-bottom: 20px;
 }
 
 .advice__subtitle--accent {
 	color: $blue;
 	margin-bottom: 15px;
-}
-
-.advice__subtitle {
-	font-size: 18px;
-	line-height: 25px;
-
-	@media (min-width: $tablet-more-width) {
-
-	}
 }
 
 .article__list {
