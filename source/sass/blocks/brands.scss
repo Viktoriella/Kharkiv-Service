@@ -112,6 +112,157 @@
 	height: 100%;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .brands__item {
+   	position: relative;
+
+   		&::before {
+	        @include pseudo();
+	        top: 50%;
+	        left: 50%;
+	        transform: translate(-50%, -50%);
+   		}
+   }
+}
+
+@media (min-width: $br-240) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+   .brands__item-1::before {
+		@include sprite(-5px, -135px, 55px, 18px);
+   }
+
+    .brands__item-2::before {
+		@include sprite(-5px, -322px, 55px, 10px);
+   }
+
+    .brands__item-3::before {
+		@include sprite(-5px, -342px, 55px, 15px);
+   }   
+
+   .brands__item-4::before {
+		@include sprite(-5px, -367px, 55px, 15px);
+   }
+
+   .brands__item-5::before {
+		@include sprite(-5px, -392px, 55px, 23px);
+   }
+
+   .brands__item-6::before {
+		@include sprite(-5px, -425px, 55px, 25px);
+   }
+
+   .brands__item-7::before {
+		@include sprite(-5px, -460px, 55px, 17px);
+   }
+
+   .brands__item-8::before {
+		@include sprite(-5px, -487px, 55px, 13px);
+   }
+
+   .brands__item-9::before {
+		@include sprite(-5px, -510px, 55px, 15px);
+   }
+
+   .brands__item-10::before {
+		@include sprite(-5px, -163px, 55px, 15px);
+   }
+
+   .brands__item-11::before {
+		@include sprite(-5px, -188px, 55px, 12px);
+   }
+
+   .brands__item-12::before {
+		@include sprite(-5px, -210px, 55px, 9px);
+   }
+
+   .brands__item-13::before {
+		@include sprite(-5px, -229px, 55px, 19px);
+   }
+
+   .brands__item-14::before {
+		@include sprite(-5px, -258px, 55px, 12px);
+   }
+
+   .brands__item-15::before {
+		@include sprite(-5px, -280px, 55px, 13px);
+   }
+
+   .brands__item-16::before {
+		@include sprite(-5px, -303px, 55px, 9px);
+   }
+}
+
+@media (min-width: $tablet-more-width) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+   .brands__item-1::before {
+		@include sprite(-5px, -535px, 75px, 24px);
+   }
+
+    .brands__item-2::before {
+		@include sprite(-5px, -779px, 75px, 14px);
+   }
+
+    .brands__item-3::before {
+		@include sprite(-5px, -803px, 75px, 20px);
+   }   
+
+   .brands__item-4::before {
+		@include sprite(-5px, -833px, 75px, 21px);
+   }
+
+   .brands__item-5::before {
+		@include sprite(-5px, -864px, 75px, 32px);
+   }
+
+   .brands__item-6::before {
+		@include sprite(-5px, -906px, 75px, 33px);
+   }
+
+   .brands__item-7::before {
+		@include sprite(-5px, -949px, 75px, 24px);
+   }
+
+   .brands__item-8::before {
+		@include sprite(-5px, -983px, 75px, 17px);
+   }
+
+   .brands__item-9::before {
+		@include sprite(-5px, -1010px, 75px, 20px);
+   }
+
+   .brands__item-11::before {
+		@include sprite(-5px, -569px, 75px, 17px);
+   }
+
+   .brands__item-12::before {
+		@include sprite(-5px, -596px, 75px, 12px);
+   }
+
+   .brands__item-13::before {
+		@include sprite(-5px, -618px, 75px, 25px);
+   }
+
+   .brands__item-14::before {
+		@include sprite(-5px, -653px, 75px, 16px);
+   }
+
+   .brands__item-15::before {
+		@include sprite(-5px, -679px, 75px, 17px);
+   }
+
+   .brands__item-16::before {
+		@include sprite(-5px, -706px, 75px, 12px);
+   }
+
+     .brands__item-17::before {
+		@include sprite(-5px, -728px, 75px, 17px);
+   }
+
+   .brands__item-18::before {
+		@include sprite(-5px, -755px, 75px, 14px);
+   }
+}
+
 .brands__item--desktop {
 	display: none;
 	
@@ -125,6 +276,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .brands__icon {
+        display: none;
+   }
 }
 
 .brands__icon-1 {

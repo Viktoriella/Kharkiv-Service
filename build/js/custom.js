@@ -19,7 +19,7 @@
 			priceMoreBtn.classList.add('price__button--more--closed');
 			priceMoreBtn.classList.remove('price__button--more--opened');
 			priceInfo.classList.add('price-information--closed');
-			priceInfo.classList.remove('price-information--opened');	
+			priceInfo.classList.remove('price-information--opened');
 		};
 	};
 
@@ -32,12 +32,18 @@
 
 	var priceMobileBtn = document.querySelector(".price__button--mobile");
 	var priceMobile = document.querySelector(".price__tablet-show");
+	var priceTable = document.querySelector(".price__table--mobile-only");
+	var lastRow = document.querySelector(".price__row--last-mobile");
 
 	var priceTableHandler = function() {
 		if (priceMobile.classList.contains('price__tablet-show--closed')) {
 			priceMobileBtn.textContent = "Свернуть";
 			priceMobileBtn.classList.add('price__button--mobile-arrow-up');
 			priceMobileBtn.classList.remove('price__button--mobile-arrow-down');
+			priceTable.classList.add('price__table--opened');
+			priceTable.classList.remove('price__table--closed');
+			lastRow.classList.add('price__table--opened');
+			lastRow.classList.remove('price__table--closed');
 			priceMobile.classList.add('price__tablet-show--opened');
 			priceMobile.classList.remove('price__tablet-show--closed');
 
@@ -45,6 +51,10 @@
 			priceMobileBtn.textContent = "Развернуть";
 			priceMobileBtn.classList.add('price__button--mobile-arrow-down');
 			priceMobileBtn.classList.remove('price__button--mobile-arrow-up');
+			priceTable.classList.add('price__table--closed');
+			priceTable.classList.remove('price__table--opened');
+			lastRow.classList.add('price__table--closed');
+			lastRow.classList.remove('price__table--opened');
 			priceMobile.classList.add('price__tablet-show--closed');
 			priceMobile.classList.remove('price__tablet-show--opened');
 		};

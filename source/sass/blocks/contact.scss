@@ -31,20 +31,15 @@
 }
 
 .contact__link--google {
-	@include sprite(-20px, -152px, 30px, 30px);
-
-	// &:hover,
-	// &:active {
-	// 	@include sprite(-20px, -292px, 30px, 30px);
-	// }
+	@include sprite(-5px, -1169px, 30px, 30px);
 }
 
 .contact__link--instagram {
-	@include sprite(-20px, -572px, 30px, 30px);
+	@include sprite(-5px, -1289px, 30px, 30px);
 }
 
 .contact__link--youtube {
-	@include sprite(-20px, -2088px, 30px, 30px);
+	@include sprite(-5px, -2283px, 30px, 30px);
 }
 
 .contact__subtitle {

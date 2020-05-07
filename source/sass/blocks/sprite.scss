@@ -8,99 +8,251 @@
     background-image: url(spritesheet.png);    background-repeat: no-repeat;
     display: block;
 
+    &.sprite-big-quotes {
+        .stitches-sprite(-5px, -5px, 150px, 120px);
+    }
+
+    &.sprite-ico-brand-1 {
+        .stitches-sprite(-5px, -135px, 55px, 18px);
+    }
+
+    &.sprite-ico-brand-10 {
+        .stitches-sprite(-5px, -163px, 55px, 15px);
+    }
+
+    &.sprite-ico-brand-11 {
+        .stitches-sprite(-5px, -188px, 55px, 12px);
+    }
+
+    &.sprite-ico-brand-12 {
+        .stitches-sprite(-5px, -210px, 55px, 9px);
+    }
+
+    &.sprite-ico-brand-13 {
+        .stitches-sprite(-5px, -229px, 55px, 19px);
+    }
+
+    &.sprite-ico-brand-14 {
+        .stitches-sprite(-5px, -258px, 55px, 12px);
+    }
+
+    &.sprite-ico-brand-15 {
+        .stitches-sprite(-5px, -280px, 55px, 13px);
+    }
+
+    &.sprite-ico-brand-16 {
+        .stitches-sprite(-5px, -303px, 55px, 9px);
+    }
+
+    &.sprite-ico-brand-2 {
+        .stitches-sprite(-5px, -322px, 55px, 10px);
+    }
+
+    &.sprite-ico-brand-3 {
+        .stitches-sprite(-5px, -342px, 55px, 15px);
+    }
+
+    &.sprite-ico-brand-4 {
+        .stitches-sprite(-5px, -367px, 55px, 15px);
+    }
+
+    &.sprite-ico-brand-5 {
+        .stitches-sprite(-5px, -392px, 55px, 23px);
+    }
+
+    &.sprite-ico-brand-6 {
+        .stitches-sprite(-5px, -425px, 55px, 25px);
+    }
+
+    &.sprite-ico-brand-7 {
+        .stitches-sprite(-5px, -460px, 55px, 17px);
+    }
+
+    &.sprite-ico-brand-8 {
+        .stitches-sprite(-5px, -487px, 55px, 13px);
+    }
+
+    &.sprite-ico-brand-9 {
+        .stitches-sprite(-5px, -510px, 55px, 15px);
+    }
+
+    &.sprite-ico-brand-desktop-1 {
+        .stitches-sprite(-5px, -535px, 75px, 24px);
+    }
+
+    &.sprite-ico-brand-desktop-11 {
+        .stitches-sprite(-5px, -569px, 75px, 17px);
+    }
+
+    &.sprite-ico-brand-desktop-12 {
+        .stitches-sprite(-5px, -596px, 75px, 12px);
+    }
+
+    &.sprite-ico-brand-desktop-13 {
+        .stitches-sprite(-5px, -618px, 75px, 25px);
+    }
+
+    &.sprite-ico-brand-desktop-14 {
+        .stitches-sprite(-5px, -653px, 75px, 16px);
+    }
+
+    &.sprite-ico-brand-desktop-15 {
+        .stitches-sprite(-5px, -679px, 75px, 17px);
+    }
+
+    &.sprite-ico-brand-desktop-16 {
+        .stitches-sprite(-5px, -706px, 75px, 12px);
+    }
+
+    &.sprite-ico-brand-desktop-17 {
+        .stitches-sprite(-5px, -728px, 75px, 17px);
+    }
+
+    &.sprite-ico-brand-desktop-18 {
+        .stitches-sprite(-5px, -755px, 75px, 14px);
+    }
+
+    &.sprite-ico-brand-desktop-2 {
+        .stitches-sprite(-5px, -779px, 75px, 14px);
+    }
+
+    &.sprite-ico-brand-desktop-3 {
+        .stitches-sprite(-5px, -803px, 75px, 20px);
+    }
+
+    &.sprite-ico-brand-desktop-4 {
+        .stitches-sprite(-5px, -833px, 75px, 21px);
+    }
+
+    &.sprite-ico-brand-desktop-5 {
+        .stitches-sprite(-5px, -864px, 75px, 32px);
+    }
+
+    &.sprite-ico-brand-desktop-6 {
+        .stitches-sprite(-5px, -906px, 75px, 33px);
+    }
+
+    &.sprite-ico-brand-desktop-7 {
+        .stitches-sprite(-5px, -949px, 75px, 24px);
+    }
+
+    &.sprite-ico-brand-desktop-8 {
+        .stitches-sprite(-5px, -983px, 75px, 17px);
+    }
+
+    &.sprite-ico-brand-desktop-9 {
+        .stitches-sprite(-5px, -1010px, 75px, 20px);
+    }
+
     &.sprite-icon-arrow-down {
-        .stitches-sprite(-20px, -20px, 16px, 36px);
+        .stitches-sprite(-5px, -1040px, 16px, 36px);
     }
 
     &.sprite-icon-arrow-right {
-        .stitches-sprite(-20px, -96px, 170px, 16px);
+        .stitches-sprite(-5px, -1086px, 170px, 16px);
+    }
+
+    &.sprite-icon-arrow-right-small {
+        .stitches-sprite(-5px, -1112px, 33px, 16px);
+    }
+
+    &.sprite-icon-brand-desktop-10 {
+        .stitches-sprite(-5px, -1138px, 75px, 21px);
     }
 
     &.sprite-icon-google {
-        .stitches-sprite(-20px, -152px, 30px, 30px);
+        .stitches-sprite(-5px, -1169px, 30px, 30px);
     }
 
     &.sprite-icon-google-footer {
-        .stitches-sprite(-20px, -222px, 30px, 30px);
+        .stitches-sprite(-5px, -1209px, 30px, 30px);
     }
 
     &.sprite-icon-google-hover {
-        .stitches-sprite(-20px, -292px, 30px, 30px);
+        .stitches-sprite(-5px, -1249px, 30px, 30px);
     }
 
     &.sprite-icon-instagram {
-        .stitches-sprite(-20px, -362px, 30px, 30px);
+        .stitches-sprite(-5px, -1289px, 30px, 30px);
     }
 
     &.sprite-icon-instagram-footer {
-        .stitches-sprite(-20px, -432px, 30px, 30px);
+        .stitches-sprite(-5px, -1329px, 30px, 30px);
     }
 
     &.sprite-icon-instagram-hover {
-        .stitches-sprite(-20px, -502px, 30px, 30px);
+        .stitches-sprite(-5px, -1369px, 30px, 30px);
     }
 
     &.sprite-icon-instagram-white {
-        .stitches-sprite(-20px, -572px, 30px, 30px);
+        .stitches-sprite(-5px, -1409px, 30px, 30px);
+    }
+
+    &.sprite-icon-logo {
+        .stitches-sprite(-5px, -1449px, 95px, 25px);
+    }
+
+    &.sprite-icon-logo-desktop {
+        .stitches-sprite(-5px, -1484px, 210px, 56px);
     }
 
     &.sprite-icon-menu-close {
-        .stitches-sprite(-20px, -642px, 42px, 42px);
+        .stitches-sprite(-5px, -1550px, 42px, 42px);
     }
 
     &.sprite-icon-menu-open {
-        .stitches-sprite(-20px, -724px, 42px, 42px);
+        .stitches-sprite(-5px, -1602px, 42px, 42px);
     }
 
     &.sprite-icon-play {
-        .stitches-sprite(-20px, -806px, 77px, 56px);
-    }
-
-    &.sprite-icon-quotes {
-        .stitches-sprite(-20px, -902px, 85px, 68px);
-    }
-
-    &.sprite-icon-quotes-desktop {
-        .stitches-sprite(-20px, -1010px, 150px, 120px);
-    }
-
-    &.sprite-icon-star {
-        .stitches-sprite(-20px, -1170px, 11px, 11px);
+        .stitches-sprite(-5px, -1654px, 77px, 56px);
     }
 
     &.sprite-icon-viber {
-        .stitches-sprite(-20px, -1221px, 27px, 13px);
+        .stitches-sprite(-5px, -1720px, 27px, 13px);
     }
 
     &.sprite-icon-work-1 {
-        .stitches-sprite(-20px, -1274px, 163px, 146px);
+        .stitches-sprite(-5px, -1743px, 132px, 115px);
     }
 
     &.sprite-icon-work-2 {
-        .stitches-sprite(-20px, -1460px, 163px, 146px);
+        .stitches-sprite(-5px, -1868px, 132px, 115px);
     }
 
     &.sprite-icon-work-3 {
-        .stitches-sprite(-20px, -1646px, 163px, 146px);
+        .stitches-sprite(-5px, -1993px, 132px, 115px);
     }
 
     &.sprite-icon-work-4 {
-        .stitches-sprite(-20px, -1832px, 163px, 146px);
+        .stitches-sprite(-5px, -2118px, 132px, 115px);
     }
 
     &.sprite-icon-youtube {
-        .stitches-sprite(-20px, -2018px, 30px, 30px);
+        .stitches-sprite(-5px, -2243px, 30px, 30px);
     }
 
     &.sprite-icon-youtube-blue {
-        .stitches-sprite(-20px, -2088px, 30px, 30px);
+        .stitches-sprite(-5px, -2283px, 30px, 30px);
     }
 
     &.sprite-icon-youtube-footer {
-        .stitches-sprite(-20px, -2158px, 30px, 30px);
+        .stitches-sprite(-5px, -2323px, 30px, 30px);
     }
 
     &.sprite-icon-youtube-hover {
-        .stitches-sprite(-20px, -2228px, 30px, 30px);
+        .stitches-sprite(-5px, -2363px, 30px, 30px);
+    }
+
+    &.sprite-quotes {
+        .stitches-sprite(-5px, -2403px, 120px, 96px);
+    }
+
+    &.sprite-quotes-desktop {
+        .stitches-sprite(-5px, -2509px, 150px, 120px);
+    }
+
+    &.sprite-small-quotes {
+        .stitches-sprite(-5px, -2639px, 85px, 68px);
     }
 }

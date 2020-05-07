@@ -14,7 +14,7 @@
 
 	&::after {
 		@include pseudo();
-		@include sprite(-20px, -902px, 85px, 68px);
+		@include sprite(-5px, -2639px, 85px, 68px);
 		top: 45px;
 		left: 50%;
 		transform: translateX(-50%);
@@ -44,7 +44,7 @@
 
 			&::after {
 				@include pseudo();
-				@include sprite(-20px, -1010px, 150px, 120px);
+				@include sprite(-5px, -2509px, 150px, 120px);
 				top: 45px;
 				left: 50%;
 				transform: translateX(-50%);

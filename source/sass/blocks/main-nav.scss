@@ -57,7 +57,7 @@
 		background-color: $blue;
 		width: 30px;
 		height: 30px;
-		@include sprite(-26px, -726px, 30px, 30px);
+		@include sprite(-11px, -1604px, 30px, 30px);
 		box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
 	}
 
@@ -65,7 +65,7 @@
 		background-color: #ffffff;
 		width: 30px;
 		height: 30px;
-		@include sprite(-26px, -644px, 30px, 30px);
+		@include sprite(-11px, -1551px, 30px, 30px);
 		box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
 	}
 }
