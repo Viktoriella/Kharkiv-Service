@@ -16,12 +16,22 @@
 }
 
 .advice__image-container {
-	height: auto;
+	height: 50%;
+	width: auto;
+	display: flex;
+	overflow: hidden;
 
 	@media (min-width: $tablet-more-width) {
 		width: 96%;
 		height: auto;
 	} 
+}
+
+.advice__image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center center;
 }
 
 .advice {
@@ -40,7 +50,7 @@
 
 	@media (min-width: $tablet-more-width) {
 		margin-top: 100px;
-		width: 90%;
+		width: 60.632%;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 30px;
@@ -50,8 +60,7 @@
 	}
 
 	@media (min-width: $small-desktop-width) {
-		margin-top: 0;
-		width: 60.632%;
+		margin-top: 0;	
 	}
 }
 
@@ -124,6 +133,32 @@
 .advice__text {
 	margin-bottom: 20px;
 }
+
+.advice__subtitle {
+
+		@media (min-width: $tablet-width) {
+		font-size: 15px;
+		line-height: 21.5px;
+	}
+
+	@media (min-width: $tablet-more-width) {
+		font-size: 15px;
+		line-height: 21.5px;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	@media (min-width: $br-960) {
+		font-size: 15px;
+		line-height: 21.5px;
+	}
+
+	@media (min-width: $smaller-desktop-width) {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+}
+
 
 .advice__subtitle--accent {
 	color: $blue;
