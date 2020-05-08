@@ -57,6 +57,13 @@
 }
 
 .articles__slide {
+	color: #222222;
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		background-color: rgba(185, 185, 185, 0.2);
+	}
 	@media (min-width: $tablet-more-width) {
 		padding-top: 20px;
 		width: 250px;
