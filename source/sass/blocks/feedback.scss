@@ -25,10 +25,14 @@
 .feedback__form {
 	margin-bottom: 30px;
 
-	@media (min-width: $tablet-more-width) {
-		width: 531px;
+	@media (min-width: $mobile-width) {
+		width: 280px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	@media (min-width: $tablet-more-width) {
+		width: 531px;
 		background-image: url("../img/quotes.png");
 		background-repeat: no-repeat;
 		background-position: top center;
@@ -47,15 +51,22 @@
 	box-sizing: border-box;
 	border-radius: 8px;
 	width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 22px;
-	padding-bottom: 21px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 13px;
+	padding-bottom: 10px;
 	border: 1px solid #979797;
 
+	@media (min-width: $tablet-more-width) {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 22px;
+		padding-bottom: 21px;		
+	}
+
 	&::placeholder {
-		font-size: 18px;
-		line-height: 22px;
+		font-size: inherit;
+		line-height: inherit;
 		letter-spacing: 0.02em;
 		color: #B9B9B9;
 	}
@@ -72,16 +83,16 @@
 	box-sizing: border-box;
 	border-radius: 8px;
 	width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 22px;
-	padding-bottom: 21px;
 	border: 1px solid #979797;
 	max-width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 13px;
+	padding-bottom: 10px;
 
 		&::placeholder {
-		font-size: 18px;
-		line-height: 22px;
+		font-size: inherit;
+		line-height: inherit;
 		letter-spacing: 0.02em;
 		color: #B9B9B9;
 	}
@@ -93,6 +104,13 @@
 	&:hover,
 	&:focus {
 		border: 1px solid #222222;
+	}
+
+	@media (min-width: $tablet-more-width) {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 22px;
+		padding-bottom: 21px;		
 	}
 }
 

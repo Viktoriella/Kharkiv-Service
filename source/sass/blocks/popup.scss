@@ -127,7 +127,7 @@
 		transform: rotate(-45deg);
 	}
 
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $smaller-desktop-width) {
 		top: 0;
 		right: -50px;
 	}

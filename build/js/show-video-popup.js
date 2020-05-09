@@ -1,7 +1,7 @@
 'use strict';
 
 (function(){
-	var showPopupButtons = document.querySelectorAll('.video__play-button');
+	var showPopupButtons = document.querySelectorAll('.video--play');
 	var overlay = document.querySelector('.popup__overlay');
 	var popup = document.querySelector('.popup');
 	var popupCloseButton = popup.querySelector('.popup__close');

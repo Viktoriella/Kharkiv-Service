@@ -102,9 +102,13 @@
 .video__slide {
 	position: relative;
 
-	// @media (min-width: 1250px) {
-	// 	width: 200px;
-	// }
+	&:hover {
+		background-color: rgba(185, 185, 185, 0.2);
+	}
+}
+
+.video--play {
+	cursor: pointer;
 }
 
 .video__container {

@@ -126,24 +126,26 @@
 	line-height: 22px;
 
 	@media (min-width: $mobile-width) {
-		font-size: 20px;
-		line-height: 27px;
+		// font-size: 20px;
+		// line-height: 27px;
 	}
 
 	@media (min-width: $tablet-small-width) {
-		font-size: 19px;
-		line-height: 25px;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
 	}
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 15px;
-		font-size: 25px;
-		line-height: 33px;
+		font-size: 20px;
+		line-height: 27px;
 	}
 
 	@media (min-width: $tablet-more-width) {
 		font-size: 15px;
 		line-height: 20px;
+		text-align: left;
 	}
 
 	@media (min-width: $br-960) {

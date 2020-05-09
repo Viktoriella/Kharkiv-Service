@@ -25,6 +25,7 @@
 		border-radius: none;
 		padding-left: 0;
 		padding-right: 0;
+		padding-bottom: 5px;
 	}
 }
 
@@ -37,5 +38,27 @@
 	.page-header__container--opened {
 		box-shadow: none;
 		border-radius: none;
+	}
+}
+
+.page-header__heading-text {
+	display: none;
+	
+	@media (min-width: $tablet-more-width) {
+		display: block;
+		@include reset();
+		padding-top: 5px;
+		font-size: 13px;
+		line-height: 13px;
+	}
+	
+	@media (min-width: $br-1400) {
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	@media (min-width: $br-1800) {
+		font-size: 15px;
+		line-height: 15px;
 	}
 }

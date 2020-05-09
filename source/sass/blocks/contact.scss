@@ -1,4 +1,4 @@
-.contact { 
+.contact {
 	text-align: left;
 	padding-left: 6.25%;
 	padding-right: 6.25%;
@@ -47,10 +47,48 @@
 	font-size: 18px;
 	line-height: 25px;
 	margin-bottom: 6px;
+
+	@media (min-width: 520px) {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	@media (min-width: $tablet-more-width) {
+		font-size: 18px;
+		line-height: 25px;
+	}
 }
 
 .contact__list {
 	@include reset-list();
+}
+
+.contact__item--viber {
+	position: relative;
+
+	&::before {
+		@include pseudo();
+		@include sprite(-5px, -1720px, 27px, 13px);
+
+		@media (min-width: $mobile-width) {
+			top: 6px;
+			left: auto;
+			right: 50%;
+		}
+
+		@media (min-width: 380px) {
+			top: 6px;
+			left: -35px;
+		}
+		
+	}
+}
+
+.contact__wrapper-mobile {
+	@media (min-width: 520px) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .contact__phones {
@@ -70,7 +108,20 @@
 	}
 }
 
+.contact__title {
+	@media (min-width: 520px) {
+		margin-bottom: 40px;
+	}
+}
+
 .contact__phones--mobile {
+	@media (min-width: 520px) {
+		width: 150px;
+	}
+
+	@media (min-width: $tablet-width) {
+		width: auto;
+	}
 
 	@media (min-width: $tablet-more-width) {
 		display: none;

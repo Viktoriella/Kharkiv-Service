@@ -1,15 +1,19 @@
 .contacts {
 	font-size: 15px;
+	
+	@media (min-width: 400px) {
+		text-align: center;
+	}
 
-	@media (min-width: $tablet-small-width) {
+	@media (min-width: $tablet-width) {
 		display: flex;
 		justify-content: space-between;
+		text-align: left;
 	}
 
 	@media (min-width: $tablet-more-width) {
 		display: flex;
 		justify-content: space-between;
-		order: 2;
 		font-size: 18px;
 	}
 }
@@ -43,7 +47,15 @@
 }
 
 .contacts__wrapper {
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $tablet-width) {
+		margin-right: 47px;
+	}
+
+	@media (min-width: $small-desktop-width) {
 		margin-right: 147px;
+	}
+
+	@media (min-width: 1500px) {
+		margin-right: 70px;
 	}
 }

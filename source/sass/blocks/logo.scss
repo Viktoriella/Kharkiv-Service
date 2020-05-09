@@ -34,20 +34,26 @@
 	width: 95px;
 	height: 25px;
 
-	@media (min-width: $tablet-more-width) {
-		width: 210px;
-		height: 55px;
-	}
+	// @media (min-width: $tablet-more-width) {
+	// 	width: 210px;
+	// 	height: 55px;
+	// }
 
-	@media (min-width: $br-960) {
-		width: 150px;
+	@media (min-width: $tablet-more-width) {
+		width: 160px;
 		height: auto;
 	}
 
-	@media (min-width: 1400px) {
+	@media (min-width: $br-1400) {
+		width: 180px;
+		height: auto;
+	}
+
+	@media (min-width: $br-1800) {
 		width: 210px;
 		height: 55px;
 	}
+
 }
 
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {

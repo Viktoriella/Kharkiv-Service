@@ -72,23 +72,25 @@ body {
 	line-height: 20px;
 
 	@media (min-width: $mobile-width) {
-		font-size: 18px;
-		line-height: 26px;
+		// font-size: 18px;
+		// line-height: 26px;
+		font-size: 14px;
+		line-height: 23px;
 	}
 
 	@media (min-width: $tablet-small-width) {
-		font-size: 16px;
-		line-height: 23px;
+		font-size: 15px;
+		line-height: 25px;
 	}
 
 	@media (min-width: $tablet-width) {
 		font-size: 15px;
-		line-height: 21.5px;
+		line-height: 25px;
 	}
 
 	@media (min-width: $tablet-more-width) {
 		font-size: 15px;
-		line-height: 21.5px;
+		line-height: 25px;
 		// min-width: $tablet-more-width;
 		// max-width: $desktop-width;
 		font-family: 'Montserrat', sans-serif;
@@ -96,7 +98,7 @@ body {
 
 	@media (min-width: $br-960) {
 		font-size: 15px;
-		line-height: 21.5px;
+		line-height: 24px;
 	}
 
 	@media (min-width: $smaller-desktop-width) {
@@ -105,12 +107,12 @@ body {
 	}
 }
 
-.main-page__container {
+.main-page__container {	
 	@media (min-width: $tablet-more-width) {
 		background-image: url("../img/bg-desktop.jpg");
 		background-repeat: no-repeat;
 		background-position: top center;
-		background-size: cover;
+		background-size: contain;
 	}
 }
 

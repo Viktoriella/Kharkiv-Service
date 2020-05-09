@@ -20,10 +20,14 @@
 	padding-right: 6.25%;
 
 	@media (min-width: $tablet-more-width) {
-		margin-top: 120px;
+		margin-top: 200px;
 		margin-bottom: 30px;
 		padding-left: 178px;
 		padding-right: 178px;
+	}
+
+	@media (min-width: $small-desktop-width) {
+		margin-top: 220px;
 	}
 }
 
