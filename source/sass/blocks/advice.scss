@@ -35,14 +35,16 @@
 }
 
 .advice__image-container {
-	height: 50%;
-	width: auto;
+	width: 100%;
+	height: auto;
 	display: flex;
 	overflow: hidden;
 
 	@media (min-width: $tablet-more-width) {
 		width: 96%;
 		height: auto;
+		display: flex;
+		overflow: hidden;
 	} 
 }
 
@@ -63,6 +65,37 @@
 	height: auto;
 	object-fit: cover;
 	object-position: center center;
+
+	@media (min-width: $tablet-more-width) {
+		height: 100%;
+		width: auto;
+		object-fit: cover;
+		object-position: center center;
+	}
+}
+
+.advice__image--var {
+	width: 100%;
+	clear: both;
+
+	@media (min-width: $tablet-small-width) {
+		width: auto;
+		object-fit: none;
+		object-position: none;
+		float: left;
+		padding-right: 20px;
+	}
+
+	@media (min-width: $small-desktop-width) {
+		width: 50%;
+		padding-right: 30px;
+		padding-bottom: 10px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: auto;
+		padding-right: 35px;
+	}
 }
 
 .advice__image--var2 {
@@ -98,7 +131,13 @@
 	}
 
 	@media (min-width: $small-desktop-width) {
-		margin-top: 0;	
+		margin-top: 0;
+	}
+}
+
+.advice--var {
+	@media (min-width: $tablet-more-width) {
+		display: block;
 	}
 }
 
@@ -109,12 +148,18 @@
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		width: 94%;
+		width: 64.632%;
 	}
 	
 	@media (min-width: $small-desktop-width) {
-		width: 64.632%;
 		margin-bottom: 80px;
+	}
+}
+
+.advice__description--var2 {
+	@media (min-width: $small-desktop-width) {
+		width: 64.632%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -192,6 +237,11 @@
 	margin-bottom: 20px;
 }
 
+.advice__text--var {
+	@include reset();
+	margin-bottom: 20px;
+}
+
 .advice__subtitle {
 
 		@media (min-width: $tablet-width) {
@@ -229,16 +279,29 @@
 }
 
 .advice__block {
-	@media (min-width: $tablet-more-width) {
+	@media (min-width: $small-desktop-width) {
 		width: 48.5%;
 	}
 }
 
 .advice__line {
+	@media (min-width: $small-desktop-width) {
+		display: flex;
+		justify-content: space-between;	
+		margin-bottom: 40px;
+	}	
+}
 
+.advice__line--description {
 	@media (min-width: $tablet-more-width) {
 		display: flex;
 		justify-content: space-between;	
 		margin-bottom: 40px;
 	}	
+}
+
+.advice__block--description {
+	@media (min-width: $tablet-more-width) {
+		width: 48.5%;
+	}
 }

@@ -20,6 +20,11 @@
 			closeCallbackPopup();
 		});
 
+		overlay.addEventListener('click', function(evt) {
+			evt.preventDefault();
+			closeCallbackPopup();
+		});
+
 		var closePopupEsc = function(evt) {
 			if (evt.keyCode === 27) {
 				evt.preventDefault();

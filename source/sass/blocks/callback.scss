@@ -229,6 +229,16 @@
 	}
 }
 
+.callback__input--footer {
+	@media (min-width: $smaller-desktop-width) {
+		width: 270px;
+	}
+
+	@media (min-width: 1450px) {
+		width: 290px;
+	}
+}
+
 .callback__input--var2 {
 	@media (min-width: $tablet-more-width) {
 		width: auto;
