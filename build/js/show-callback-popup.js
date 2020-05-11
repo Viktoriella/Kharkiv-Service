@@ -35,11 +35,18 @@
 		document.addEventListener('keydown', closePopupEsc);
 	};
 
-	callbackButtons.forEach(function(button) {
-		button.addEventListener('click', function(evt) {
+	for (var i = 0; i < callbackButtons.length; i++) {
+		callbackButtons[i].addEventListener('click', function(evt) {
 			evt.preventDefault();
 			callbackPopupHandler();
 		});
-	})
+	}
+
+	// callbackButtons.forEach(function(button) {
+	// 	button.addEventListener('click', function(evt) {
+	// 		evt.preventDefault();
+	// 		callbackPopupHandler();
+	// 	});
+	// })
 
 }());

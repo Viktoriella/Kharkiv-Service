@@ -421,6 +421,10 @@ input:active, textarea:active {
 html {
   overflow-x: hidden; }
 
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    overflow-x: auto; } }
+
 body {
   margin: 0;
   color: #222222;
@@ -462,10 +466,6 @@ body {
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover; } }
-
-@media (min-width: 1920px) {
-  .main-page__container {
-    background-size: contain; } }
 
 .visually-hidden {
   width: 1px;
@@ -1190,6 +1190,17 @@ body {
   -o-object-position: center center;
      object-position: center center; }
 
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .article__image-container {
+    position: relative; }
+  .article__image {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+
 .articles__slide .article__image-container {
   margin-bottom: 10px; }
 
@@ -1312,6 +1323,8 @@ body {
     .intro__tel {
       font-size: 12px;
       line-height: 15px; } }
+  .intro__tel:hover, .intro__tel:active {
+    color: rgba(34, 34, 34, 0.5); }
 
 .intro__tel--viber {
   position: relative; }
@@ -2083,6 +2096,16 @@ body {
 .price__container {
   display: flex;
   flex-direction: column; }
+
+@media (min-width: 1200px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .price__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  .price__row th.price__price,
+  .price__row td.price__price {
+    width: 10%; } }
 
 .price__tablet-show {
   display: none; }

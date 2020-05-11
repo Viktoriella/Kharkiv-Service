@@ -35,16 +35,18 @@
 		document.addEventListener('keydown', closePopupEsc);
 	};
 	
-	// showPopupButton.addEventListener('click', function(evt) {
+	for (var i = 0; i < showPopupButtons.length; i++) {
+		showPopupButtons[i].addEventListener('click', function(evt) {
+			evt.preventDefault();
+			popupHandler();
+		});
+	}
+
+	// showPopupButtons.forEach(function(button) {
+	// 	button.addEventListener('click', function(evt) {
 	// 	evt.preventDefault();
 	// 	popupHandler();
-	// });
-
-	showPopupButtons.forEach(function(button) {
-		button.addEventListener('click', function(evt) {
-		evt.preventDefault();
-		popupHandler();
-		});
-	})
+	// 	});
+	// })
 
 }());

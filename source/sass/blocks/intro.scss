@@ -85,12 +85,6 @@
 	}
 }
 
-.intro__list--mobile {
-	@media (min-width: $mobile-width) {
-		
-	}
-}
-
 .intro__tel {
 	font-size: 10px;
 	line-height: 13px;
@@ -106,6 +100,11 @@
 	@media (min-width: $mobile-width) {
 		font-size: 12px;
 		line-height: 15px;		
+	}
+
+	&:hover,
+	&:active {
+		color: rgba(34, 34, 34, 0.5);
 	}
 }
 

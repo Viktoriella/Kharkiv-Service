@@ -48,6 +48,21 @@
 	object-position: center center;
 }
 
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.article__image-container {
+		position: relative;
+	}
+
+   .article__image {
+   		position: absolute;
+        width: auto;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+		transform: translate(-50%, -50%);
+   }
+}
+
 .articles__slide .article__image-container {
 	margin-bottom: 10px;
 }

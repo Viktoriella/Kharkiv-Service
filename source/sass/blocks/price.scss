@@ -132,6 +132,20 @@
 	flex-direction: column;
 }
 
+@media (min-width: $small-desktop-width) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .price__row {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
+   }
+
+   .price__row th.price__price,
+   .price__row td.price__price {
+		width: 10%;
+	}
+}
+
 .price__tablet-show {
 	display: none;
 
